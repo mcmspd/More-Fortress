@@ -3078,8 +3078,8 @@
 		"weight": 600
 	},
 	"AGFort": {
-		"buildPoints": 375,
-		"buildPower": 150,
+		"buildPoints": 1000,
+		"buildPower": 400,
 		"damage": 50,
 		"effectSize": 100,
 		"facePlayer": 1,
