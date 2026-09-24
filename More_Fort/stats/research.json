@@ -1462,8 +1462,8 @@
 			"R-Wpn-Laser02",
 			"R-Defense-WallUpgrade05"
 		],
-		"researchPoints": 8400,
-		"researchPower": 262,
+		"researchPoints": 12000,
+		"researchPower": 400,
 		"resultStructures": [
 			"X-Super-Laser"
 		],
