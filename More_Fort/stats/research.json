@@ -1462,8 +1462,8 @@
 			"R-Wpn-MG4",
 			"R-Defense-WallUpgrade03"
 		],
-		"researchPoints": 6500,
-		"researchPower": 150,
+		"researchPoints": 4800,
+		"researchPower": 200,
 		"resultStructures": [
 			"X-Super-AG"
 		],
