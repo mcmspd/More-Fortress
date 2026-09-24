@@ -1459,6 +1459,8 @@
 		"msgName": "RES_EMP_CAN",
 		"name": "Laser Fortress",
 		"requiredResearch": [
+			"R-Wpn-Laser02",
+			"R-Defense-WallUpgrade05"
 		],
 		"researchPoints": 8400,
 		"researchPower": 262,
