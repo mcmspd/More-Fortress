@@ -3542,11 +3542,11 @@
 	"X-Super-AG": {
 		"armour": 15,
 		"breadth": 2,
-		"buildPoints": 1250,
+		"buildPoints": 1000,
 		"buildPower": 600,
 		"combinesWithWall": true,
 		"height": 2,
-		"hitpoints": 2500,
+		"hitpoints": 1600,
 		"id": "X-Super-AG",
 		"name": "Assault Gun Fortress",
 		"resistance": 100,
