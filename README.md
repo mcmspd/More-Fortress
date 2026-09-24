@@ -4,4 +4,4 @@ New Fortress:
 Laser Fortress
 
 Usage:
-Put the folder into mods/<version>/multiplay
+Put the folder into mods/wz-version/multiplay
