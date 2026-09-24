@@ -1453,6 +1453,22 @@
 		],
 		"statID": "X-Super-Cannon"
 	},
+	"R-Defense-Super-AG": {
+		"iconID": "IMAGE_RES_DEFENCE",
+		"id": "R-Defense-Super-AG",
+		"msgName": "RES_EMP_CAN",
+		"name": "Assault Gun Fortress",
+		"requiredResearch": [
+			"R-Wpn-MG4",
+			"R-Defense-WallUpgrade03"
+		],
+		"researchPoints": 6500,
+		"researchPower": 150,
+		"resultStructures": [
+			"X-Super-AG"
+		],
+		"statID": "X-Super-AG"
+	},
 	"R-Defense-Super-Laser": {
 		"iconID": "IMAGE_RES_DEFENCE",
 		"id": "R-Defense-Super-Lasee",

@@ -3539,6 +3539,29 @@
 		],
 		"width": 2
 	},
+	"X-Super-AG": {
+		"armour": 15,
+		"breadth": 2,
+		"buildPoints": 1250,
+		"buildPower": 600,
+		"combinesWithWall": true,
+		"height": 2,
+		"hitpoints": 2500,
+		"id": "X-Super-AG",
+		"name": "Assault Gun Fortress",
+		"resistance": 100,
+		"sensorID": "FortressSensor",
+		"strength": "HARD",
+		"structureModel": [
+			"STWPFCAN.PIE"
+		],
+		"thermal": 15,
+		"type": "FORTRESS",
+		"weapons": [
+			"AGFort"
+		],
+		"width": 2
+	},
 	"X-Super-Laser": {
 		"armour": 15,
 		"breadth": 2,
