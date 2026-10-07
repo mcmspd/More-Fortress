@@ -5,76 +5,56 @@
 
 Warzone 2100 multiplay mod: adds 4 Fortress-class defenses + 1 designable rocket weapon. Data-only, no JS. All `.pie` files are kept intentionally, even if unreferenced.
 
+## Layout
+
+```
+More_Fort/
+  diffs/MoreFort/stats/weapons.json     new weapons (full objects)
+  diffs/MoreFort/stats/structure.json  new structures (full objects)
+  diffs/MoreFort/stats/research.json   new research topics (full objects)
+  components/weapons/*.pie  turret/barrel models
+  structs/*.pie              building bodies
+  effects/*.pie              scaled FX
+  texpages/page-12-player-buildings.png
+  check.py                   compliance checker (run it)
+  stats-reference.md         field/enum reference + checklist
+  README.md                  player-facing install + content
+```
+
+No `stats/` folder. Engine merges `diffs/*/stats/*.json` onto `data/mp/stats/*.json` (`WzConfig jsonMerge`; `null` deletes a base key). Subfolder name under `diffs/` is arbitrary.
+
 ## How the 3 stats files connect
 
 `research → structure → weapon → .pie`. Break one link and the entry is dead:
 
 * `research.resultStructures[]` unlocks `structure.id`; `resultComponents[]` unlocks `weapons.id`.
-* `structure.weapons[]` must exist in base game + `weapons.json`.
+* `structure.weapons[]` must exist in base game + `weapons.json` (max 3).
 * `weapons.model/mountModel/*Gfx` → `components/`, `effects/`; `structure.structureModel` → `structs/` or base.
+* Research prerequisites (`requiredResearch`) must exist in base or in this mod; cycles fail load.
 
-Current mapping (verified, no orphans):
+## Compliance
 
-* `R-Defense-Super-AG` → `X-Super-AG` → `AGFort`
-* `R-Defense-Super-Laser` → `X-Super-Laser` → `LaserSuper`
-* `R-Defense-Super-AA` → `X-Super-AA` → `AAGunSuper`
-* `R-Defense-Super-Flame` → `X-Super-Flame` → `FlameSuper`
-* `R-Wpn-Rocket-ATGM` → `Rocket-ATGM` (designable tank weapon, no structure)
+Authoritative source is the Warzone2100 GitHub repo (`Warzone2100/warzone2100`, ref `master`):
 
-## Layout
+* Stats shape and merge: `data/mp/stats/*.json`, `lib/framework/wzconfig.cpp` (`jsonMerge`).
+* Field semantics and enums: `src/stats.cpp` (`loadWeaponStats`), `src/structure.cpp`, `src/research.cpp` (`loadResearch`).
+* Asset filenames on disk are lowercase; `.pie`/`.ogg` references must match exactly (Linux break otherwise). Base files on disk are lowercase even where base JSON uses uppercase — always write lowercase.
 
-```
-More_Fort/
-  diffs/MoreFort/stats/weapons.json     5 keys, full objects
-  diffs/MoreFort/stats/structure.json  4 keys, full objects
-  diffs/MoreFort/stats/research.json   5 keys, full objects
-  components/weapons/*.pie  13 files (some now unused, kept)
-  structs/*.pie              3 files (2 now unused, kept)
-  effects/*.pie              9 files (some now unused, kept)
-  texpages/page-12-player-buildings.png
-```
+Rules that have bitten before:
 
-No `stats/` folder. Engine merges `diffs/*/stats/*.json` onto `data/mp/stats/*.json` (`WzConfig jsonMerge`; `null` deletes). Subfolder name under `diffs/` is arbitrary.
+* Time/damage numeric fields must be integers — the engine applies `toUInt()` then multiplies by 100, so floats truncate (`2.5` → `2`).
+* `research.msgName` is optional; if present it must be unique and must not collide with base keys.
+* `redComponents[]`/`redStructures[]` must never contain `""`.
+* Never add, shadow, or delete `ZNULL*` entries.
 
-## Content
+Enforced by `check.py` (stdlib only):
 
-### Structures — all `FORTRESS`, `combinesWithWall:true`, `FortressSensor`
-
-* `X-Super-AG` 1600HP armour 8, 2x2, 1000/500
-* `X-Super-Laser` 3200HP armour 15, 2x2, 2000/1000
-* `X-Super-AA` 2800HP armour 15, 2x2
-* `X-Super-Flame` 1600HP armour 8, 2x2
-
-### Weapons
-
-* `AGFort` 35dmg, 0.5 pause, 1024-1408, `ShootAir`
-* `LaserSuper` 350dmg, 15rds/reload 50, 1500-2304, 100% hit
-* `AAGunSuper` 250dmg, `AirOnly`, 1408-2560
-* `FlameSuper` 55dmg + periodic 20, 512-1280
-* `Rocket-ATGM` 60dmg, `designable:1`, 512-3840
-
-### Research
-
-* `R-Defense-Super-AG`: `MG4 + Wall03`, 4800/200
-* `R-Defense-Super-Laser`: `Laser02 + Wall05`, 12000/400
-* `R-Defense-Super-AA`: `AAGun02 + Wall05`, 8400/262
-* `R-Defense-Super-Flame`: `Flame2 + Wall03`, 4800/200
-* `R-Wpn-Rocket-ATGM`: `Rocket01-LtAT`, 4000/200
-
-### Removed (per user)
-
-* Unresearchable: `X-Super-HC-HC-CF`, `X-Super-Rocket-Dual`, `Cannon375mmMk2`.
-* All mortars: `Emplacement-MortarPit03`, `Mortar1Mk2`, `Mortar2Mk1`/`Mortar3ROTARYMk1` patches, `R-Defense-Large-MortarPit`.
+* `python3 check.py` — verifies base refs against GitHub (cached under `/tmp/opencode/wz-check-cache`, only referenced parts); falls back to WARN with no internet. Exit 0 = pass, 1 = fail.
+* `python3 check.py --offline` — skips network; base refs become WARN.
+* `python3 check.py --online` — legacy flag, online is now default.
 
 ## Install / Edit
 
 * Drop folder (or `.wz`) into `mods/<version>/multiplay`.
 * Add: full object under new key + `.pie` as needed. Patch base with partial object. Delete base key with `null`.
-* Validate: JSON parses; `structure.weapons[]` ∈ base+diff; `research.requiredResearch/result*` exist; `.pie` case matches (`las_Body` vs `las_body` is wrong).
-
-## Known issues (do not fix without approval)
-
-1. `LaserSuper.mountModel: las_Body_3x.pie` vs file `las_body_3x.pie` — Linux break.
-2. `msgName` reused (`RES_EMP_CAN` x4, `RES_W_RK_LTAT1` collides with base).
-3. `R-Wpn-Rocket-ATGM.redComponents: [""]` — should be real ID or omitted.
-4. `README.md` documents only AG/Laser.
+* Validate: `python3 check.py` must report 0 errors.
