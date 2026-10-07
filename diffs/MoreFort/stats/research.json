@@ -2,7 +2,7 @@
  "R-Defense-ATGM": {
   "iconID": "IMAGE_RES_DEFENCE",
   "id": "R-Defense-ATGM",
-  "name": "ATGM Emplacement",
+  "name": "ATGM",
   "requiredResearch": [
    "R-Wpn-Rocket-ATGM"
   ],
@@ -76,7 +76,7 @@
  "R-Wpn-Rocket-ATGM": {
   "iconID": "IMAGE_RES_WEAPONTECH",
   "id": "R-Wpn-Rocket-ATGM",
-  "name": "Anti-Tank Guided Missile Launcher",
+  "name": "Anti-Tank Guided Missile (ATGM)",
   "requiredResearch": [
    "R-Wpn-Rocket01-LtAT"
   ],

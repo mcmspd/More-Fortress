@@ -188,7 +188,7 @@
   "mountModel": "atgm_mount.pie",
   "movement": "INDIRECT",
   "muzzleGfx": "fxmroc.pie",
-  "name": "Anti-Tank Guided Missile Launcher",
+  "name": "ATGM",
   "numExplosions": 1,
   "numRounds": 4,
   "radiusLife": 10,
