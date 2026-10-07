@@ -1,0 +1,99 @@
+{
+ "R-Defense-Large-MortarPit": {
+  "iconID": "IMAGE_RES_DEFENCE",
+  "id": "R-Defense-Large-MortarPit",
+  "msgName": "RES_EMP_Mpit",
+  "name": "Large Mortar Pit",
+  "requiredResearch": [
+   "R-Defense-MortarPit"
+  ],
+  "researchPoints": 800,
+  "researchPower": 36,
+  "resultStructures": [
+   "Emplacement-MortarPit03"
+  ],
+  "statID": "Emplacement-MortarPit01"
+ },
+ "R-Defense-Super-AA": {
+  "iconID": "IMAGE_RES_DEFENCE",
+  "id": "R-Defense-Super-AA",
+  "msgName": "RES_EMP_CAN",
+  "name": "AA Flak Fortress",
+  "requiredResearch": [
+   "R-Wpn-AAGun02",
+   "R-Defense-WallUpgrade05"
+  ],
+  "researchPoints": 8400,
+  "researchPower": 262,
+  "resultStructures": [
+   "X-Super-AA"
+  ],
+  "statID": "X-Super-AA"
+ },
+ "R-Defense-Super-AG": {
+  "iconID": "IMAGE_RES_DEFENCE",
+  "id": "R-Defense-Super-AG",
+  "msgName": "RES_EMP_CAN",
+  "name": "Assault Gun Fortress",
+  "requiredResearch": [
+   "R-Wpn-MG4",
+   "R-Defense-WallUpgrade03"
+  ],
+  "researchPoints": 4800,
+  "researchPower": 200,
+  "resultStructures": [
+   "X-Super-AG"
+  ],
+  "statID": "X-Super-AG"
+ },
+ "R-Defense-Super-Flame": {
+  "iconID": "IMAGE_RES_DEFENCE",
+  "id": "R-Defense-Super-Flame",
+  "msgName": "RES_EMP_CAN",
+  "name": "Flamer Fortress",
+  "requiredResearch": [
+   "R-Wpn-Flame2",
+   "R-Defense-WallUpgrade03"
+  ],
+  "researchPoints": 4800,
+  "researchPower": 200,
+  "resultStructures": [
+   "X-Super-Flame"
+  ],
+  "statID": "X-Super-Flame"
+ },
+ "R-Defense-Super-Laser": {
+  "iconID": "IMAGE_RES_DEFENCE",
+  "id": "R-Defense-Super-Laser",
+  "msgName": "RES_EMP_CAN",
+  "name": "Laser Fortress",
+  "requiredResearch": [
+   "R-Wpn-Laser02",
+   "R-Defense-WallUpgrade05"
+  ],
+  "researchPoints": 12000,
+  "researchPower": 400,
+  "resultStructures": [
+   "X-Super-Laser"
+  ],
+  "statID": "X-Super-Laser"
+ },
+ "R-Wpn-Rocket-ATGM": {
+  "iconID": "IMAGE_RES_WEAPONTECH",
+  "id": "R-Wpn-Rocket-ATGM",
+  "msgName": "RES_W_RK_LTAT1",
+  "name": "Anti-Tank Guided Missile Launcher",
+  "redComponents": [
+   ""
+  ],
+  "requiredResearch": [
+   "R-Wpn-Rocket01-LtAT"
+  ],
+  "researchPoints": 4000,
+  "researchPower": 200,
+  "resultComponents": [
+   "Rocket-ATGM"
+  ],
+  "statID": "Rocket-ATGM"
+ }
+}
