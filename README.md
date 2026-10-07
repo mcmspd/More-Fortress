@@ -1,6 +1,6 @@
 **Warzone 2100 Mod: More Fortress**
 
-Adds 4 new Fortress defenses and 1 new tank weapon to skirmish and multiplayer.
+Adds 4 new Fortress defenses, 1 ATGM emplacement, and 1 new tank weapon to skirmish and multiplayer.
 
 ## Installation
 
@@ -27,6 +27,12 @@ AA Flak Fortress:
 - Research "AA Flak Fortress" after "AA Tornado Flak Cannon" (`R-Wpn-AAGun02`)
   and "Supercrete Mk2" (`R-Defense-WallUpgrade05`)
 - Anti-air only, very long range with explosive flak shells
+
+ATGM Emplacement:
+- Research "ATGM Emplacement" after
+  "Anti-Tank Guided Missile Launcher" (`R-Wpn-Rocket-ATGM`)
+- Fixed emplacement with the same long-range anti-tank missiles,
+  including the 4-tile minimum range
 
 Laser Fortress:
 - Research "Laser Fortress" after "Pulse Laser" (`R-Wpn-Laser02`)

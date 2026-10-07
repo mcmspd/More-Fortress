@@ -1,4 +1,26 @@
 {
+ "Emplacement-ATGM": {
+  "armour": 10,
+  "breadth": 1,
+  "buildPoints": 400,
+  "buildPower": 250,
+  "height": 1,
+  "hitpoints": 400,
+  "id": "Emplacement-ATGM",
+  "name": "ATGM Emplacement",
+  "resistance": 150,
+  "sensorID": "DefaultSensor1Mk1",
+  "strength": "HARD",
+  "structureModel": [
+   "blhardpt.pie"
+  ],
+  "thermal": 10,
+  "type": "DEFENSE",
+  "weapons": [
+   "Rocket-ATGM"
+  ],
+  "width": 1
+ },
  "X-Super-AA": {
   "armour": 15,
   "breadth": 2,

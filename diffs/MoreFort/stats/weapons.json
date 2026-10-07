@@ -181,7 +181,7 @@
   "longRange": 3840,
   "maxElevation": 90,
   "minElevation": -60,
-  "minRange": 128,
+  "minRange": 512,
   "minimumDamage": 33,
   "missGfx": "fxgrdexl.pie",
   "model": "atgm_weapon.pie",
