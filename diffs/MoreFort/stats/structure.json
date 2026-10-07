@@ -7,7 +7,7 @@
   "height": 1,
   "hitpoints": 400,
   "id": "Emplacement-ATGM",
-  "name": "ATGM",
+  "name": "ATGM Emplacement",
   "resistance": 150,
   "sensorID": "DefaultSensor1Mk1",
   "strength": "HARD",

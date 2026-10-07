@@ -2,7 +2,7 @@
  "R-Defense-ATGM": {
   "iconID": "IMAGE_RES_DEFENCE",
   "id": "R-Defense-ATGM",
-  "name": "ATGM",
+  "name": "ATGM Emplacement",
   "requiredResearch": [
    "R-Wpn-Rocket-ATGM"
   ],
