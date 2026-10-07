@@ -1,26 +1,4 @@
 {
- "Emplacement-MortarPit03": {
-  "armour": 10,
-  "breadth": 2,
-  "buildPoints": 600,
-  "buildPower": 400,
-  "height": 2,
-  "hitpoints": 1200,
-  "id": "Emplacement-MortarPit03",
-  "name": "Large Mortar Pit",
-  "resistance": 150,
-  "sensorID": "DefaultSensor1Mk1",
-  "strength": "MEDIUM",
-  "structureModel": [
-   "BLMRTPIT-2x.PIE"
-  ],
-  "thermal": 10,
-  "type": "DEFENSE",
-  "weapons": [
-   "Mortar1Mk2"
-  ],
-  "width": 2
- },
  "X-Super-AA": {
   "armour": 15,
   "breadth": 2,
@@ -35,7 +13,7 @@
   "sensorID": "FortressSensor",
   "strength": "HARD",
   "structureModel": [
-   "STWPFCAN.PIE"
+   "stwpfcan.pie"
   ],
   "thermal": 15,
   "type": "FORTRESS",
@@ -58,7 +36,7 @@
   "sensorID": "FortressSensor",
   "strength": "HARD",
   "structureModel": [
-   "STWPFCAN.PIE"
+   "stwpfcan.pie"
   ],
   "thermal": 8,
   "type": "FORTRESS",
@@ -81,7 +59,7 @@
   "sensorID": "FortressSensor",
   "strength": "HARD",
   "structureModel": [
-   "STWPFCAN.PIE"
+   "stwpfcan.pie"
   ],
   "thermal": 8,
   "type": "FORTRESS",
@@ -104,7 +82,7 @@
   "sensorID": "FortressSensor",
   "strength": "HARD",
   "structureModel": [
-   "STWPFCAN.PIE"
+   "stwpfcan.pie"
   ],
   "thermal": 15,
   "type": "FORTRESS",
