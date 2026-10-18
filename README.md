@@ -44,7 +44,7 @@ ATGM Emplacement:
 - Research "ATGM Emplacement" after
   "Anti-Tank Guided Missile Launcher" (`R-Wpn-Rocket-ATGM`)
 - Fixed emplacement with the same long-range anti-tank missiles,
-  including the 4-tile minimum range
+  including the 5-tile minimum range
 
 Laser Fortress:
 
@@ -65,11 +65,11 @@ M1299 Howitzer Fortress:
   and "Supercrete Mk2" (`R-Defense-WallUpgrade05`)
 - Indirect fire: shells arc over your walls, so it has no line-of-sight requirement
 - Range 5 to 80 tiles, best accuracy from 30 to 80 tiles out
-- Fires once every 17 seconds, hitting about 4 times as hard as the
-  stock Ground Shaker emplacement once you account for accuracy
+- Fires once every 25 seconds, the same cadence as the stock Ground
+  Shaker emplacement, hitting about 4 times as hard per shell
 - 1400 direct damage and 1400 splash across a 4-tile blast
-- Accuracy is 65% at long range and 50% up close, so roughly a third
-  of shells miss: it is artillery, not a precision gun
+- Accuracy is 55% at long range and 40% up close, so roughly half of
+  shells miss: it is artillery, not a precision gun
 - Leaves the ground scorched for 2.5 seconds
 - Very heavy turret, turns slowly and rocks back hard on every shot
 - Cannot hit anything closer than 5 tiles, so keep your attackers at range
