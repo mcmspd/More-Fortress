@@ -1,0 +1,36 @@
+name: Build & Release .wz
+
+on:
+  push:
+    tags:
+      - 'v*.*.*'
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: 'Release tag (e.g. v0.6)'
+        required: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Build .wz package
+        run: |
+          # A .wz is just a .zip; include everything except .git
+          zip -r MoreFortress-${{ github.event.inputs.tag || github.ref_name }}.wz \
+            AGENTS.md README.md WISHLIST.md check.py stats-reference.md \
+            components diffs effects structs \
+            -x '*.git*'
+
+      - name: Upload release asset
+        uses: softprops/action-gh-release@v2
+        with:
+          files: MoreFortress-*.wz
+          tag_name: ${{ github.event.inputs.tag || github.ref_name }}
+          generate_release_notes: true
+          fail_on_unmatched_files: false
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
