@@ -13,28 +13,43 @@ Adds 5 new Fortress defenses, 1 ATGM emplacement, and 1 new tank weapon to skirm
 All fortresses are 2x2, join onto walls, and come with their own long-range gun.
 
 Assault Gun Fortress:
+
+![Assault Gun Fortress](Pictures/AG_FORT.png)
+
 - Research "Assault Gun Fortress" after "Assault Gun" (`R-Wpn-MG4`)
   and "Improved Hardcrete Mk3" (`R-Defense-WallUpgrade03`)
 - Same range as the Cannon Fortress, less armour
 - Can also hit air targets
 
 Flamer Fortress:
+
+![Flamer Fortress](Pictures/FLAM_FORT.png)
+
 - Research "Flamer Fortress" after "Heavy Flamer - Inferno" (`R-Wpn-Flame2`)
   and "Improved Hardcrete Mk3" (`R-Defense-WallUpgrade03`)
 - Short-range wall of flame, sets the ground burning
 
 AA Flak Fortress:
+
+![AA Flak Fortress](Pictures/AA_FLAK_FORT.png)
+
 - Research "AA Flak Fortress" after "AA Tornado Flak Cannon" (`R-Wpn-AAGun02`)
   and "Supercrete Mk2" (`R-Defense-WallUpgrade05`)
 - Anti-air only, very long range with explosive flak shells
 
 ATGM Emplacement:
+
+![ATGM Emplacement](Pictures/ATGM_Emplacement.png)
+
 - Research "ATGM Emplacement" after
   "Anti-Tank Guided Missile Launcher" (`R-Wpn-Rocket-ATGM`)
 - Fixed emplacement with the same long-range anti-tank missiles,
   including the 4-tile minimum range
 
 Laser Fortress:
+
+![Laser Fortress](Pictures/LAS_FORT.png)
+
 - Research "Laser Fortress" after "Pulse Laser" (`R-Wpn-Laser02`)
   and "Supercrete Mk2" (`R-Defense-WallUpgrade05`)
 - Long range, fires a rapid burst of pulses then reloads
@@ -42,6 +57,9 @@ Laser Fortress:
 - Counter with artillery or a rush of medium tanks
 
 M1299 Howitzer Fortress:
+
+![M1299 Howitzer Fortress](Pictures/H_FORT.png)
+
 - Research "M1299 Howitzer Fortress" after
   "Heavy Howitzer - Ground Shaker" (`R-Wpn-HvyHowitzer`)
   and "Supercrete Mk2" (`R-Defense-WallUpgrade05`)

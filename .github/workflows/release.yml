@@ -21,11 +21,13 @@ jobs:
 
       - name: Build .wz package
         run: |
-          # A .wz is just a .zip; include everything except .git
+          # A .wz is just a .zip.
+          # Explicit allowlist (not a wildcard) so that repo-only files such as
+          # Pictures/ (README screenshots, ~1.1 MB) are never shipped to players.
           zip -r MoreFortress-${{ github.event.inputs.tag || github.ref_name }}.wz \
             AGENTS.md README.md WISHLIST.md check.py stats-reference.md \
             components diffs effects structs \
-            -x '*.git*'
+            -x '*.git*' -x 'Pictures/*'
 
       - name: Upload release asset
         uses: softprops/action-gh-release@v2
