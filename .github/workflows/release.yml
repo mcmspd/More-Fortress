@@ -21,13 +21,16 @@ jobs:
 
       - name: Build .wz package
         run: |
-          # A .wz is just a .zip.
-          # Explicit allowlist (not a wildcard) so that repo-only files such as
-          # Pictures/ (README screenshots, ~1.1 MB) are never shipped to players.
+          # A .wz is just a .zip containing ONLY the mod itself:
+          #   diffs/     - the stats that get merged onto the base game
+          #   components/weapons, structs, effects - .pie models the game loads
+          # Everything else in the repo is developer tooling and is deliberately
+          # NOT shipped: check.py, AGENTS.md, README.md, WISHLIST.md,
+          # stats-reference.md, Pictures/, .github/.
+          # If a texpages/ directory is ever added it must be listed here too.
           zip -r MoreFortress-${{ github.event.inputs.tag || github.ref_name }}.wz \
-            AGENTS.md README.md WISHLIST.md check.py stats-reference.md \
-            components diffs effects structs \
-            -x '*.git*' -x 'Pictures/*'
+            diffs components structs effects \
+            -x '*.git*'
 
       - name: Upload release asset
         uses: softprops/action-gh-release@v2
