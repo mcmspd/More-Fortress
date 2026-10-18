@@ -96,7 +96,7 @@ Ground Shaker (`fxcammo.pie`, `fxmnexp.pie`, `fxhhowt.pie`, `fxlsplsh.pie`, `lrg
 Fortress flash `fxshcanm.pie`.
 
 Structure `X-Super-Howitzer`: 2×2 FORTRESS, armour 15 / thermal 15, buildPoints 2000 /
-buildPower 1000 (matching the stock Cannon Fortress), hitpoints 4000, height 4,
+buildPower 2500, hitpoints 4000, height 4,
 `combinesWithWall: true`, `sensorID: "FortressSensor"`.
 
 Research `R-Defense-Super-Howitzer`: prereqs `R-Wpn-HvyHowitzer` + `R-Defense-WallUpgrade05`,
