@@ -183,8 +183,21 @@ Research `R-Defense-Super-Howitzer`: prereqs `R-Wpn-HvyHowitzer` + `R-Defense-Wa
   `check.py` now flags it explicitly.
 * The Wall 13/14/15 line splits the 300% hit point boost into three 100% steps, each
   costing 65535 RP / 4500 PW (196605 RP / 13500 PW for all three). Each tier sits
-  exactly at the `UWORD_MAX` cap — legal, but there is no headroom left on those
-  values.
+  exactly at the `UWORD_MAX` cap — legal (verified in-game), but there is no headroom
+  left on those values.
+* **A `msgName` is only legal on a `techCode: 0` (TC_MAJOR) topic** and it must resolve
+  to a briefing message the game can find. Setting `msgName` on a `techCode: 1` topic
+  trips `ASSERT(research.techCode == TC_MAJOR)` in `loadResearch`; a `msgName` with no
+  briefing file trips `ASSERT(ptr)` in `getViewData` ("Message X not found"). This mod
+  ships no briefings, so our research topics must not set `msgName` at all.
+* **Mod installs shadow base files.** A mod with a root-level `stats/research.json`
+  replaces the base game's file, and `wrf/multires.wrf` loads that file as `RESCH` — so
+  an incomplete copy makes `loadResearch()` fail and the game exits to the main menu.
+  Always use `diffs/<name>/stats/*.json`, never a root-level `stats/`.
+* **Stale installs are silently used.** A copy of the mod in
+  `mods/<version>/autoload/<name>/` is applied to every game mode and takes precedence
+  over a newer `.wz` in `mods/downloads/`. Keep only one install, and re-sync it after
+  every release.
 * Raw DPS is misleading for low-accuracy artillery — it assumes every shell hits. Always
   report effective DPS (`damage × hitChance × RPM`) alongside it.
 * Run `python3 check.py` (online — do not use `--offline`, base refs must be verified

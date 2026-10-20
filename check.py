@@ -415,6 +415,17 @@ def check_research(research, structures, weapons, base):
             if isinstance(val, int) and not isinstance(val, bool) and val > UWORD_MAX:
                 err(f"research.{key}.{field}: {val} exceeds UWORD_MAX ({UWORD_MAX}); "
                     f"engine will refuse to load the research and the game will crash")
+        # A msgName is only legal on a TC_MAJOR (techCode 0) topic, and it must
+        # resolve to a briefing message the game can find.
+        if o.get("msgName"):
+            if o.get("techCode"):
+                err(f"research.{key}: msgName {o['msgName']!r} with techCode "
+                    f"{o.get('techCode')} - the engine only allows a message on a "
+                    f"TC_MAJOR (techCode 0) topic")
+            elif base is not None and base.available and o["msgName"] not in base.msgnames:
+                warn(f"research.{key}: msgName {o['msgName']!r} is not a known base "
+                     f"message; the game will assert 'Message not found' unless the "
+                     f"mod ships the briefing file")
         for r in o.get("requiredResearch", []):
             if r in all_ids:
                 continue

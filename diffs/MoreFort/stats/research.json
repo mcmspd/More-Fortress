@@ -76,7 +76,6 @@
  "R-Defense-Super-RIM116": {
   "iconID": "IMAGE_RES_DEFENCE",
   "id": "R-Defense-Super-RIM116",
-  "msgName": "RES_EMP_RIM116",
   "name": "Super RIM-116 AA Fortress",
   "requiredResearch": [
    "R-Wpn-Missile-LtSAM",
@@ -132,7 +131,6 @@
   "iconID": "IMAGE_RES_DEFENCE",
   "id": "R-Defense-WallUpgrade13",
   "imdName": "BLWALLH.PIE",
-  "msgName": "RES_DF_WU13",
   "name": "Ultra-High Performance Concrete",
   "requiredResearch": [
    "R-Defense-WallUpgrade12"
@@ -156,7 +154,6 @@
   "iconID": "IMAGE_RES_DEFENCE",
   "id": "R-Defense-WallUpgrade14",
   "imdName": "BLWALLH.PIE",
-  "msgName": "RES_DF_WU14",
   "name": "Carbon-Fibre Reinforced Concrete",
   "requiredResearch": [
    "R-Defense-WallUpgrade13"
@@ -180,7 +177,6 @@
   "iconID": "IMAGE_RES_DEFENCE",
   "id": "R-Defense-WallUpgrade15",
   "imdName": "BLWALLH.PIE",
-  "msgName": "RES_DF_WU15",
   "name": "Self-Healing Nano-Concrete",
   "requiredResearch": [
    "R-Defense-WallUpgrade14"
