@@ -114,9 +114,9 @@ Self-Healing Nano-Concrete:
 - Together they add 300%, turning a Laser or RIM-116 Fortress from 3200
   hit points into 24320, and the M1299 Howitzer Fortress from 4000 into
   30400
-- Brutally expensive: 21845 research points and 1500 research power each,
-  65535 research points and 4500 research power for all three, the most
-  expensive research in the game
+- Brutally expensive: 65535 research points and 4500 research power each,
+  the most expensive research in the game, for 196605 research points and
+  13500 research power to get all three
 - They add hit points only, so armour still comes from the Plasteel tiers
 
 ## New weapon
