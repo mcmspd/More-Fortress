@@ -106,16 +106,18 @@ Fortress Sensor Upgrade:
   buildings keep their normal sight
 - Also required before the Super RIM-116 AA Fortress can be researched
 
-Ultra-High Performance Concrete:
-- Research "Ultra-High Performance Concrete" after "Plasteel Mk3"
-  (`R-Defense-WallUpgrade12`)
-- A final wall upgrade that adds 300% hit points to every wall, bunker
-  and fortress in the game, on top of the twelve base wall tiers
-- Brutally expensive: 65535 research points and 4500 research power,
-  the most expensive research in the game
-- Turns a Laser or RIM-116 Fortress from 3200 hit points into 24320,
-  and the M1299 Howitzer Fortress from 4000 into 30400
-- It adds hit points only, so armour still comes from the Plasteel tiers
+Ultra-High Performance Concrete, Carbon-Fibre Reinforced Concrete and
+Self-Healing Nano-Concrete:
+- Three final wall upgrades, researched in order after "Plasteel Mk3"
+  (`R-Defense-WallUpgrade12`), each adding 100% hit points to every wall,
+  bunker and fortress on top of the twelve base wall tiers
+- Together they add 300%, turning a Laser or RIM-116 Fortress from 3200
+  hit points into 24320, and the M1299 Howitzer Fortress from 4000 into
+  30400
+- Brutally expensive: 21845 research points and 1500 research power each,
+  65535 research points and 4500 research power for all three, the most
+  expensive research in the game
+- They add hit points only, so armour still comes from the Plasteel tiers
 
 ## New weapon
 

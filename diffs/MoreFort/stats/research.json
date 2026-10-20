@@ -137,15 +137,63 @@
   "requiredResearch": [
    "R-Defense-WallUpgrade12"
   ],
-  "researchPoints": 65535,
-  "researchPower": 4500,
+  "researchPoints": 21845,
+  "researchPower": 1500,
   "results": [
    {
     "class": "Building",
     "filterParameter": "Type",
     "filterValue": "Wall",
     "parameter": "HitPoints",
-    "value": 300
+    "value": 100
+   }
+  ],
+  "subgroupIconID": "IMAGE_RES_GRPUPG",
+  "techCode": 1
+ },
+ "R-Defense-WallUpgrade14": {
+  "category": "Wall",
+  "iconID": "IMAGE_RES_DEFENCE",
+  "id": "R-Defense-WallUpgrade14",
+  "imdName": "BLWALLH.PIE",
+  "msgName": "RES_DF_WU14",
+  "name": "Carbon-Fibre Reinforced Concrete",
+  "requiredResearch": [
+   "R-Defense-WallUpgrade13"
+  ],
+  "researchPoints": 21845,
+  "researchPower": 1500,
+  "results": [
+   {
+    "class": "Building",
+    "filterParameter": "Type",
+    "filterValue": "Wall",
+    "parameter": "HitPoints",
+    "value": 100
+   }
+  ],
+  "subgroupIconID": "IMAGE_RES_GRPUPG",
+  "techCode": 1
+ },
+ "R-Defense-WallUpgrade15": {
+  "category": "Wall",
+  "iconID": "IMAGE_RES_DEFENCE",
+  "id": "R-Defense-WallUpgrade15",
+  "imdName": "BLWALLH.PIE",
+  "msgName": "RES_DF_WU15",
+  "name": "Self-Healing Nano-Concrete",
+  "requiredResearch": [
+   "R-Defense-WallUpgrade14"
+  ],
+  "researchPoints": 21845,
+  "researchPower": 1500,
+  "results": [
+   {
+    "class": "Building",
+    "filterParameter": "Type",
+    "filterValue": "Wall",
+    "parameter": "HitPoints",
+    "value": 100
    }
   ],
   "subgroupIconID": "IMAGE_RES_GRPUPG",

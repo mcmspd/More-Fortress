@@ -181,6 +181,10 @@ Research `R-Defense-Super-Howitzer`: prereqs `R-Wpn-HvyHowitzer` + `R-Defense-Wa
   `Failed to parse wrf/multires.wrf` → `Failed to load level data or map. Exiting to
   main menu.` — the game exits to the title screen. This is not a mod-format error and
   `check.py` now flags it explicitly.
+* The Wall 13/14/15 line splits the 300% hit point boost into three 100% steps
+  (21845 RP / 1500 PW each) so the total cost stays at 65535 RP / 4500 PW — the same as
+  a single tier, but spread over three separate researches the player has to take in
+  order.
 * Raw DPS is misleading for low-accuracy artillery — it assumes every shell hits. Always
   report effective DPS (`damage × hitChance × RPM`) alongside it.
 * Run `python3 check.py` (online — do not use `--offline`, base refs must be verified
