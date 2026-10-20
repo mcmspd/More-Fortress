@@ -5,7 +5,45 @@ Planned content for the Warzone 2100 multiplay mod.
 | # | Item | Status | Files affected | BEHAVIOUR |
 |---|------|--------|----------------|-----------|
 | 1 | **M1299 Howitzer Fortress** | ✅ Done | `weapons.json` (`HowitzerSuper`), `structure.json` (`X-Super-Howitzer`), `research.json` (`R-Defense-Super-Howitzer`), `README.md` | 3 RPM indirect siege shell, 1400 direct + 1400 splash over a 4-tile blast, 65/50% accuracy, 2.5 s ground scorch, recoil 500, heavy 120000-weight turret |
-| 2 | **SUPER RIM-216 Rolling Airframe Anti-Aircraft Missile Fortress** | ⬜ Todo | `diffs/MoreFort/stats/weapons.json`, `diffs/MoreFort/stats/structure.json`, `diffs/MoreFort/stats/research.json`, `README.md` | **1000 RPM**, fires a barrage of long-range **blue missiles**, medium damage, damage type **Anti-Tank**, **Shoot Air only** |
+| 2 | **Super RIM-116 AA Fortress** | ✅ Done | `diffs/MoreFort/stats/weapons.json` (`RIM116Super`), `diffs/MoreFort/stats/structure.json` (`X-Super-RIM116`), `diffs/MoreFort/stats/research.json` (`R-Defense-Super-RIM116`), `components/weapons/rim-116.pie`, `README.md` | Air-only 60-round CIWS interceptor: 60 × 450 damage in a 6 s salvo, 27,000 burst damage, 60 s reload, 32-tile range |
+
+## Item 2 as built
+
+`RIM116Super` in `diffs/MoreFort/stats/weapons.json`. The original stock Missile Fortress
+(`MissileSuper` / `X-Super-Missile`) was the baseline; the weapon is named and modelled on
+the RIM-116 Rolling Airframe Missile launcher.
+
+| Field | Value | Note |
+|-------|-------|------|
+| `damage` | 450 | same per-missile as the stock Avenger SAM |
+| `minimumDamage` | 33 | AP floor = 148, also identical to the Avenger SAM |
+| `numRounds` | **60** | 30× the stock Missile Fortress's 4 |
+| `firePause` | 1 (0.1 s) | 5.9 s to rip through the whole belt |
+| `reloadTime` | 600 (60 s) | burst doctrine: empty for a full minute |
+| Cycle / duty cycle | 65.9 s / 9% | |
+| **Damage per burst** | **27,000** | 30× the Avenger SAM's 900 |
+| `longHit` / `shortHit` | 65 / 75 | accuracy **falls off with range**, unlike the howitzer |
+| `flags` | `AirOnly` | air targets only |
+| `movement` / `weaponSubClass` / `weaponEffect` | HOMING-DIRECT / MISSILE / ANTI TANK | as the stock Missile Fortress |
+| `flightSpeed` | 1750 (13.7 tiles/s) | faster than every base missile, slower than the SAMs' 2250 |
+| `longRange` / `shortRange` / `minRange` | 4096 / 640 / 128 | 32 / 5 / 1 tiles |
+| `model` | `rim-116.pie` | new asset, TYPE 200 (barrel) |
+| `mountModel` | `trwpfmsl.pie` | stock Missile Fortress mount |
+| `flightGfx` | `fxmplme.pie` | stock base-game missile |
+| `weight` | 10000 | below `HEAVY_WEAPON_WEIGHT`, so the turret traverses at full speed |
+
+Effective DPS vs the stock Avenger SAM: **1.29× at long range, 1.71× up close**, at the cost
+of a 60-second reload that leaves the launcher defenseless between salvos.
+
+Structure `X-Super-RIM116`: 2×2 FORTRESS, armour 15 / thermal 15, 3200 hitpoints,
+buildPoints 2000 / buildPower 1600 (stock Missile Fortress values), `sensorID: "FortressSensor"`.
+
+Research `R-Defense-Super-RIM116`: 12000 RP / 400 PW, requires `R-Wpn-Missile-LtSAM`
+(Avenger SAM), `R-Defense-WallUpgrade05` (Supercrete Mk2) and this mod's own
+`R-Sys-Sensor-FortressUpgrade`.
+
+**Naming note:** the assets and IDs use RIM-**116** (the launcher), not RIM-216 (the missile),
+so the weapon, structure, research and `rim-116.pie` all agree.
 | 3 | **ATGM** | ✅ Done | `diffs/MoreFort/stats/weapons.json` (`Rocket-ATGM`), `README.md` | 4 blue missiles per 20 s reload at 105 damage each (matches Lancer per shot), 1.5× Lancer sustained DPS, 5–30 tile standoff band, slow flight needing lead |
 
 ## Item 3 as built

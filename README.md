@@ -1,6 +1,6 @@
 **Warzone 2100 Mod: More Fortress**
 
-Adds 5 new Fortress defenses, 1 ATGM emplacement, and 1 new tank weapon to skirmish and multiplayer.
+Adds 6 new Fortress defenses, 1 ATGM emplacement, and 1 new tank weapon to skirmish and multiplayer.
 
 ## Installation
 
@@ -76,6 +76,25 @@ M1299 Howitzer Fortress:
 - Countered by fast movers at long range, since the shell arcs slowly
   and lands where the target was
 
+Super RIM-116 AA Fortress:
+
+![Super RIM-116 AA Fortress](Pictures/RIM116_FORT.png)
+
+- Research "Super RIM-116 AA Fortress" after "Avenger SAM"
+  (`R-Wpn-Missile-LtSAM`), "Supercrete Mk2" (`R-Defense-WallUpgrade05`)
+  and "Fortress Sensor Upgrade" (`R-Sys-Sensor-FortressUpgrade`)
+- Air-only interceptor battery, the hardest hitter in the mod
+- Ripples out 60 missiles in about 6 seconds, then sits empty for a
+  full minute before it can reload
+- Each missile hits for 450 damage, the same as the stock Avenger SAM,
+  but it carries 30 times as many rounds: 27000 damage in one salvo
+- Range 1 to 32 tiles, with its best accuracy inside 5 tiles
+- Accuracy is 75% inside 5 tiles and 65% beyond that
+- Survives a lot of punishment at 3200 hitpoints and 15 armour
+- Counter with sustained air pressure: once the 60-round belt is empty
+  the launcher is defenseless for a minute, and a second fortress can
+  out-shoot it on sustained targets
+
 ## Research upgrades
 
 Fortress Sensor Upgrade:
@@ -85,6 +104,18 @@ Fortress Sensor Upgrade:
   12 tiles to 18 tiles, matching the Wide Spectrum Sensor
 - Affects only fortresses that use the Fortress Sensor, so your other
   buildings keep their normal sight
+- Also required before the Super RIM-116 AA Fortress can be researched
+
+Ultra-High Performance Concrete:
+- Research "Ultra-High Performance Concrete" after "Plasteel Mk3"
+  (`R-Defense-WallUpgrade12`)
+- A final wall upgrade that adds 300% hit points to every wall, bunker
+  and fortress in the game, on top of the twelve base wall tiers
+- Brutally expensive: 192000 research points and 4500 research power,
+  almost four times the cost of the priciest stock research
+- Turns a Laser or RIM-116 Fortress from 3200 hit points into 24320,
+  and the M1299 Howitzer Fortress from 4000 into 30400
+- It adds hit points only, so armour still comes from the Plasteel tiers
 
 ## New weapon
 

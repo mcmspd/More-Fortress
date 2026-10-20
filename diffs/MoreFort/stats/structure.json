@@ -25,7 +25,7 @@
   "armour": 15,
   "breadth": 2,
   "buildPoints": 1750,
-  "buildPower": 600,
+  "buildPower": 750,
   "combinesWithWall": true,
   "height": 4,
   "hitpoints": 2800,
@@ -47,8 +47,8 @@
  "X-Super-AG": {
   "armour": 8,
   "breadth": 2,
-  "buildPoints": 1000,
-  "buildPower": 500,
+  "buildPoints": 750,
+  "buildPower": 750,
   "combinesWithWall": true,
   "height": 2,
   "hitpoints": 1600,
@@ -70,8 +70,8 @@
  "X-Super-Flame": {
   "armour": 8,
   "breadth": 2,
-  "buildPoints": 1000,
-  "buildPower": 500,
+  "buildPoints": 750,
+  "buildPower": 750,
   "combinesWithWall": true,
   "height": 2,
   "hitpoints": 1600,
@@ -113,27 +113,50 @@
   ],
   "width": 2
   },
-  "X-Super-Howitzer": {
-   "armour": 15,
-   "breadth": 2,
-   "buildPoints": 2000,
-   "buildPower": 2500,
-   "combinesWithWall": true,
-   "height": 4,
-   "hitpoints": 4000,
-   "id": "X-Super-Howitzer",
-   "name": "M1299 Howitzer Fortress",
-   "resistance": 100,
-   "sensorID": "FortressSensor",
-   "strength": "HARD",
-   "structureModel": [
-    "stwpfcan.pie"
-   ],
-   "thermal": 15,
-   "type": "FORTRESS",
-   "weapons": [
-    "HowitzerSuper"
-   ],
-   "width": 2
-  }
+ "X-Super-RIM116": {
+  "armour": 15,
+  "breadth": 2,
+  "buildPoints": 2000,
+  "buildPower": 1600,
+  "combinesWithWall": true,
+  "height": 3,
+  "hitpoints": 3200,
+  "id": "X-Super-RIM116",
+  "name": "Super RIM-116 AA Fortress",
+  "resistance": 100,
+  "sensorID": "FortressSensor",
+  "strength": "HARD",
+  "structureModel": [
+   "stwpfcan.pie"
+  ],
+  "thermal": 15,
+  "type": "FORTRESS",
+  "weapons": [
+   "RIM116Super"
+  ],
+  "width": 2
+ },
+ "X-Super-Howitzer": {
+  "armour": 15,
+  "breadth": 2,
+  "buildPoints": 2000,
+  "buildPower": 2500,
+  "combinesWithWall": true,
+  "height": 4,
+  "hitpoints": 4000,
+  "id": "X-Super-Howitzer",
+  "name": "M1299 Howitzer Fortress",
+  "resistance": 100,
+  "sensorID": "FortressSensor",
+  "strength": "HARD",
+  "structureModel": [
+   "stwpfcan.pie"
+  ],
+  "thermal": 15,
+  "type": "FORTRESS",
+  "weapons": [
+   "HowitzerSuper"
+  ],
+  "width": 2
+ }
 }

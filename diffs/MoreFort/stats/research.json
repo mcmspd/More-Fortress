@@ -73,6 +73,23 @@
   ],
   "statID": "X-Super-Howitzer"
  },
+ "R-Defense-Super-RIM116": {
+  "iconID": "IMAGE_RES_DEFENCE",
+  "id": "R-Defense-Super-RIM116",
+  "msgName": "RES_EMP_RIM116",
+  "name": "Super RIM-116 AA Fortress",
+  "requiredResearch": [
+   "R-Wpn-Missile-LtSAM",
+   "R-Defense-WallUpgrade05",
+   "R-Sys-Sensor-FortressUpgrade"
+  ],
+  "researchPoints": 12000,
+  "researchPower": 400,
+  "resultStructures": [
+   "X-Super-RIM116"
+  ],
+  "statID": "X-Super-RIM116"
+ },
  "R-Defense-Super-Laser": {
   "iconID": "IMAGE_RES_DEFENCE",
   "id": "R-Defense-Super-Laser",
@@ -109,6 +126,30 @@
    }
   ],
   "subgroupIconID": "IMAGE_RES_GRPUPG"
+ },
+ "R-Defense-WallUpgrade13": {
+  "category": "Wall",
+  "iconID": "IMAGE_RES_DEFENCE",
+  "id": "R-Defense-WallUpgrade13",
+  "imdName": "BLWALLH.PIE",
+  "msgName": "RES_DF_WU13",
+  "name": "Ultra-High Performance Concrete",
+  "requiredResearch": [
+   "R-Defense-WallUpgrade12"
+  ],
+  "researchPoints": 192000,
+  "researchPower": 4500,
+  "results": [
+   {
+    "class": "Building",
+    "filterParameter": "Type",
+    "filterValue": "Wall",
+    "parameter": "HitPoints",
+    "value": 300
+   }
+  ],
+  "subgroupIconID": "IMAGE_RES_GRPUPG",
+  "techCode": 1
  },
  "R-Wpn-Rocket-ATGM": {
   "iconID": "IMAGE_RES_WEAPONTECH",
