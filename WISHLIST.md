@@ -175,6 +175,12 @@ Research `R-Defense-Super-Howitzer`: prereqs `R-Wpn-HvyHowitzer` + `R-Defense-Wa
 * The engine skips applying a research `results[]` entry when the target stat's current
   value is `<= 0`, so any stat modified by research must have a positive base value.
 * All numeric stat fields must be integers (engine applies `toUInt()`).
+* **`researchPoints` and `researchPower` are capped at `UWORD_MAX` (65535)** — they are
+  `uint16` in the engine. Exceeding the cap makes `loadResearch()` return false, which
+  aborts the RES/WRF parse and produces:
+  `Failed to parse wrf/multires.wrf` → `Failed to load level data or map. Exiting to
+  main menu.` — the game exits to the title screen. This is not a mod-format error and
+  `check.py` now flags it explicitly.
 * Raw DPS is misleading for low-accuracy artillery — it assumes every shell hits. Always
   report effective DPS (`damage × hitChance × RPM`) alongside it.
 * Run `python3 check.py` (online — do not use `--offline`, base refs must be verified

@@ -137,7 +137,7 @@
   "requiredResearch": [
    "R-Defense-WallUpgrade12"
   ],
-  "researchPoints": 192000,
+  "researchPoints": 65535,
   "researchPower": 4500,
   "results": [
    {

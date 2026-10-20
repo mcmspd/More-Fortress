@@ -30,6 +30,11 @@ INT_FIELDS = ("damage", "longRange", "shortRange", "firePause",
               "flightSpeed", "minElevation", "maxElevation",
               "researchPoints", "researchPower", "armour", "thermal",
               "resistance", "width", "breadth", "height")
+
+# Engine limit: research points/power are uint16 (UWORD_MAX). Exceeding it makes
+# loadResearch() fail, aborting the RES/WRF parse -> "Failed to parse
+# wrf/multires.wrf" -> "Failed to load level data or map" -> game exits.
+UWORD_MAX = 65535
 MOVEMENTS = {"DIRECT", "INDIRECT", "HOMING-DIRECT", "HOMING-INDIRECT"}
 WCLASSES = {"KINETIC", "HEAT"}
 WSUBS = {"CANNON", "MORTARS", "MISSILE", "ROCKET", "ENERGY", "GAUSS",
@@ -402,6 +407,14 @@ def check_research(research, structures, weapons, base):
             continue
         if not any(k in o for k in ("resultStructures", "resultComponents", "results")):
             warn(f"research.{key}: no result* field, does nothing")
+        # Engine caps these at UWORD_MAX (uint16). loadResearch() returns false
+        # above the cap, which aborts the whole RES/WRF parse and makes the game
+        # fail with "Failed to parse wrf/multires.wrf" then exit to the main menu.
+        for field in ("researchPoints", "researchPower"):
+            val = o.get(field)
+            if isinstance(val, int) and not isinstance(val, bool) and val > UWORD_MAX:
+                err(f"research.{key}.{field}: {val} exceeds UWORD_MAX ({UWORD_MAX}); "
+                    f"engine will refuse to load the research and the game will crash")
         for r in o.get("requiredResearch", []):
             if r in all_ids:
                 continue

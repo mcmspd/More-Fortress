@@ -111,8 +111,8 @@ Ultra-High Performance Concrete:
   (`R-Defense-WallUpgrade12`)
 - A final wall upgrade that adds 300% hit points to every wall, bunker
   and fortress in the game, on top of the twelve base wall tiers
-- Brutally expensive: 192000 research points and 4500 research power,
-  almost four times the cost of the priciest stock research
+- Brutally expensive: 65535 research points and 4500 research power,
+  the most expensive research in the game
 - Turns a Laser or RIM-116 Fortress from 3200 hit points into 24320,
   and the M1299 Howitzer Fortress from 4000 into 30400
 - It adds hit points only, so armour still comes from the Plasteel tiers
