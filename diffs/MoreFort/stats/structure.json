@@ -158,5 +158,51 @@
    "HowitzerSuper"
   ],
   "width": 2
+ },
+ "X-Super-MRP": {
+  "armour": 8,
+  "breadth": 2,
+  "buildPoints": 750,
+  "buildPower": 750,
+  "combinesWithWall": true,
+  "height": 2,
+  "hitpoints": 1600,
+  "id": "X-Super-MRP",
+  "name": "Large Rocket Pod Fortress",
+  "resistance": 100,
+  "sensorID": "FortressSensor",
+  "strength": "HARD",
+  "structureModel": [
+   "stwpfcan.pie"
+  ],
+  "thermal": 8,
+  "type": "FORTRESS",
+  "weapons": [
+   "MRP-Super"
+  ],
+  "width": 2
+ },
+ "X-Super-Mortar": {
+  "armour": 8,
+  "breadth": 2,
+  "buildPoints": 750,
+  "buildPower": 750,
+  "combinesWithWall": true,
+  "height": 2,
+  "hitpoints": 1600,
+  "id": "X-Super-Mortar",
+  "name": "Mortar Fortress",
+  "resistance": 100,
+  "sensorID": "FortressSensor",
+  "strength": "HARD",
+  "structureModel": [
+   "stwpfcan.pie"
+  ],
+  "thermal": 8,
+  "type": "FORTRESS",
+  "weapons": [
+   "MortarSuper"
+  ],
+  "width": 2
  }
 }

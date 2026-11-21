@@ -1,6 +1,6 @@
 **Warzone 2100 Mod: More Fortress**
 
-Adds 6 new Fortress defenses, 1 ATGM emplacement, and 1 new tank weapon to skirmish and multiplayer.
+Adds 7 new Fortress defenses, 1 ATGM emplacement, and 1 new tank weapon to skirmish and multiplayer.
 
 ## Installation
 
@@ -28,6 +28,13 @@ Flamer Fortress:
 - Research "Flamer Fortress" after "Heavy Flamer - Inferno" (`R-Wpn-Flame2`)
   and "Improved Hardcrete Mk3" (`R-Defense-WallUpgrade03`)
 - Short-range wall of flame, sets the ground burning
+
+Mortar Fortress:
+
+- Research "Mortar Fortress" after "Mortar" (`R-Wpn-Mortar01Lt`)
+  and "Improved Hardcrete Mk3" (`R-Defense-WallUpgrade03`)
+- Entrance-tier indirect fire, 200 damage with 7.5-tile splash
+- Range 20 tiles, 30% long and 40% short accuracy, same reload as stock Mortar
 
 AA Flak Fortress:
 

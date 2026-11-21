@@ -89,6 +89,21 @@
   ],
   "statID": "X-Super-RIM116"
  },
+ "R-Defense-Super-MRP": {
+  "iconID": "IMAGE_RES_DEFENCE",
+  "id": "R-Defense-Super-MRP",
+  "name": "Large Rocket Pod Fortress",
+  "requiredResearch": [
+   "R-Wpn-Rocket05-MiniPod",
+   "R-Defense-WallUpgrade03"
+  ],
+  "researchPoints": 4800,
+  "researchPower": 200,
+  "resultStructures": [
+   "X-Super-MRP"
+  ],
+  "statID": "X-Super-MRP"
+ },
  "R-Defense-Super-Laser": {
   "iconID": "IMAGE_RES_DEFENCE",
   "id": "R-Defense-Super-Laser",
@@ -208,5 +223,20 @@
    "Rocket-ATGM"
   ],
   "statID": "Rocket-ATGM"
+ },
+ "R-Defense-Super-Mortar": {
+  "iconID": "IMAGE_RES_DEFENCE",
+  "id": "R-Defense-Super-Mortar",
+  "name": "Mortar Fortress",
+  "requiredResearch": [
+   "R-Wpn-Mortar01Lt",
+   "R-Defense-WallUpgrade03"
+  ],
+  "researchPoints": 4800,
+  "researchPower": 200,
+  "resultStructures": [
+   "X-Super-Mortar"
+  ],
+  "statID": "X-Super-Mortar"
  }
 }
