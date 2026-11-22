@@ -17,7 +17,9 @@ Assault Gun Fortress:
 
 ![Assault Gun Fortress](Pictures/AG_FORT.png)
 
-- List of Required Researches: Assault Gun (`R-Wpn-MG4`), Improved Hardcrete Mk3 (`R-Defense-WallUpgrade03`)
+- List of Required Researches:
+  - Assault Gun (`R-Wpn-MG4`)
+  - Improved Hardcrete Mk3 (`R-Defense-WallUpgrade03`)
 - Build Power: 750
 - Build Points: 750
 - Weapon:
@@ -34,7 +36,9 @@ Flamer Fortress:
 
 ![Flamer Fortress](Pictures/FLAM_FORT.png)
 
-- List of Required Researches: Heavy Flamer - Inferno (`R-Wpn-Flame2`), Improved Hardcrete Mk3 (`R-Defense-WallUpgrade03`)
+- List of Required Researches:
+  - Heavy Flamer - Inferno (`R-Wpn-Flame2`)
+  - Improved Hardcrete Mk3 (`R-Defense-WallUpgrade03`)
 - Build Power: 750
 - Build Points: 750
 - Weapon:
@@ -51,7 +55,10 @@ Mortar Fortress:
 
 ![Mortar Fortress](Pictures/Mort_FORT.png)
 
-- List of Required Researches: Mortar (`R-Wpn-Mortar01Lt`), Improved Hardcrete Mk3 (`R-Defense-WallUpgrade03`), HE Mortar Shells Mk3 (`R-Wpn-Mortar-Damage03`)
+- List of Required Researches:
+  - Mortar (`R-Wpn-Mortar01Lt`)
+  - Improved Hardcrete Mk3 (`R-Defense-WallUpgrade03`)
+  - HE Mortar Shells Mk3 (`R-Wpn-Mortar-Damage03`)
 - Build Power: 750
 - Build Points: 750
 - Weapon:
@@ -68,7 +75,10 @@ Large Rocket Pod Fortress:
 
 ![Large Rocket Pod Fortress](Pictures/LRP_FORT.png)
 
-- List of Required Researches: Mini-Rocket Pod (`R-Wpn-Rocket05-MiniPod`), Improved Hardcrete Mk3 (`R-Defense-WallUpgrade03`), HE Rockets Mk3 (`R-Wpn-Rocket-Damage03`)
+- List of Required Researches:
+  - Mini-Rocket Pod (`R-Wpn-Rocket05-MiniPod`)
+  - Improved Hardcrete Mk3 (`R-Defense-WallUpgrade03`)
+  - HE Rockets Mk3 (`R-Wpn-Rocket-Damage03`)
 - Build Power: 750
 - Build Points: 750
 - Weapon:
@@ -85,7 +95,10 @@ Wide-Spectrum Sensor Fortress:
 
 ![Wide-Spectrum Sensor Fortress](Pictures/WideSpec_FORT.png)
 
-- List of Required Researches: Wide Spectrum Sensor (`R-Sys-Sensor-WS`), Wide Spectrum Sensor Tower (`R-Sys-Sensor-WSTower`), Supercrete Mk2 (`R-Defense-WallUpgrade05`)
+- List of Required Researches:
+  - Wide Spectrum Sensor (`R-Sys-Sensor-WS`)
+  - Wide Spectrum Sensor Tower (`R-Sys-Sensor-WSTower`)
+  - Supercrete Mk2 (`R-Defense-WallUpgrade05`)
 - Build Power: 2000
 - Build Points: 4000
 - Weapon: none (unarmed sensor, limited to 3 per player)
@@ -94,7 +107,9 @@ Nexus Link Fortress:
 
 ![Nexus Link Fortress](Pictures/NLINK_FORT.png)
 
-- List of Required Researches: Nexus Link Turret (`R-Sys-SpyTurret`), Supercrete Mk2 (`R-Defense-WallUpgrade05`)
+- List of Required Researches:
+  - Nexus Link Turret (`R-Sys-SpyTurret`)
+  - Supercrete Mk2 (`R-Defense-WallUpgrade05`)
 - Build Power: 5000
 - Build Points: 4000
 - Weapon:
@@ -111,7 +126,10 @@ Nexus Link Fortress:
 
 ![3x3 Cannon Fortress](Pictures/3x3Can_FORT.png)
 
-- List of Required Researches: Plascrete Mk2 (`R-Defense-WallUpgrade08`), HVAPFSDS Cannon Rounds Mk2 (`R-Wpn-Cannon-Damage08`), Cannon Autoloader Mk3 (`R-Wpn-Cannon-ROF03`)
+- List of Required Researches:
+  - Plascrete Mk2 (`R-Defense-WallUpgrade08`)
+  - HVAPFSDS Cannon Rounds Mk2 (`R-Wpn-Cannon-Damage08`)
+  - Cannon Autoloader Mk3 (`R-Wpn-Cannon-ROF03`)
 - Build Power: 1500
 - Build Points: 3000
 - Weapon:
@@ -128,7 +146,8 @@ Large Wall:
 
 ![Large Wall](Pictures/L_Wall.png)
 
-- List of Required Researches: Supercrete Mk2 (`R-Defense-WallUpgrade05`)
+- List of Required Researches:
+  - Supercrete Mk2 (`R-Defense-WallUpgrade05`)
 - Build Power: 100
 - Build Points: 500
 - Weapon: none (gunless wall block)
@@ -137,7 +156,10 @@ Plasma Cannon Fortress:
 
 ![Plasma Cannon Fortress](Pictures/PC_FORT.png)
 
-- List of Required Researches: Plasmite Flamer (`R-Wpn-Plasmite-Flamer`), Plasma Cannon (`R-Wpn-PlasmaCannon`), Supercrete Mk2 (`R-Defense-WallUpgrade05`)
+- List of Required Researches:
+  - Plasmite Flamer (`R-Wpn-Plasmite-Flamer`)
+  - Plasma Cannon (`R-Wpn-PlasmaCannon`)
+  - Supercrete Mk2 (`R-Defense-WallUpgrade05`)
 - Build Power: 1000
 - Build Points: 2000
 - Weapon:
@@ -154,7 +176,9 @@ AA Flak Fortress:
 
 ![AA Flak Fortress](Pictures/AA_FLAK_FORT.png)
 
-- List of Required Researches: AA Tornado Flak Cannon (`R-Wpn-AAGun02`), Supercrete Mk2 (`R-Defense-WallUpgrade05`)
+- List of Required Researches:
+  - AA Tornado Flak Cannon (`R-Wpn-AAGun02`)
+  - Supercrete Mk2 (`R-Defense-WallUpgrade05`)
 - Build Power: 750
 - Build Points: 1750
 - Weapon:
@@ -171,7 +195,8 @@ ATGM Emplacement:
 
 ![ATGM Emplacement](Pictures/ATGM_Emplacement.png)
 
-- List of Required Researches: Anti-Tank Guided Missile Launcher (`R-Wpn-Rocket-ATGM`)
+- List of Required Researches:
+  - Anti-Tank Guided Missile Launcher (`R-Wpn-Rocket-ATGM`)
 - Build Power: 250
 - Build Points: 400
 - Weapon:
@@ -188,7 +213,9 @@ Laser Fortress:
 
 ![Laser Fortress](Pictures/LAS_FORT.png)
 
-- List of Required Researches: Pulse Laser (`R-Wpn-Laser02`), Supercrete Mk2 (`R-Defense-WallUpgrade05`)
+- List of Required Researches:
+  - Pulse Laser (`R-Wpn-Laser02`)
+  - Supercrete Mk2 (`R-Defense-WallUpgrade05`)
 - Build Power: 1000
 - Build Points: 2000
 - Weapon:
@@ -205,7 +232,9 @@ M1299 Howitzer Fortress:
 
 ![M1299 Howitzer Fortress](Pictures/H_FORT.png)
 
-- List of Required Researches: HEAP Howitzer Shells (`R-Wpn-Howitzer-Damage04`), Plascrete Mk2 (`R-Defense-WallUpgrade08`)
+- List of Required Researches:
+  - HEAP Howitzer Shells (`R-Wpn-Howitzer-Damage04`)
+  - Plascrete Mk2 (`R-Defense-WallUpgrade08`)
 - Build Power: 1800
 - Build Points: 2000
 - Weapon:
@@ -222,7 +251,12 @@ Super RIM-116 AA Fortress:
 
 ![Super RIM-116 AA Fortress](Pictures/RIM116_FORT.png)
 
-- List of Required Researches: Avenger SAM (`R-Wpn-Missile-LtSAM`), Plascrete Mk2 (`R-Defense-WallUpgrade08`), Search & Destroy Missiles (`R-Wpn-Missile-Accuracy02`), Advanced Missile Allocation System (`R-Wpn-Missile-ROF01`), Sensor Upgrade Mk3 (`R-Sys-Sensor-Upgrade03`)
+- List of Required Researches:
+  - Avenger SAM (`R-Wpn-Missile-LtSAM`)
+  - Plascrete Mk2 (`R-Defense-WallUpgrade08`)
+  - Search & Destroy Missiles (`R-Wpn-Missile-Accuracy02`)
+  - Advanced Missile Allocation System (`R-Wpn-Missile-ROF01`)
+  - Sensor Upgrade Mk3 (`R-Sys-Sensor-Upgrade03`)
 - Build Power: 1600
 - Build Points: 2000
 - Weapon:
@@ -254,7 +288,8 @@ Self-Healing Nano-Concrete:
 
 Anti-Tank Guided Missile Launcher:
 - A designable turret for your own tank designs
-- List of Required Researches: Lancer AT Rocket (`R-Wpn-Rocket01-LtAT`)
+- List of Required Researches:
+  - Lancer AT Rocket (`R-Wpn-Rocket01-LtAT`)
 - Build Power: 250
 - Build Points: 1500
 - Weapon:
