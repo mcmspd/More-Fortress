@@ -222,7 +222,8 @@ def load_stats():
         err("no diffs/*/stats/ directory found")
         return data
     for d in STATS_DIRS:
-        for name in ("weapons.json", "structure.json", "research.json"):
+        for name in ("weapons.json", "structure.json", "research.json",
+                     "sensor.json"):
             p = d / name
             if not p.exists():
                 continue
@@ -232,7 +233,8 @@ def load_stats():
                 err(f"{p}: invalid JSON: {e}")
     for d in STATS_DIRS:
         for p in d.glob("*.json"):
-            if p.name not in ("weapons.json", "structure.json", "research.json"):
+            if p.name not in ("weapons.json", "structure.json", "research.json",
+                                "sensor.json"):
                 warn(f"{p}: unexpected stats file (engine still merges it)")
                 try:
                     json.loads(p.read_text())
@@ -352,7 +354,8 @@ def check_weapons(weapons, pie_index, base):
                 err(f"weapons.{key}.{f}: {o[f]!r} must be 0-100")
 
 
-def check_structures(structures, weapons, pie_index, base):
+def check_structures(structures, weapons, pie_index, base, sensors=None):
+    sensors = sensors or {}
     pie_lowers = {n.lower() for n in pie_index}
     for key, o in structures.items():
         if not isinstance(o, dict):
@@ -380,6 +383,8 @@ def check_structures(structures, weapons, pie_index, base):
         if "sensorID" in o:
             if sid in KNOWN_BASE_SENSORS:
                 pass
+            elif sid in sensors:
+                info(f"structure.{key}.sensorID: {sid!r} verified in diff sensor.json")
             elif base is not None and base.available:
                 if sid in base.sensor_ids:
                     info(f"structure.{key}.sensorID: {sid!r} verified in base @{base.ref}")
@@ -538,12 +543,14 @@ def main(argv=None):
     weapons = data.get("weapons.json", {})
     structures = data.get("structure.json", {})
     research = data.get("research.json", {})
+    sensors = data.get("sensor.json", {})
     check_key_ids("weapons", weapons)
     check_key_ids("structure", structures)
     check_key_ids("research", research)
+    check_key_ids("sensor", sensors)
     pie_index = mod_pie_index()
     check_weapons(weapons, pie_index, base)
-    check_structures(structures, weapons, pie_index, base)
+    check_structures(structures, weapons, pie_index, base, sensors)
     check_research(research, structures, weapons, base)
     check_pie_textures(pie_index)
     if args.verbose:

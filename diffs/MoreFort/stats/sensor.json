@@ -1,0 +1,11 @@
+{
+ "FortressSensorWide": {
+  "id": "FortressSensorWide",
+  "location": "TURRET",
+  "mountModel": "trhsnsr3-3x.pie",
+  "name": "Wide-Spectrum Fortress Sensor",
+  "range": 3390,
+  "sensorModel": "gnhsnsr4-3x.pie",
+  "type": "SUPER"
+ }
+}

@@ -25,8 +25,8 @@ jobs:
           #   diffs/     - the stats that get merged onto the base game
           #   components/weapons, structs, effects - .pie models the game loads
           # Everything else in the repo is developer tooling and is deliberately
-          # NOT shipped: check.py, AGENTS.md, README.md, WISHLIST.md,
-          # stats-reference.md, Pictures/, .github/.
+          # NOT shipped: check.py, scale_pie.py, AGENTS.md, README.md,
+          # WISHLIST.md, stats-reference.md, Pictures/, .github/.
           # If a texpages/ directory is ever added it must be listed here too.
           zip -r MoreFortress-${{ github.event.inputs.tag || github.ref_name }}.wz \
             diffs components structs effects \

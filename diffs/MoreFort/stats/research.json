@@ -63,8 +63,8 @@
   "id": "R-Defense-Super-Howitzer",
   "name": "M1299 Howitzer Fortress",
   "requiredResearch": [
-   "R-Wpn-HvyHowitzer",
-   "R-Defense-WallUpgrade05"
+   "R-Wpn-Howitzer-Damage04",
+   "R-Defense-WallUpgrade08"
   ],
   "researchPoints": 14000,
   "researchPower": 437,
@@ -79,8 +79,10 @@
   "name": "Super RIM-116 AA Fortress",
   "requiredResearch": [
    "R-Wpn-Missile-LtSAM",
-   "R-Defense-WallUpgrade05",
-   "R-Sys-Sensor-FortressUpgrade"
+   "R-Defense-WallUpgrade08",
+   "R-Wpn-Missile-Accuracy02",
+   "R-Wpn-Missile-ROF01",
+   "R-Sys-Sensor-Upgrade03"
   ],
   "researchPoints": 12000,
   "researchPower": 400,
@@ -95,7 +97,8 @@
   "name": "Large Rocket Pod Fortress",
   "requiredResearch": [
    "R-Wpn-Rocket05-MiniPod",
-   "R-Defense-WallUpgrade03"
+   "R-Defense-WallUpgrade03",
+   "R-Wpn-Rocket-Damage03"
   ],
   "researchPoints": 4800,
   "researchPower": 200,
@@ -118,28 +121,6 @@
    "X-Super-Laser"
   ],
   "statID": "X-Super-Laser"
- },
- "R-Sys-Sensor-FortressUpgrade": {
-  "category": "Sensor",
-  "iconID": "IMAGE_RES_SYSTEMTECH",
-  "id": "R-Sys-Sensor-FortressUpgrade",
-  "imdName": "GNLSNSR1.PIE",
-  "name": "Fortress Sensor Upgrade",
-  "requiredResearch": [
-   "R-Sys-Sensor-Upgrade03"
-  ],
-  "researchPoints": 9000,
-  "researchPower": 281,
-  "results": [
-   {
-    "class": "Sensor",
-    "filterParameter": "Id",
-    "filterValue": "FortressSensor",
-    "parameter": "Range",
-    "value": 48
-   }
-  ],
-  "subgroupIconID": "IMAGE_RES_GRPUPG"
  },
  "R-Defense-WallUpgrade13": {
   "category": "Wall",
@@ -230,7 +211,8 @@
   "name": "Mortar Fortress",
   "requiredResearch": [
    "R-Wpn-Mortar01Lt",
-   "R-Defense-WallUpgrade03"
+   "R-Defense-WallUpgrade03",
+   "R-Wpn-Mortar-Damage03"
   ],
   "researchPoints": 4800,
   "researchPower": 200,
@@ -238,5 +220,82 @@
    "X-Super-Mortar"
   ],
   "statID": "X-Super-Mortar"
+ },
+ "R-Defense-Super-WideSpec": {
+  "iconID": "IMAGE_RES_DEFENCE",
+  "id": "R-Defense-Super-WideSpec",
+  "name": "Wide-Spectrum Sensor Fortress",
+  "requiredResearch": [
+   "R-Sys-Sensor-WS",
+   "R-Sys-Sensor-WSTower",
+   "R-Defense-WallUpgrade05"
+  ],
+  "researchPoints": 12000,
+  "researchPower": 400,
+  "resultStructures": [
+   "X-Super-WideSpec"
+  ],
+  "statID": "X-Super-WideSpec"
+ },
+ "R-Defense-Super-Nexus": {
+  "iconID": "IMAGE_RES_DEFENCE",
+  "id": "R-Defense-Super-Nexus",
+  "name": "Nexus Link Fortress",
+  "requiredResearch": [
+   "R-Sys-SpyTurret",
+   "R-Defense-WallUpgrade05"
+  ],
+  "researchPoints": 15000,
+  "researchPower": 5000,
+  "resultStructures": [
+   "X-Super-Nexus"
+  ],
+  "statID": "X-Super-Nexus"
+ },
+ "R-Defense-Super-Cannon3x": {
+  "iconID": "IMAGE_RES_DEFENCE",
+  "id": "R-Defense-Super-Cannon3x",
+  "name": "3x3 Cannon Fortress",
+  "requiredResearch": [
+   "R-Defense-WallUpgrade08",
+   "R-Wpn-Cannon-Damage08",
+   "R-Wpn-Cannon-ROF03"
+  ],
+  "researchPoints": 10000,
+  "researchPower": 300,
+  "resultStructures": [
+   "X-Super-Cannon3x"
+  ],
+  "statID": "X-Super-Cannon3x"
+ },
+ "R-Defense-LargeWall": {
+  "iconID": "IMAGE_RES_DEFENCE",
+  "id": "R-Defense-LargeWall",
+  "name": "Large Wall",
+  "requiredResearch": [
+   "R-Defense-WallUpgrade05"
+  ],
+  "researchPoints": 3000,
+  "researchPower": 150,
+  "resultStructures": [
+   "X-Large-Wall"
+  ],
+  "statID": "X-Large-Wall"
+ },
+ "R-Defense-Super-Plasma": {
+  "iconID": "IMAGE_RES_DEFENCE",
+  "id": "R-Defense-Super-Plasma",
+  "name": "Plasma Cannon Fortress",
+  "requiredResearch": [
+   "R-Wpn-Plasmite-Flamer",
+   "R-Wpn-PlasmaCannon",
+   "R-Defense-WallUpgrade05"
+  ],
+  "researchPoints": 12000,
+  "researchPower": 400,
+  "resultStructures": [
+   "X-Super-Plasma"
+  ],
+  "statID": "X-Super-Plasma"
  }
 }

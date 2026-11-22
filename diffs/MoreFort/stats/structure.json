@@ -140,7 +140,7 @@
   "armour": 15,
   "breadth": 2,
   "buildPoints": 2000,
-  "buildPower": 2500,
+  "buildPower": 1800,
   "combinesWithWall": true,
   "height": 4,
   "hitpoints": 4000,
@@ -202,6 +202,122 @@
   "type": "FORTRESS",
   "weapons": [
    "MortarSuper"
+  ],
+  "width": 2
+ },
+ "X-Super-WideSpec": {
+  "armour": 15,
+  "breadth": 2,
+  "buildPoints": 4000,
+  "buildPower": 2000,
+  "combinesWithWall": true,
+  "height": 3,
+  "hitpoints": 3200,
+  "id": "X-Super-WideSpec",
+  "name": "Wide-Spectrum Sensor Fortress",
+  "resistance": 100,
+  "sensorID": "FortressSensorWide",
+  "strength": "HARD",
+  "structureModel": [
+   "stwpfcan.pie"
+  ],
+  "thermal": 15,
+  "type": "FORTRESS",
+  "userLimits": [
+   0,
+   3,
+   3
+  ],
+  "width": 2
+ },
+ "X-Super-Nexus": {
+  "armour": 15,
+  "breadth": 2,
+  "buildPoints": 4000,
+  "buildPower": 5000,
+  "combinesWithWall": true,
+  "height": 3,
+  "hitpoints": 3200,
+  "id": "X-Super-Nexus",
+  "name": "Nexus Link Fortress",
+  "resistance": 100,
+  "sensorID": "FortressSensor",
+  "strength": "HARD",
+  "structureModel": [
+   "stwpfcan.pie"
+  ],
+  "thermal": 15,
+  "type": "FORTRESS",
+  "userLimits": [
+   0,
+   5,
+   5
+  ],
+  "weapons": [
+   "NexusSuper"
+  ],
+  "width": 2
+ },
+ "X-Super-Cannon3x": {
+  "armour": 30,
+  "breadth": 3,
+  "buildPoints": 3000,
+  "buildPower": 1500,
+  "combinesWithWall": true,
+  "height": 5,
+  "hitpoints": 6400,
+  "id": "X-Super-Cannon3x",
+  "name": "3x3 Cannon Fortress",
+  "resistance": 100,
+  "sensorID": "FortressSensor",
+  "strength": "HARD",
+  "structureModel": [
+   "stwpfcan-1.5x.pie"
+  ],
+  "thermal": 30,
+  "type": "FORTRESS",
+  "weapons": [
+   "CannonSuper3x"
+  ],
+  "width": 3
+ },
+ "X-Large-Wall": {
+  "armour": 15,
+  "breadth": 2,
+  "buildPoints": 500,
+  "buildPower": 100,
+  "height": 2,
+  "hitpoints": 2800,
+  "id": "X-Large-Wall",
+  "name": "Large Wall",
+  "strength": "HARD",
+  "structureModel": [
+   "stwpfcan-x3.pie"
+  ],
+  "thermal": 15,
+  "type": "WALL",
+  "width": 2
+ },
+ "X-Super-Plasma": {
+  "armour": 15,
+  "breadth": 2,
+  "buildPoints": 2000,
+  "buildPower": 1000,
+  "combinesWithWall": true,
+  "height": 2,
+  "hitpoints": 3200,
+  "id": "X-Super-Plasma",
+  "name": "Plasma Cannon Fortress",
+  "resistance": 100,
+  "sensorID": "FortressSensor",
+  "strength": "HARD",
+  "structureModel": [
+   "stwpfcan.pie"
+  ],
+  "thermal": 15,
+  "type": "FORTRESS",
+  "weapons": [
+   "PlasmaSuper"
   ],
   "width": 2
  }
