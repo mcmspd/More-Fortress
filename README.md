@@ -17,155 +17,223 @@ Assault Gun Fortress:
 
 ![Assault Gun Fortress](Pictures/AG_FORT.png)
 
-- Research "Assault Gun Fortress" after "Assault Gun" (`R-Wpn-MG4`)
-  and "Improved Hardcrete Mk3" (`R-Defense-WallUpgrade03`)
-- Same range as the Cannon Fortress, less armour
-- Can also hit air targets
+- List of Required Researches: Assault Gun (`R-Wpn-MG4`), Improved Hardcrete Mk3 (`R-Defense-WallUpgrade03`)
+- Build Power: 750
+- Build Points: 750
+- Weapon:
+- Name: Assault Gun Fortress
+- Range: 8-11 tiles
+- ROF: continuous
+- Damage: 35
+- Damage Type: Kinetic
+- Damage Mod: Anti-Personnel
+- Splash: no
+- Burn: no
 
 Flamer Fortress:
 
 ![Flamer Fortress](Pictures/FLAM_FORT.png)
 
-- Research "Flamer Fortress" after "Heavy Flamer - Inferno" (`R-Wpn-Flame2`)
-  and "Improved Hardcrete Mk3" (`R-Defense-WallUpgrade03`)
-- Short-range wall of flame, sets the ground burning
+- List of Required Researches: Heavy Flamer - Inferno (`R-Wpn-Flame2`), Improved Hardcrete Mk3 (`R-Defense-WallUpgrade03`)
+- Build Power: 750
+- Build Points: 750
+- Weapon:
+- Name: FlamerFortress
+- Range: 4-10 tiles
+- ROF: 40/min
+- Damage: 55
+- Damage Type: Heat
+- Damage Mod: Flamer
+- Splash: 2 tiles
+- Burn: 2 tiles for 5 seconds
 
 Mortar Fortress:
 
 ![Mortar Fortress](Pictures/Mort_FORT.png)
 
-- Research "Mortar Fortress" after "Mortar" (`R-Wpn-Mortar01Lt`),
-  "Improved Hardcrete Mk3" (`R-Defense-WallUpgrade03`)
-  and "HE Mortar Shells Mk3" (`R-Wpn-Mortar-Damage03`)
-- Entrance-tier indirect fire, 150 damage with 120 splash over 7.5 tiles
-- Range 20 tiles, 50% long and 40% short accuracy, same reload as stock Mortar
-- 5-tile minimum range, blind to close rushers
+- List of Required Researches: Mortar (`R-Wpn-Mortar01Lt`), Improved Hardcrete Mk3 (`R-Defense-WallUpgrade03`), HE Mortar Shells Mk3 (`R-Wpn-Mortar-Damage03`)
+- Build Power: 750
+- Build Points: 750
+- Weapon:
+- Name: Mortar Fortress
+- Range: 11-20 tiles
+- ROF: 10/min
+- Damage: 150
+- Damage Type: Kinetic
+- Damage Mod: Artillery Round
+- Splash: 7.5 tiles
+- Burn: no
 
 Large Rocket Pod Fortress:
 
 ![Large Rocket Pod Fortress](Pictures/LRP_FORT.png)
 
-- Research "Large Rocket Pod Fortress" after "Mini-Rocket Pod" (`R-Wpn-Rocket05-MiniPod`),
-  "Improved Hardcrete Mk3" (`R-Defense-WallUpgrade03`)
-  and "HE Rockets Mk3" (`R-Wpn-Rocket-Damage03`)
-- 2x2 fortress with 20-round MRP-Super pod, 40 damage per rocket
-- Short-range anti-tank saturation, can hit air targets
+- List of Required Researches: Mini-Rocket Pod (`R-Wpn-Rocket05-MiniPod`), Improved Hardcrete Mk3 (`R-Defense-WallUpgrade03`), HE Rockets Mk3 (`R-Wpn-Rocket-Damage03`)
+- Build Power: 750
+- Build Points: 750
+- Weapon:
+- Name: Large-Rocket-Pod
+- Range: 5-10 tiles
+- ROF: 171/min
+- Damage: 40
+- Damage Type: Kinetic
+- Damage Mod: Anti-Tank
+- Splash: no
+- Burn: no
 
 Wide-Spectrum Sensor Fortress:
 
 ![Wide-Spectrum Sensor Fortress](Pictures/WideSpec_FORT.png)
 
-- Research "Wide-Spectrum Sensor Fortress" after "Wide Spectrum Sensor"
-  (`R-Sys-Sensor-WS`), "Wide Spectrum Sensor Tower" (`R-Sys-Sensor-WSTower`)
-  and "Supercrete Mk2" (`R-Defense-WallUpgrade05`)
-- Unarmed 2x2 fortress with 1.5x wide-spec sight (3390 range) and 3x mast
-- Spots for other fortresses, defenseless alone, limited to 3 per player
+- List of Required Researches: Wide Spectrum Sensor (`R-Sys-Sensor-WS`), Wide Spectrum Sensor Tower (`R-Sys-Sensor-WSTower`), Supercrete Mk2 (`R-Defense-WallUpgrade05`)
+- Build Power: 2000
+- Build Points: 4000
+- Weapon: none (unarmed sensor, limited to 3 per player)
 
 Nexus Link Fortress:
 
 ![Nexus Link Fortress](Pictures/NLINK_FORT.png)
 
-- Research "Nexus Link Fortress" after "Nexus Link Turret" (`R-Sys-SpyTurret`)
-  and "Supercrete Mk2" (`R-Defense-WallUpgrade05`)
-- 2x2 converter fortress, 2.5x turret, 3x beam, 20 damage per hit (10x), 17.5-tile range
-- Flips enemy units ten times faster than the stock link turret
-- Expensive: 4000 build points, 5000 build power, 15000 RP research, limited to 5 per player
+- List of Required Researches: Nexus Link Turret (`R-Sys-SpyTurret`), Supercrete Mk2 (`R-Defense-WallUpgrade05`)
+- Build Power: 5000
+- Build Points: 4000
+- Weapon:
+- Name: Nexus Link Fortress
+- Range: 17.5 tiles
+- ROF: 600/min
+- Damage: 20
+- Damage Type: Heat
+- Damage Mod: Anti-Personnel
+- Splash: no
+- Burn: no
 
 3x3 Cannon Fortress (concept test):
 
 ![3x3 Cannon Fortress](Pictures/3x3Can_FORT.png)
 
-- Research "3x3 Cannon Fortress" after "Plascrete Mk2" (`R-Defense-WallUpgrade08`),
-  "HVAPFSDS Cannon Rounds Mk2" (`R-Wpn-Cannon-Damage08`) and "Cannon Autoloader Mk3"
-  (`R-Wpn-Cannon-ROF03`)
-- 3x3 footprint on a 1.5x fortress body with a doubled cannon
-- 760 damage (2x), 640 splash (5 tiles) with 3 s burn, 2816 range (2x), 1.25x fire rate
-- 6400 HP and 30 armour (2x stock)
+- List of Required Researches: Plascrete Mk2 (`R-Defense-WallUpgrade08`), HVAPFSDS Cannon Rounds Mk2 (`R-Wpn-Cannon-Damage08`), Cannon Autoloader Mk3 (`R-Wpn-Cannon-ROF03`)
+- Build Power: 1500
+- Build Points: 3000
+- Weapon:
+- Name: 3x3 Cannon Fortress
+- Range: 2-22 tiles
+- ROF: 12.5/min
+- Damage: 760
+- Damage Type: Kinetic
+- Damage Mod: All-Rounder
+- Splash: 5 tiles
+- Burn: 5 tiles for 3 seconds
 
 Large Wall:
 
 ![Large Wall](Pictures/L_Wall.png)
 
-- Research "Large Wall" after "Supercrete Mk2" (`R-Defense-WallUpgrade05`)
-- 2x2 unarmed wall block, 2800 hitpoints (4x hardcrete), no sensor
-- Holds the line where a fortress would be overkill
+- List of Required Researches: Supercrete Mk2 (`R-Defense-WallUpgrade05`)
+- Build Power: 100
+- Build Points: 500
+- Weapon: none (gunless wall block)
 
 Plasma Cannon Fortress:
 
 ![Plasma Cannon Fortress](Pictures/PC_FORT.png)
 
-- Research "Plasma Cannon Fortress" after "Plasmite Flamer" (`R-Wpn-Plasmite-Flamer`),
-  "Plasma Cannon" (`R-Wpn-PlasmaCannon`) and "Supercrete Mk2" (`R-Defense-WallUpgrade05`)
-- 2x2 mid-range burst cannon, 2500 damage per shot with 640 splash (5 tiles), 5 s ground burn
-- Shreds at 15 tiles, 1.25x stock reload, 2.5x turret with triple-size shells
-- 5-tile dead zone, needs screening against rushers
+- List of Required Researches: Plasmite Flamer (`R-Wpn-Plasmite-Flamer`), Plasma Cannon (`R-Wpn-PlasmaCannon`), Supercrete Mk2 (`R-Defense-WallUpgrade05`)
+- Build Power: 1000
+- Build Points: 2000
+- Weapon:
+- Name: Plasma Cannon Fortress
+- Range: 7.5-15 tiles
+- ROF: 5/min
+- Damage: 2500
+- Damage Type: Heat
+- Damage Mod: All-Rounder
+- Splash: 5 tiles
+- Burn: 5 tiles for 5 seconds
 
 AA Flak Fortress:
 
 ![AA Flak Fortress](Pictures/AA_FLAK_FORT.png)
 
-- Research "AA Flak Fortress" after "AA Tornado Flak Cannon" (`R-Wpn-AAGun02`)
-  and "Supercrete Mk2" (`R-Defense-WallUpgrade05`)
-- Anti-air only, very long range with explosive flak shells
+- List of Required Researches: AA Tornado Flak Cannon (`R-Wpn-AAGun02`), Supercrete Mk2 (`R-Defense-WallUpgrade05`)
+- Build Power: 750
+- Build Points: 1750
+- Weapon:
+- Name: AA Flak Fortress
+- Range: 11-20 tiles
+- ROF: 35/min
+- Damage: 250
+- Damage Type: Kinetic
+- Damage Mod: Anti-Tank
+- Splash: 5 tiles
+- Burn: no
 
 ATGM Emplacement:
 
 ![ATGM Emplacement](Pictures/ATGM_Emplacement.png)
 
-- Research "ATGM Emplacement" after
-  "Anti-Tank Guided Missile Launcher" (`R-Wpn-Rocket-ATGM`)
-- Fixed emplacement with the same long-range anti-tank missiles,
-  including the 5-tile minimum range
+- List of Required Researches: Anti-Tank Guided Missile Launcher (`R-Wpn-Rocket-ATGM`)
+- Build Power: 250
+- Build Points: 400
+- Weapon:
+- Name: ATGM
+- Range: 4-30 tiles
+- ROF: 11/min
+- Damage: 105
+- Damage Type: Kinetic
+- Damage Mod: Anti-Tank
+- Splash: no
+- Burn: no
 
 Laser Fortress:
 
 ![Laser Fortress](Pictures/LAS_FORT.png)
 
-- Research "Laser Fortress" after "Pulse Laser" (`R-Wpn-Laser02`)
-  and "Supercrete Mk2" (`R-Defense-WallUpgrade05`)
-- Long range, fires a rapid burst of pulses then reloads
-- Very good against cyborgs, weak against medium and heavy tanks
-- Counter with artillery or a rush of medium tanks
+- List of Required Researches: Pulse Laser (`R-Wpn-Laser02`), Supercrete Mk2 (`R-Defense-WallUpgrade05`)
+- Build Power: 1000
+- Build Points: 2000
+- Weapon:
+- Name: Laser Fortress
+- Range: 11.7-24 tiles
+- ROF: 112/min
+- Damage: 380
+- Damage Type: Heat
+- Damage Mod: Anti-Personnel
+- Splash: no
+- Burn: no
 
 M1299 Howitzer Fortress:
 
 ![M1299 Howitzer Fortress](Pictures/H_FORT.png)
 
-- Research "M1299 Howitzer Fortress" after
-  "HEAP Howitzer Shells" (`R-Wpn-Howitzer-Damage04`)
-  and "Plascrete Mk2" (`R-Defense-WallUpgrade08`)
-- Indirect fire: shells arc over your walls, so it has no line-of-sight requirement
-- Range 5 to 80 tiles, best accuracy from 30 to 80 tiles out
-- Fires once every 25 seconds, the same cadence as the stock Ground
-  Shaker emplacement, hitting about 4 times as hard per shell
-- 1400 direct damage and 1400 splash across a 4-tile blast
-- Accuracy is 55% at long range and 40% up close, so roughly half of
-  shells miss: it is artillery, not a precision gun
-- Leaves the ground scorched for 2.5 seconds
-- Very heavy turret, turns slowly and rocks back hard on every shot
-- Cannot hit anything closer than 5 tiles, so keep your attackers at range
-- Countered by fast movers at long range, since the shell arcs slowly
-  and lands where the target was
+- List of Required Researches: HEAP Howitzer Shells (`R-Wpn-Howitzer-Damage04`), Plascrete Mk2 (`R-Defense-WallUpgrade08`)
+- Build Power: 1800
+- Build Points: 2000
+- Weapon:
+- Name: M1299 Howitzer
+- Range: 30-80 tiles
+- ROF: 2.4/min
+- Damage: 1400
+- Damage Type: Kinetic
+- Damage Mod: Artillery Round
+- Splash: 4 tiles
+- Burn: 4 tiles for 2.5 seconds
 
 Super RIM-116 AA Fortress:
 
 ![Super RIM-116 AA Fortress](Pictures/RIM116_FORT.png)
 
-- Research "Super RIM-116 AA Fortress" after "Avenger SAM" (`R-Wpn-Missile-LtSAM`),
-  "Plascrete Mk2" (`R-Defense-WallUpgrade08`), "Search & Destroy Missiles"
-  (`R-Wpn-Missile-Accuracy02`), "Advanced Missile Allocation System"
-  (`R-Wpn-Missile-ROF01`) and "Sensor Upgrade Mk3" (`R-Sys-Sensor-Upgrade03`)
-- Air-only interceptor battery, the hardest hitter in the mod
-- Ripples out 60 missiles in about 6 seconds, then sits empty for a
-  full minute before it can reload
-- Each missile hits for 450 damage, the same as the stock Avenger SAM,
-  but it carries 30 times as many rounds: 27000 damage in one salvo
-- Range 1 to 32 tiles, with its best accuracy inside 5 tiles
-- Accuracy is 75% inside 5 tiles and 65% beyond that
-- Survives a lot of punishment at 3200 hitpoints and 15 armour
-- Counter with sustained air pressure: once the 60-round belt is empty
-  the launcher is defenseless for a minute, and a second fortress can
-  out-shoot it on sustained targets
+- List of Required Researches: Avenger SAM (`R-Wpn-Missile-LtSAM`), Plascrete Mk2 (`R-Defense-WallUpgrade08`), Search & Destroy Missiles (`R-Wpn-Missile-Accuracy02`), Advanced Missile Allocation System (`R-Wpn-Missile-ROF01`), Sensor Upgrade Mk3 (`R-Sys-Sensor-Upgrade03`)
+- Build Power: 1600
+- Build Points: 2000
+- Weapon:
+- Name: RIM-116 AA Missile
+- Range: 5-32 tiles
+- ROF: 54/min
+- Damage: 450
+- Damage Type: Kinetic
+- Damage Mod: Anti-Tank
+- Splash: 0.5 tiles
+- Burn: no
 
 ## Research upgrades
 
@@ -186,12 +254,15 @@ Self-Healing Nano-Concrete:
 
 Anti-Tank Guided Missile Launcher:
 - A designable turret for your own tank designs
-- Research "Anti-Tank Guided Missile Launcher" after
-  "Lancer AT Rocket" (`R-Wpn-Rocket01-LtAT`)
-- Very long range anti-tank rockets, best at standoff distance
-- Fires a ripple of 4 blue missiles, then waits 20 seconds to reload
-- Each missile hits as hard as a stock Lancer, but you get twice as many
-  per salvo, so sustained damage is about 1.5 times a Lancer
-- Rockets are slow and must be led well ahead of moving targets
-- Cannot engage anything inside 5 tiles, so it needs to be well back
-- Counter with fast light units that close the distance
+- List of Required Researches: Lancer AT Rocket (`R-Wpn-Rocket01-LtAT`)
+- Build Power: 250
+- Build Points: 1500
+- Weapon:
+- Name: ATGM
+- Range: 4-30 tiles
+- ROF: 11/min
+- Damage: 105
+- Damage Type: Kinetic
+- Damage Mod: Anti-Tank
+- Splash: no
+- Burn: no
