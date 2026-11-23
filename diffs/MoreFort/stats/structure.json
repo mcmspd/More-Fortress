@@ -262,7 +262,7 @@
   "armour": 30,
   "breadth": 3,
   "buildPoints": 3000,
-  "buildPower": 1500,
+  "buildPower": 4000,
   "combinesWithWall": true,
   "height": 5,
   "hitpoints": 6400,
