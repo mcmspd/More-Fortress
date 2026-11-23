@@ -23,7 +23,7 @@ Every file is a JSON object keyed by ID:
 ```
 
 * Key and inner `id` must match.
-* `diffs/` patching: any `diffs/<anything>/stats/weapons.json` is merged onto the base file. New keys are added, existing keys are patched field-by-field, `"key": null` deletes. This is why `More_Fort` only ships 8 weapons instead of 127.
+* `diffs/` patching: any `diffs/<anything>/stats/weapons.json` is merged onto the base file. New keys are added, existing keys are patched field-by-field, `"key": null` deletes. This is why `More_Fort` only ships 12 weapons instead of 127.
 * Never delete entries starting with `ZNULL` (`ZNULLWEAPON`, `ZNULLBODY`, …) — the engine requires them first in the list.
 * Time units: `firePause`, `reloadTime`, `radiusLife`, `periodicalDamageTime` are multiplied by 100 internally. `firePause: 2` = 200 game ticks.
 
