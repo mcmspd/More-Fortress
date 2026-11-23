@@ -212,7 +212,7 @@
   "requiredResearch": [
    "R-Wpn-Mortar01Lt",
    "R-Defense-WallUpgrade03",
-   "R-Wpn-Mortar-Damage03"
+   "R-Wpn-Mortar-Damage04"
   ],
   "researchPoints": 4800,
   "researchPower": 200,
@@ -228,7 +228,7 @@
   "requiredResearch": [
    "R-Sys-Sensor-WS",
    "R-Sys-Sensor-WSTower",
-   "R-Defense-WallUpgrade05"
+   "R-Defense-WallUpgrade08"
   ],
   "researchPoints": 12000,
   "researchPower": 400,
