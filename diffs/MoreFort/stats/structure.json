@@ -24,7 +24,7 @@
  "X-Super-AA": {
   "armour": 15,
   "breadth": 2,
-  "buildPoints": 1750,
+  "buildPoints": 1500,
   "buildPower": 750,
   "combinesWithWall": true,
   "height": 4,
@@ -47,7 +47,7 @@
  "X-Super-AG": {
   "armour": 8,
   "breadth": 2,
-  "buildPoints": 750,
+  "buildPoints": 650,
   "buildPower": 750,
   "combinesWithWall": true,
   "height": 2,
@@ -70,7 +70,7 @@
  "X-Super-Flame": {
   "armour": 8,
   "breadth": 2,
-  "buildPoints": 750,
+  "buildPoints": 650,
   "buildPower": 750,
   "combinesWithWall": true,
   "height": 2,
@@ -94,7 +94,7 @@
   "armour": 15,
   "breadth": 2,
   "buildPoints": 2000,
-  "buildPower": 1000,
+  "buildPower": 1250,
   "combinesWithWall": true,
   "height": 2,
   "hitpoints": 3200,
@@ -117,7 +117,7 @@
   "armour": 15,
   "breadth": 2,
   "buildPoints": 2000,
-  "buildPower": 1600,
+  "buildPower": 1750,
   "combinesWithWall": true,
   "height": 3,
   "hitpoints": 3200,
@@ -162,7 +162,7 @@
  "X-Super-MRP": {
   "armour": 8,
   "breadth": 2,
-  "buildPoints": 750,
+  "buildPoints": 650,
   "buildPower": 750,
   "combinesWithWall": true,
   "height": 2,
@@ -185,7 +185,7 @@
  "X-Super-Mortar": {
   "armour": 8,
   "breadth": 2,
-  "buildPoints": 750,
+  "buildPoints": 650,
   "buildPower": 750,
   "combinesWithWall": true,
   "height": 2,
@@ -261,7 +261,7 @@
  "X-Super-Cannon3x": {
   "armour": 30,
   "breadth": 3,
-  "buildPoints": 3000,
+  "buildPoints": 4000,
   "buildPower": 4000,
   "combinesWithWall": true,
   "height": 5,
@@ -301,8 +301,8 @@
  "X-Super-Plasma": {
   "armour": 15,
   "breadth": 2,
-  "buildPoints": 2000,
-  "buildPower": 1000,
+  "buildPoints": 2500,
+  "buildPower": 2000,
   "combinesWithWall": true,
   "height": 2,
   "hitpoints": 3200,
