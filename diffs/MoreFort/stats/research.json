@@ -297,5 +297,34 @@
    "X-Super-Plasma"
   ],
   "statID": "X-Super-Plasma"
+ },
+ "R-Wpn-Mortar-Acc04": {
+  "category": "Mortar Accuracy",
+  "iconID": "IMAGE_RES_WEAPONTECH",
+  "id": "R-Wpn-Mortar-Acc04",
+  "name": "Radar-Assisted Mortar Targeting",
+  "requiredResearch": [
+   "R-Wpn-Mortar-Acc03"
+  ],
+  "researchPoints": 7200,
+  "researchPower": 225,
+  "results": [
+   {
+    "class": "Weapon",
+    "filterParameter": "ImpactClass",
+    "filterValue": "MORTARS",
+    "parameter": "HitChance",
+    "value": 10
+   },
+   {
+    "class": "Weapon",
+    "filterParameter": "ImpactClass",
+    "filterValue": "MORTARS",
+    "parameter": "ShortHitChance",
+    "value": 10
+   }
+  ],
+  "statID": "MortarSuper",
+  "subgroupIconID": "IMAGE_RES_GRPACC"
  }
 }

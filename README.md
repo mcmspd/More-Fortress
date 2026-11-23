@@ -65,11 +65,12 @@ Mortar Fortress:
 - Name: Mortar Fortress
 - Range: 11-20 tiles
 - ROF: 10/min
-- Damage: 150
+- Damage: 165
 - Damage Type: Kinetic
 - Damage Mod: Artillery Round
-- Splash: 7.5 tiles
+- Splash: 5 tiles
 - Burn: no
+- Note: Radar-Assisted Mortar Targeting (`R-Wpn-Mortar-Acc04`) adds another 10% accuracy after Target Acquisition shells
 
 Large Rocket Pod Fortress:
 
