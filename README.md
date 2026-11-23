@@ -130,7 +130,7 @@ Nexus Link Fortress:
   - Plascrete Mk2 (`R-Defense-WallUpgrade08`)
   - HVAPFSDS Cannon Rounds Mk2 (`R-Wpn-Cannon-Damage08`)
   - Cannon Autoloader Mk3 (`R-Wpn-Cannon-ROF03`)
-- Build Power: 1500
+- Build Power: 4000
 - Build Points: 3000
 - Weapon:
 - Name: 3x3 Cannon Fortress
