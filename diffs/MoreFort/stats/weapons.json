@@ -511,7 +511,7 @@
     "facePlayer": 1,
     "firePause": 30,
     "flags": "NoFriendlyFire",
-    "flightGfx": "fxlproj-3x.pie",
+    "flightGfx": "fxgammoh.pie",
     "flightSpeed": 1200,
     "hitGfx": "fxmethit.pie",
     "hitpoints": 45,
