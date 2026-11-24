@@ -506,12 +506,12 @@
   "RailPlasmiteSuper": {
     "buildPoints": 400,
     "buildPower": 110,
-    "damage": 500,
+    "damage": 1000,
     "effectSize": 300,
     "facePlayer": 1,
     "firePause": 30,
     "flags": "NoFriendlyFire",
-    "flightGfx": "fxlproj.pie",
+    "flightGfx": "fxlproj-3x.pie",
     "flightSpeed": 450,
     "hitGfx": "fxmethit.pie",
     "hitpoints": 45,
@@ -542,7 +542,7 @@
     "shortRange": 1024,
     "waterGfx": "fxmethit.pie",
     "weaponClass": "HEAT",
-    "weaponEffect": "FLAMER",
+    "weaponEffect": "ALL ROUNDER",
     "weaponSubClass": "FLAME",
     "weaponWav": "flmthrow.ogg",
     "weight": 90000

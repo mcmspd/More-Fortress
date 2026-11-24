@@ -186,8 +186,8 @@ Rail Plasmite Accelerator Fortress:
 - Weapon:
 - Name: Rail Plasmite Accelerator
 - Range: 8-20 tiles
-- ROF: 8/min
-- Damage: 500
+- ROF: 20/min
+- Damage: 1000
 - Damage Type: Heat
 - Damage Mod: All-Rounder
 - Splash: 2 tiles
