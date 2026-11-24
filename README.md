@@ -256,7 +256,7 @@ Super RIM-116 AA Fortress:
 - List of Required Researches:
   - Avenger SAM (`R-Wpn-Missile-LtSAM`)
   - Plascrete Mk2 (`R-Defense-WallUpgrade08`)
-  - Search & Destroy Missiles (`R-Wpn-Missile-Accuracy02`)
+  - Target Prediction Missiles (`R-Wpn-Missile-Accuracy01`)
   - Advanced Missile Allocation System (`R-Wpn-Missile-ROF01`)
   - Sensor Upgrade Mk3 (`R-Sys-Sensor-Upgrade03`)
 - Build Power: 1600
