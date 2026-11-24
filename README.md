@@ -1,6 +1,6 @@
 **Warzone 2100 Mod: More Fortress**
 
-Adds 14 new Fortress defenses, 1 large wall, 1 ATGM emplacement, and 1 new tank weapon to skirmish and multiplayer.
+Adds 13 new Fortress defenses, 1 large wall, 1 ATGM emplacement, and 1 new tank weapon to skirmish and multiplayer.
 
 ## Installation
 
@@ -173,25 +173,6 @@ Plasma Cannon Fortress:
 - Damage Mod: All-Rounder
 - Splash: 5 tiles
 - Burn: 5 tiles for 5 seconds
-
-Rail Plasmite Accelerator Fortress:
-
-- List of Required Researches:
-  - Rail Gun (`R-Wpn-RailGun02`)
-  - Plasma Cannon (`R-Wpn-PlasmaCannon`)
-  - Plasmite Flamer (`R-Wpn-Plasmite-Flamer`)
-  - Supercrete Mk2 (`R-Defense-WallUpgrade05`)
-- Build Power: 2000
-- Build Points: 2500
-- Weapon:
-- Name: Rail Plasmite Accelerator
-- Range: 8-20 tiles
-- ROF: 20/min
-- Damage: 1000
-- Damage Type: Heat
-- Damage Mod: All-Rounder
-- Splash: no
-- Burn: 1 tile for 0.5 seconds
 
 AA Flak Fortress:
 

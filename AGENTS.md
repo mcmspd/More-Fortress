@@ -3,7 +3,7 @@
 > REQUIRED: any AI agent working in this folder MUST read this file
 > plus `stats-reference.md` before editing, adding, or deleting stats/models.
 
-Warzone 2100 multiplay mod: adds 14 Fortress-class defenses + Large Wall + ATGM emplacement + 1 designable rocket weapon. Data-only, no JS. All `.pie` files are kept intentionally, even if unreferenced.
+Warzone 2100 multiplay mod: adds 13 Fortress-class defenses + Large Wall + ATGM emplacement + 1 designable rocket weapon. Data-only, no JS. All `.pie` files are kept intentionally, even if unreferenced.
 
 ## Layout
 
