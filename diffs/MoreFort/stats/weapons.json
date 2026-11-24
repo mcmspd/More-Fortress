@@ -532,7 +532,7 @@
     "numExplosions": 1,
     "penetrate": 1,
     "periodicalDamage": 20,
-    "periodicalDamageRadius": 256,
+    "periodicalDamageRadius": 384,
     "periodicalDamageTime": 50,
     "radius": 256,
     "radiusDamage": 40,
