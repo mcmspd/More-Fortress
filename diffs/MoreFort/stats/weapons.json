@@ -545,7 +545,7 @@
     "weaponEffect": "FLAMER",
     "weaponSubClass": "FLAME",
     "weaponWav": "flmthrow.ogg",
-    "weight": 150000
+    "weight": 90000
   },
   "SunburstSuper": {
     "buildPoints": 1500,
