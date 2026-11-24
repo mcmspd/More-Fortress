@@ -535,7 +535,7 @@
     "periodicalDamageRadius": 384,
     "periodicalDamageTime": 50,
     "radius": 256,
-    "radiusDamage": 40,
+    "radiusDamage": 1000,
     "radiusLife": 100,
     "rotate": 180,
     "shortHit": 90,
