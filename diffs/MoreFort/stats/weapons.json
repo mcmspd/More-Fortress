@@ -509,7 +509,7 @@
     "damage": 500,
     "effectSize": 300,
     "facePlayer": 1,
-    "firePause": 75,
+    "firePause": 30,
     "flags": "NoFriendlyFire",
     "flightGfx": "fxlproj.pie",
     "flightSpeed": 450,
