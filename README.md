@@ -282,7 +282,7 @@ Large Sunburst Array Fortress:
 - Name: Large Sunburst Array
 - Range: 13-17 tiles
 - ROF: 171/min
-- Damage: 110
+- Damage: 138
 - Damage Type: Kinetic
 - Damage Mod: Anti-Tank
 - Splash: 1.5 tiles

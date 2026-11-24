@@ -506,7 +506,7 @@
   "SunburstSuper": {
     "buildPoints": 1500,
     "buildPower": 500,
-    "damage": 110,
+    "damage": 138,
     "effectSize": 100,
     "explosionWav": "smlexpl.ogg",
     "faceInFlight": 1,

@@ -21,4 +21,4 @@ Planned content for the Warzone 2100 multiplay mod.
 | 15 | **Particle Gun Fortress** | ⬜ Todo | `diffs/MoreFort/stats/`, `README.md` | 2x2 particle gun fortress |
 | 16 | **3x3 Cannon Fortress (concept test)** | ✅ Done | `diffs/MoreFort/stats/` | 3x3 test: 1.5x body, 2x gun, 760 dmg (2x), 640 splash (5 tiles), 3 s burn, 2816 range (2x), ROF 1.25x (pause 48), 6400 HP + 30 armour (2x), muzzle node 195 with meshes at -20 y, 3x shell at 0.75x speed, requires Plascrete Mk2 + HVAPFSDS Mk2 + Autoloader Mk3 |
 | 17 | **Large Wall** | ✅ Done | `diffs/MoreFort/stats/` | 2x2 WALL block on fortress body, 2800 HP (4x hardcrete), no weapon, no sensor, requires Supercrete Mk2 |
-| 18 | **Large Sunburst Array Fortress** | ✅ Done | `diffs/MoreFort/stats/`, `README.md` | 2x2 air-only fortress, 110 dmg (stock), 36 rounds per salvo (6x), 17-tile range (+5), 3x turret, stock rockets at 2x speed, requires Sunburst AA + WallUpgrade05 |
+| 18 | **Large Sunburst Array Fortress** | ✅ Done | `diffs/MoreFort/stats/`, `README.md` | 2x2 air-only fortress, 138 dmg (+25%), 36 rounds per salvo (6x), 17-tile range (+5), 3x turret, stock rockets at 2x speed, requires Sunburst AA + WallUpgrade05 |
