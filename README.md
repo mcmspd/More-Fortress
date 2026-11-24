@@ -57,7 +57,7 @@ Mortar Fortress:
 
 - List of Required Researches:
   - Mortar (`R-Wpn-Mortar01Lt`)
-  - Improved Hardcrete Mk3 (`R-Defense-WallUpgrade03`)
+  - Supercrete Mk2 (`R-Defense-WallUpgrade05`)
   - HEAP Mortar Shells Mk3 (`R-Wpn-Mortar-Damage06`)
 - Build Power: 750
 - Build Points: 750

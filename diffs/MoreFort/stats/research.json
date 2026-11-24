@@ -210,7 +210,7 @@
   "id": "R-Defense-Super-Mortar",
   "name": "Mortar Fortress",
   "requiredResearch": [
-   "R-Defense-WallUpgrade03",
+   "R-Defense-WallUpgrade05",
    "R-Wpn-Mortar-Damage06"
   ],
   "researchPoints": 4800,
