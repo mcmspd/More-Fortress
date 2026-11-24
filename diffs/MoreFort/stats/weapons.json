@@ -541,7 +541,7 @@
     "waterGfx": "fxmethit.pie",
     "weaponClass": "HEAT",
     "weaponEffect": "ALL ROUNDER",
-    "weaponSubClass": "FLAME",
+    "weaponSubClass": "GAUSS",
     "weaponWav": "flmthrow.ogg",
     "weight": 90000
   },
