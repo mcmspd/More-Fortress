@@ -191,7 +191,7 @@ Rail Plasmite Accelerator Fortress:
 - Damage Type: Heat
 - Damage Mod: All-Rounder
 - Splash: no
-- Burn: no
+- Burn: 1 tile for 0.5 seconds
 
 AA Flak Fortress:
 
