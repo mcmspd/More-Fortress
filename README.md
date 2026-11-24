@@ -58,14 +58,14 @@ Mortar Fortress:
 - List of Required Researches:
   - Mortar (`R-Wpn-Mortar01Lt`)
   - Improved Hardcrete Mk3 (`R-Defense-WallUpgrade03`)
-  - HEAP Mortar Shells (`R-Wpn-Mortar-Damage04`)
+  - HEAP Mortar Shells Mk3 (`R-Wpn-Mortar-Damage06`)
 - Build Power: 750
 - Build Points: 750
 - Weapon:
 - Name: Mortar Fortress
 - Range: 11-20 tiles
 - ROF: 10/min
-- Damage: 165
+- Damage: 200
 - Damage Type: Kinetic
 - Damage Mod: Artillery Round
 - Splash: 5 tiles

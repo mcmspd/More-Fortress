@@ -337,7 +337,7 @@
   "MortarSuper": {
     "buildPoints": 600,
     "buildPower": 200,
-    "damage": 85,
+    "damage": 200,
     "effectSize": 512,
     "explosionWav": "lrgexpl.ogg",
     "facePlayer": 1,
