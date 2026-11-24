@@ -320,5 +320,28 @@
    "PlasmaSuper"
   ],
   "width": 2
+ },
+ "X-Super-Sunburst": {
+  "armour": 15,
+  "breadth": 2,
+  "buildPoints": 1750,
+  "buildPower": 1000,
+  "combinesWithWall": true,
+  "height": 2,
+  "hitpoints": 2800,
+  "id": "X-Super-Sunburst",
+  "name": "Large Sunburst Array Fortress",
+  "resistance": 100,
+  "sensorID": "FortressSensor",
+  "strength": "HARD",
+  "structureModel": [
+   "stwpfcan.pie"
+  ],
+  "thermal": 15,
+  "type": "FORTRESS",
+  "weapons": [
+   "SunburstSuper"
+  ],
+  "width": 2
  }
 }

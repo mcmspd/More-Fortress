@@ -1,6 +1,6 @@
 **Warzone 2100 Mod: More Fortress**
 
-Adds 12 new Fortress defenses, 1 large wall, 1 ATGM emplacement, and 1 new tank weapon to skirmish and multiplayer.
+Adds 13 new Fortress defenses, 1 large wall, 1 ATGM emplacement, and 1 new tank weapon to skirmish and multiplayer.
 
 ## Installation
 
@@ -269,6 +269,24 @@ Super RIM-116 AA Fortress:
 - Damage Mod: Anti-Tank
 - Splash: 0.5 tiles
 - Burn: no
+
+Large Sunburst Array Fortress:
+
+- List of Required Researches:
+  - Sunburst AA Rocket Array (`R-Wpn-Sunburst`)
+  - Supercrete Mk2 (`R-Defense-WallUpgrade05`)
+- Build Power: 750
+- Build Points: 1750
+- Weapon:
+- Name: Large Sunburst Array
+- Range: 13-17 tiles
+- ROF: 171/min
+- Damage: 110
+- Damage Type: Kinetic
+- Damage Mod: Anti-Tank
+- Splash: 1.5 tiles
+- Burn: no
+- Triple-size turret, stock rockets at double speed
 
 ## Research upgrades
 

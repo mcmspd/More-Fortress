@@ -210,9 +210,8 @@
   "id": "R-Defense-Super-Mortar",
   "name": "Mortar Fortress",
   "requiredResearch": [
-   "R-Wpn-Mortar01Lt",
    "R-Defense-WallUpgrade03",
-   "R-Wpn-Mortar-Damage04"
+   "R-Wpn-Mortar-Damage02"
   ],
   "researchPoints": 4800,
   "researchPower": 200,
@@ -326,5 +325,20 @@
   ],
   "statID": "MortarSuper",
   "subgroupIconID": "IMAGE_RES_GRPACC"
+ },
+ "R-Defense-Super-Sunburst": {
+  "iconID": "IMAGE_RES_DEFENCE",
+  "id": "R-Defense-Super-Sunburst",
+  "name": "Large Sunburst Array Fortress",
+  "requiredResearch": [
+   "R-Wpn-Sunburst",
+   "R-Defense-WallUpgrade05"
+  ],
+  "researchPoints": 8400,
+  "researchPower": 262,
+  "resultStructures": [
+   "X-Super-Sunburst"
+  ],
+  "statID": "X-Super-Sunburst"
  }
 }
