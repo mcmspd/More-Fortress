@@ -512,7 +512,7 @@
     "firePause": 75,
     "flags": "NoFriendlyFire",
     "flightGfx": "fxlproj.pie",
-    "flightSpeed": 900,
+    "flightSpeed": 1800,
     "hitGfx": "fxmethit.pie",
     "hitpoints": 45,
     "id": "RailPlasmiteSuper",
