@@ -343,5 +343,28 @@
    "SunburstSuper"
   ],
   "width": 2
+ },
+ "X-Super-RailPlasmite": {
+  "armour": 15,
+  "breadth": 2,
+  "buildPoints": 2500,
+  "buildPower": 2000,
+  "combinesWithWall": true,
+  "height": 2,
+  "hitpoints": 3200,
+  "id": "X-Super-RailPlasmite",
+  "name": "Rail Plasmite Accelerator Fortress",
+  "resistance": 100,
+  "sensorID": "FortressSensor",
+  "strength": "HARD",
+  "structureModel": [
+   "stwpfcan.pie"
+  ],
+  "thermal": 15,
+  "type": "FORTRESS",
+  "weapons": [
+   "RailPlasmiteSuper"
+  ],
+  "width": 2
  }
 }

@@ -340,5 +340,22 @@
    "X-Super-Sunburst"
   ],
   "statID": "X-Super-Sunburst"
+ },
+ "R-Defense-Super-RailPlasmite": {
+  "iconID": "IMAGE_RES_DEFENCE",
+  "id": "R-Defense-Super-RailPlasmite",
+  "name": "Rail Plasmite Accelerator Fortress",
+  "requiredResearch": [
+   "R-Wpn-RailGun02",
+   "R-Wpn-PlasmaCannon",
+   "R-Wpn-Plasmite-Flamer",
+   "R-Defense-WallUpgrade05"
+  ],
+  "researchPoints": 15000,
+  "researchPower": 500,
+  "resultStructures": [
+   "X-Super-RailPlasmite"
+  ],
+  "statID": "X-Super-RailPlasmite"
  }
 }
