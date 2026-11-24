@@ -122,6 +122,7 @@ Nexus Link Fortress:
 - Damage Mod: Anti-Personnel
 - Splash: no
 - Burn: no
+- Limit: 2 per player (`userLimits`)
 
 3x3 Cannon Fortress (concept test):
 

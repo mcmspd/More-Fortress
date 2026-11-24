@@ -250,8 +250,8 @@
   "type": "FORTRESS",
   "userLimits": [
    0,
-   5,
-   5
+   2,
+   2
   ],
   "weapons": [
    "NexusSuper"
