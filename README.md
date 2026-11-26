@@ -21,7 +21,7 @@ Assault Gun Fortress:
   - Assault Gun (`R-Wpn-MG4`)
   - Improved Hardcrete Mk3 (`R-Defense-WallUpgrade03`)
 - Build Power: 750
-- Build Points: 750
+- Build Points: 650
 - Weapon:
 - Name: Assault Gun Fortress
 - Range: 8-11 tiles
@@ -40,7 +40,7 @@ Flamer Fortress:
   - Heavy Flamer - Inferno (`R-Wpn-Flame2`)
   - Improved Hardcrete Mk3 (`R-Defense-WallUpgrade03`)
 - Build Power: 750
-- Build Points: 750
+- Build Points: 650
 - Weapon:
 - Name: FlamerFortress
 - Range: 4-10 tiles
@@ -56,19 +56,18 @@ Mortar Fortress:
 ![Mortar Fortress](Pictures/Mort_FORT.png)
 
 - List of Required Researches:
-  - Mortar (`R-Wpn-Mortar01Lt`)
   - Supercrete Mk2 (`R-Defense-WallUpgrade05`)
   - HEAP Mortar Shells Mk3 (`R-Wpn-Mortar-Damage06`)
 - Build Power: 750
-- Build Points: 750
+- Build Points: 650
 - Weapon:
 - Name: Mortar Fortress
-- Range: 11-20 tiles
-- ROF: 10/min
+- Range: 11-22 tiles
+- ROF: 20/min
 - Damage: 200
 - Damage Type: Kinetic
 - Damage Mod: Artillery Round
-- Splash: 5 tiles
+- Splash: 4 tiles
 - Burn: no
 - Note: Radar-Assisted Mortar Targeting (`R-Wpn-Mortar-Acc04`) adds another 10% accuracy after Target Acquisition shells
 
@@ -81,7 +80,7 @@ Large Rocket Pod Fortress:
   - Improved Hardcrete Mk3 (`R-Defense-WallUpgrade03`)
   - HE Rockets Mk3 (`R-Wpn-Rocket-Damage03`)
 - Build Power: 750
-- Build Points: 750
+- Build Points: 650
 - Weapon:
 - Name: Large-Rocket-Pod
 - Range: 5-10 tiles
@@ -99,7 +98,7 @@ Wide-Spectrum Sensor Fortress:
 - List of Required Researches:
   - Wide Spectrum Sensor (`R-Sys-Sensor-WS`)
   - Wide Spectrum Sensor Tower (`R-Sys-Sensor-WSTower`)
-  - Supercrete Mk2 (`R-Defense-WallUpgrade05`)
+  - Plascrete Mk2 (`R-Defense-WallUpgrade08`)
 - Build Power: 2000
 - Build Points: 4000
 - Weapon: none (unarmed sensor, limited to 3 per player)
@@ -138,7 +137,7 @@ Nexus Link Fortress:
 - Name: 3x3 Cannon Fortress
 - Range: 2-22 tiles
 - ROF: 12.5/min
-- Damage: 760
+- Damage: 750
 - Damage Type: Kinetic
 - Damage Mod: All-Rounder
 - Splash: 5 tiles
@@ -162,12 +161,12 @@ Plasma Cannon Fortress:
   - Plasmite Flamer (`R-Wpn-Plasmite-Flamer`)
   - Plasma Cannon (`R-Wpn-PlasmaCannon`)
   - Supercrete Mk2 (`R-Defense-WallUpgrade05`)
-- Build Power: 1000
-- Build Points: 2000
+- Build Power: 2000
+- Build Points: 2500
 - Weapon:
 - Name: Plasma Cannon Fortress
 - Range: 7.5-15 tiles
-- ROF: 5/min
+- ROF: 4/min
 - Damage: 2500
 - Damage Type: Heat
 - Damage Mod: All-Rounder
@@ -182,11 +181,11 @@ AA Flak Fortress:
   - AA Tornado Flak Cannon (`R-Wpn-AAGun02`)
   - Supercrete Mk2 (`R-Defense-WallUpgrade05`)
 - Build Power: 750
-- Build Points: 1750
+- Build Points: 1500
 - Weapon:
 - Name: AA Flak Fortress
 - Range: 11-20 tiles
-- ROF: 35/min
+- ROF: 43/min
 - Damage: 250
 - Damage Type: Kinetic
 - Damage Mod: Anti-Tank
@@ -218,7 +217,7 @@ Laser Fortress:
 - List of Required Researches:
   - Pulse Laser (`R-Wpn-Laser02`)
   - Supercrete Mk2 (`R-Defense-WallUpgrade05`)
-- Build Power: 1000
+- Build Power: 1250
 - Build Points: 2000
 - Weapon:
 - Name: Laser Fortress
@@ -259,13 +258,13 @@ Super RIM-116 AA Fortress:
   - Target Prediction Missiles (`R-Wpn-Missile-Accuracy01`)
   - Advanced Missile Allocation System (`R-Wpn-Missile-ROF01`)
   - Sensor Upgrade Mk3 (`R-Sys-Sensor-Upgrade03`)
-- Build Power: 1600
+- Build Power: 1750
 - Build Points: 2000
 - Weapon:
 - Name: RIM-116 AA Missile
 - Range: 5-32 tiles
-- ROF: 54/min
-- Damage: 450
+- ROF: 23/min
+- Damage: 550
 - Damage Type: Kinetic
 - Damage Mod: Anti-Tank
 - Splash: 0.5 tiles
@@ -276,7 +275,7 @@ Large Sunburst Array Fortress:
 - List of Required Researches:
   - Sunburst AA Rocket Array (`R-Wpn-Sunburst`)
   - Supercrete Mk2 (`R-Defense-WallUpgrade05`)
-- Build Power: 750
+- Build Power: 1000
 - Build Points: 1750
 - Weapon:
 - Name: Large Sunburst Array
