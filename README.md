@@ -58,7 +58,7 @@ Mortar Fortress:
 - List of Required Researches:
   - Supercrete Mk2 (`R-Defense-WallUpgrade05`)
   - HEAP Mortar Shells Mk3 (`R-Wpn-Mortar-Damage06`)
-- Build Power: 750
+- Build Power: 1000
 - Build Points: 650
 - Weapon:
 - Name: Mortar Fortress

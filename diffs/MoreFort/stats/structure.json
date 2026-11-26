@@ -183,13 +183,13 @@
   "width": 2
  },
  "X-Super-Mortar": {
-  "armour": 8,
+  "armour": 15,
   "breadth": 2,
   "buildPoints": 650,
-  "buildPower": 750,
+  "buildPower": 1000,
   "combinesWithWall": true,
   "height": 2,
-  "hitpoints": 1600,
+  "hitpoints": 3200,
   "id": "X-Super-Mortar",
   "name": "Mortar Fortress",
   "resistance": 100,
@@ -198,7 +198,7 @@
   "structureModel": [
    "stwpfcan.pie"
   ],
-  "thermal": 8,
+  "thermal": 15,
   "type": "FORTRESS",
   "weapons": [
    "MortarSuper"
