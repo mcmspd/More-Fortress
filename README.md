@@ -295,7 +295,7 @@ Plasma Cannon Fortress:
   - Cannon Fortress (`R-Defense-Super-Cannon`)
   - Superhot Plasmite Gel Mk3 (`R-Wpn-Flamer-Damage09`)
   - Plasma Cannon (`R-Wpn-PlasmaCannon`)
-  - Plascrete Mk2 (`R-Defense-WallUpgrade08`)
+  - Supercrete Mk2 (`R-Defense-WallUpgrade05`)
 - MRT: 37:28
 - Build Power: 1750
 - Build Points: 2500
