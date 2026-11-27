@@ -461,13 +461,13 @@
   "PlasmaSuper": {
     "buildPoints": 2000,
     "buildPower": 1000,
-    "damage": 2500,
+    "damage": 500,
     "designable": 0,
     "effectSize": 300,
     "explosionWav": "lsrexpl.ogg",
     "facePlayer": 1,
     "fireOnMove": 0,
-    "firePause": 150,
+    "firePause": 125,
     "flightGfx": "fxshgssa-3x.pie",
     "flightSpeed": 1500,
     "hitGfx": "fxflech4.pie",
@@ -501,7 +501,7 @@
     "weaponEffect": "ALL ROUNDER",
     "weaponSubClass": "CANNON",
     "weaponWav": "bemlsr.ogg",
-    "weight": 90000
+    "weight": 58500
   },
   "SunburstSuper": {
     "buildPoints": 1500,

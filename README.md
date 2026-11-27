@@ -183,8 +183,8 @@ Plasma Cannon Fortress:
 - Weapon:
 - Name: Plasma Cannon Fortress
 - Range: 7.5-15 tiles
-- ROF: 4/min
-- Damage: 2500 (166.7/s)
+- ROF: 4.8/min
+- Damage: 500 (40/s)
 - Damage Type: Heat
 - Damage Mod: All-Rounder
 - Splash: 5 tiles
