@@ -3,7 +3,7 @@
 > REQUIRED: any AI agent working in this folder MUST read this file
 > plus `stats-reference.md` before editing, adding, or deleting stats/models.
 
-Warzone 2100 multiplay mod: adds 13 Fortress-class defenses + Large Wall + ATGM emplacement + 1 designable rocket weapon. Data-only, no JS. All `.pie` files are kept intentionally, even if unreferenced.
+Warzone 2100 multiplay mod: adds 13 Fortress-class defenses + Large Wall + ATGM emplacement + 1 designable rocket weapon. Data-only, no JS. Every `.pie` on disk must be referenced; orphans get deleted (`check.py` warns).
 
 ## Layout
 
@@ -52,7 +52,7 @@ Rules that have bitten before:
 * `redComponents[]`/`redStructures[]` must never contain `""`.
 * Never add, shadow, or delete `ZNULL*` entries.
 * Build caps use the stats field `userLimits: [min, mp, max]` (e.g. Repair Facility `[0, 5, 5]`). Campaign scripts can raise them; MP uses the middle value. No JS needed.
-* Art convention: scaled pies keep the stock point counts with multiplied coordinates (`-2x`, `-3x`, `-4x`, `-5x` suffixes). Never use `.` in pie names (`-25x` means 2.5x). Old files stay on disk even when unreferenced.
+* Art convention: scaled pies keep the stock point counts with multiplied coordinates (`-2x`, `-3x`, `-4x`, `-5x` suffixes). Never use `.` in pie names (`-25x` means 2.5x). Unreferenced pies are orphans: delete them, never hoard.
 * 3x3 fortress recipe (proven in game): body at 1.5x stock with connector `0 0 195`; weapon meshes at 2x stock with y minus 20 on every mesh point; weapon connectors at pure scaled values snapped to integers (engine rejects mixed int/float connector lines), never shifted. The minus 20 is visual only: it reseats the enlarged mesh on the mount after the connector was raised for line of fire, and it changes no ballistics. Copy this verbatim for every future 3x3 fortress weapon. Do not re-derive it.
 
 ## Tools and verification
@@ -61,7 +61,8 @@ Rules that have bitten before:
 * `python3 scale_pie.py --scale F in.pie out.pie` — uniform XYZ scaler for POINTS and CONNECTORS; leaves POLYGONS UV, TYPE, TEXTURE untouched. Use it for `-4x` art instead of hand-editing. Verify by halving/doubling back against the stock pie bounding box.
 * `python3 research_time.py <research|structure|weapon ID> [--preset 0-4] [--labs N] [--chain]` — minimum research time, rate model calibrated against https://aco4.github.io/wz/mrt/ (single moduled lab, upgrades applied at inflection, power ignored). Spot checks on preset 2: Mortar Pit 0:24, HEAP Mk3 16:01, Rail Gun 37:35.
 * Chain check per item: `research.resultStructures[]` → `structure.id`, `structure.weapons[]` → `weapons.id`, `weapons.model/mountModel/*Gfx` → files on disk (lowercase, exact match). Break one link and the entry is dead in game.
-* Docs sync per item: `WISHLIST.md` status (Todo → In progress → Done), `README.md` section with research prerequisites and behavior. `Pictures/` screenshots are deferred to the end; mark `Done (pic pending)` meanwhile.
+* Orphan check: every mod `.pie` must be referenced from stats (`model`/`mountModel`/`*Gfx`/`structureModel`/`sensorModel`); `check.py` warns on orphans.
+* Docs sync per item: `WISHLIST.md` status (Todo → Done → Balanced once playtested), `README.md` section with research prerequisites and behavior. `Pictures/` screenshots are deferred to the end; mark `Done (pic pending)` meanwhile.
 * README block template (one per structure, ordered by ascending MRT; keep rows in this order, omit N/A rows):
   `Name:` / blank / `![Name](Pictures/FILE.png)` / blank / `- List of Required Researches:` (`  - Name (\`ID\`)` per line) / `- MRT: m:ss` (from `research_time.py`, clean No Bases start, 1 lab) / `- Build Power:` / `- Build Points:` / `- Weapon:` (`- Weapon: none (...)` if unarmed) / `- Name:` / `- Range: A-B tiles` / `- ROF:` (`X/min`, continuous counts as 600/min) / `- Damage:` (`N (DPS/s)`, DPS = damage x ROF / 60, 1 decimal) / `- Damage Type:` / `- Damage Mod:` / `- Splash:` (`no` or `N tiles`) / `- Radius Damage:` (`No` or `N damage / M Tiles`) / `- Burn:` (`no` or `N tiles for S seconds`) / `- Burn Damage:` (`No` or `N damage`) / optional `- Limit:` / `- Note:` lines.
 

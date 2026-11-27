@@ -23,7 +23,7 @@ Every file is a JSON object keyed by ID:
 ```
 
 * Key and inner `id` must match.
-* `diffs/` patching: any `diffs/<anything>/stats/weapons.json` is merged onto the base file. New keys are added, existing keys are patched field-by-field, `"key": null` deletes. This is why `More_Fort` only ships 12 weapons instead of 127.
+* `diffs/` patching: any `diffs/<anything>/stats/weapons.json` is merged onto the base file. New keys are added, existing keys are patched field-by-field, `"key": null` deletes. This is why `More_Fort` only ships 13 weapons instead of 127.
 * Never delete entries starting with `ZNULL` (`ZNULLWEAPON`, `ZNULLBODY`, …) — the engine requires them first in the list.
 * Time units: `firePause`, `reloadTime`, `radiusLife`, `periodicalDamageTime` are multiplied by 100 internally. `firePause: 2` = 200 game ticks.
 
@@ -130,8 +130,9 @@ Everything except the key is optional, but a research with no `result*` does not
 
 ## Quick checklist before commit
 
-1. `python3 -c "import json; json.load(open('diffs/MoreFort/stats/weapons.json'))"` — valid JSON?
+1. `python3 check.py` — must report `0 error(s), 0 warning(s)` (covers JSON validity, key/id match, int fields, ref existence, pie case, ZNULL, msgName, orphans).
 2. Every `structure.weapons[]` exists in base + diff?
 3. Every `research.requiredResearch` / `result*` exists?
-4. Every `.pie` / `.ogg` referenced exists (watch `las_Body` vs `las_body` case on Linux)?
+4. Every `.pie` / `.ogg` referenced exists (watch `las_Body` vs `las_body` case on Linux), and no mod `.pie` is orphaned?
 5. No `ZNULL*` deleted, no `msgName` reused, no `[""]` placeholders?
+6. README block matches template (row order, MRT from `research_time.py` preset 0, DPS = damage x ROF / 60)?

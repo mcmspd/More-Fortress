@@ -489,6 +489,22 @@ def check_research(research, structures, weapons, base):
         visit(k, [])
 
 
+def check_pie_orphans(weapons, structures, sensors, pie_index):
+    """Every mod pie must be referenced somewhere; orphans get deleted."""
+    used = set()
+    for o in list(weapons.values()) + list(structures.values()) + list(sensors.values()):
+        if not isinstance(o, dict):
+            continue
+        for f, v in o.items():
+            vals = v if isinstance(v, list) else [v]
+            for x in vals:
+                if isinstance(x, str) and x.lower().endswith(".pie"):
+                    used.add(x)
+    for name, rel in sorted(pie_index.items()):
+        if name not in used:
+            warn(f"{rel}: unreferenced pie, delete it")
+
+
 def check_pie_textures(pie_index):
     for name, rel in pie_index.items():
         if not name.lower().endswith(".pie"):
@@ -552,6 +568,7 @@ def main(argv=None):
     check_weapons(weapons, pie_index, base)
     check_structures(structures, weapons, pie_index, base, sensors)
     check_research(research, structures, weapons, base)
+    check_pie_orphans(weapons, structures, sensors, pie_index)
     check_pie_textures(pie_index)
     if args.verbose:
         for i in sorted(infos):
