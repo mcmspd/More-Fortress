@@ -13,6 +13,9 @@ Adds 13 new Fortress defenses, 1 large wall, 1 ATGM emplacement, and 1 new tank 
 All fortresses join onto walls and come with their own gun. Most are 2x2;
 the 3x3 Cannon Fortress is the exception. The Large Wall is a gunless 2x2 block.
 
+MRT = Minimum Research Time from `research_time.py` (clean No Bases start,
+1 fully-moduled lab, power cost ignored).
+
 Assault Gun Fortress:
 
 ![Assault Gun Fortress](Pictures/AG_FORT.png)
@@ -24,6 +27,7 @@ Assault Gun Fortress:
 - Build Points: 650
 - Weapon:
 - Name: Assault Gun Fortress
+- MRT: 16:04
 - Range: 8-11 tiles
 - ROF: continuous
 - Damage: 35
@@ -43,6 +47,7 @@ Flamer Fortress:
 - Build Points: 650
 - Weapon:
 - Name: FlamerFortress
+- MRT: 15:14
 - Range: 4-10 tiles
 - ROF: 40/min
 - Damage: 55
@@ -69,6 +74,7 @@ Mortar Fortress:
 - Damage Mod: Artillery Round
 - Splash: 4 tiles
 - Burn: no
+- MRT: 23:36
 - Note: Radar-Assisted Mortar Targeting (`R-Wpn-Mortar-Acc04`) adds another 10% accuracy after Target Acquisition shells
 
 Large Rocket Pod Fortress:
@@ -83,6 +89,7 @@ Large Rocket Pod Fortress:
 - Build Points: 650
 - Weapon:
 - Name: Large-Rocket-Pod
+- MRT: 11:23
 - Range: 5-10 tiles
 - ROF: 171/min
 - Damage: 40
@@ -102,6 +109,7 @@ Wide-Spectrum Sensor Fortress:
 - Build Power: 2000
 - Build Points: 4000
 - Weapon: none (unarmed sensor, limited to 3 per player)
+- MRT: 36:09
 
 Nexus Link Fortress:
 
@@ -122,6 +130,7 @@ Nexus Link Fortress:
 - Splash: no
 - Burn: no
 - Limit: 2 per player (`userLimits`)
+- MRT: 29:45
 
 3x3 Cannon Fortress (concept test):
 
@@ -142,6 +151,7 @@ Nexus Link Fortress:
 - Damage Mod: All-Rounder
 - Splash: 5 tiles
 - Burn: 5 tiles for 3 seconds
+- MRT: 35:39
 
 Large Wall:
 
@@ -152,6 +162,7 @@ Large Wall:
 - Build Power: 100
 - Build Points: 500
 - Weapon: none (gunless wall block)
+- MRT: 19:33
 
 Plasma Cannon Fortress:
 
@@ -172,6 +183,7 @@ Plasma Cannon Fortress:
 - Damage Mod: All-Rounder
 - Splash: 5 tiles
 - Burn: 5 tiles for 5 seconds
+- MRT: 25:49
 
 AA Flak Fortress:
 
@@ -191,6 +203,7 @@ AA Flak Fortress:
 - Damage Mod: Anti-Tank
 - Splash: 5 tiles
 - Burn: no
+- MRT: 25:36
 
 ATGM Emplacement:
 
@@ -209,6 +222,7 @@ ATGM Emplacement:
 - Damage Mod: Anti-Tank
 - Splash: no
 - Burn: no
+- MRT: 13:22
 
 Laser Fortress:
 
@@ -221,6 +235,7 @@ Laser Fortress:
 - Build Points: 2000
 - Weapon:
 - Name: Laser Fortress
+- MRT: 35:03
 - Range: 11.7-24 tiles
 - ROF: 112/min
 - Damage: 380
@@ -247,6 +262,7 @@ M1299 Howitzer Fortress:
 - Damage Mod: Artillery Round
 - Splash: 4 tiles
 - Burn: 4 tiles for 2.5 seconds
+- MRT: 36:40
 
 Super RIM-116 AA Fortress:
 
@@ -268,6 +284,7 @@ Super RIM-116 AA Fortress:
 - Damage Type: Kinetic
 - Damage Mod: Anti-Tank
 - Splash: 0.5 tiles
+- MRT: 39:14
 - Burn: no
 
 Large Sunburst Array Fortress:
@@ -287,6 +304,7 @@ Large Sunburst Array Fortress:
 - Splash: 1.5 tiles
 - Burn: no
 - Triple-size turret, stock rockets at double speed
+- MRT: 21:14
 
 ## Research upgrades
 
@@ -320,3 +338,4 @@ Anti-Tank Guided Missile Launcher:
 - Damage Mod: Anti-Tank
 - Splash: no
 - Burn: no
+- MRT: 12:34
