@@ -242,7 +242,8 @@
   "name": "Nexus Link Fortress",
   "requiredResearch": [
    "R-Sys-SpyTurret",
-   "R-Defense-WallUpgrade05"
+   "R-Defense-WallUpgrade05",
+   "R-Defense-WallUpgrade08"
   ],
   "researchPoints": 15000,
   "researchPower": 5000,

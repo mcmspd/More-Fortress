@@ -125,7 +125,7 @@ Large Sunburst Array Fortress:
 - Build Points: 1750
 - Weapon:
 - Name: Large Sunburst Array
-- Range: 13-17 tiles
+- Range: 11-20 tiles
 - ROF: 171/min
 - Damage: 138 (393.3/s)
 - Damage Type: Kinetic
@@ -192,7 +192,7 @@ Plasma Cannon Fortress:
   - Plasma Cannon (`R-Wpn-PlasmaCannon`)
   - Supercrete Mk2 (`R-Defense-WallUpgrade05`)
 - MRT: 25:49
-- Build Power: 2000
+- Build Power: 1750
 - Build Points: 2500
 - Weapon:
 - Name: Plasma Cannon Fortress
@@ -205,29 +205,6 @@ Plasma Cannon Fortress:
 - Radius Damage: 500 damage / 5 Tiles
 - Burn: 5 tiles for 5 seconds
 - Burn Damage: 25 damage
-
-Nexus Link Fortress:
-
-![Nexus Link Fortress](Pictures/NLINK_FORT.png)
-
-- List of Required Researches:
-  - Nexus Link Turret (`R-Sys-SpyTurret`)
-  - Supercrete Mk2 (`R-Defense-WallUpgrade05`)
-- MRT: 29:45
-- Build Power: 5000
-- Build Points: 4000
-- Weapon:
-- Name: Nexus Link Fortress
-- Range: 17.5 tiles
-- ROF: 600/min
-- Damage: 20 (200/s)
-- Damage Type: Heat
-- Damage Mod: Anti-Personnel
-- Splash: no
-- Radius Damage: No
-- Burn: no
-- Burn Damage: No
-- Limit: 2 per player (`userLimits`)
 
 Laser Fortress:
 
@@ -309,6 +286,30 @@ M1299 Howitzer Fortress:
 - Burn: 4 tiles for 2.5 seconds
 - Burn Damage: 1 damage
 
+Nexus Link Fortress:
+
+![Nexus Link Fortress](Pictures/NLINK_FORT.png)
+
+- List of Required Researches:
+  - Nexus Link Turret (`R-Sys-SpyTurret`)
+  - Supercrete Mk2 (`R-Defense-WallUpgrade05`)
+  - Plascrete Mk2 (`R-Defense-WallUpgrade08`)
+- MRT: 36:55
+- Build Power: 5000
+- Build Points: 4000
+- Weapon:
+- Name: Nexus Link Fortress
+- Range: 17.5 tiles
+- ROF: 600/min
+- Damage: 20 (200/s)
+- Damage Type: Heat
+- Damage Mod: Anti-Personnel
+- Splash: no
+- Radius Damage: No
+- Burn: no
+- Burn Damage: No
+- Limit: 2 per player (`userLimits`)
+
 Super RIM-116 AA Fortress:
 
 ![Super RIM-116 AA Fortress](Pictures/RIM116_FORT.png)
@@ -325,8 +326,8 @@ Super RIM-116 AA Fortress:
 - Weapon:
 - Name: RIM-116 AA Missile
 - Range: 5-32 tiles
-- ROF: 23/min
-- Damage: 550 (210.8/s)
+- ROF: 37.5/min
+- Damage: 550 (343.8/s)
 - Damage Type: Kinetic
 - Damage Mod: Anti-Tank
 - Splash: 0.5 tiles
