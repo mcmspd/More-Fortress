@@ -35,6 +35,7 @@ Large Rocket Pod Fortress:
 - Damage Type: Kinetic
 - Damage Mod: Anti-Tank
 - Splash: no
+- Radius Damage: No
 - Burn: no
 
 ATGM Emplacement:
@@ -54,6 +55,7 @@ ATGM Emplacement:
 - Damage Type: Kinetic
 - Damage Mod: Anti-Tank
 - Splash: no
+- Radius Damage: No
 - Burn: no
 
 Flamer Fortress:
@@ -74,6 +76,7 @@ Flamer Fortress:
 - Damage Type: Heat
 - Damage Mod: Flamer
 - Splash: 2 tiles
+- Radius Damage: 40 damage / 2 Tiles
 - Burn: 2 tiles for 5 seconds
 
 Assault Gun Fortress:
@@ -94,6 +97,7 @@ Assault Gun Fortress:
 - Damage Type: Kinetic
 - Damage Mod: Anti-Personnel
 - Splash: no
+- Radius Damage: No
 - Burn: no
 
 Large Wall:
@@ -123,6 +127,7 @@ Large Sunburst Array Fortress:
 - Damage Type: Kinetic
 - Damage Mod: Anti-Tank
 - Splash: 1.5 tiles
+- Radius Damage: 50 damage / 1.5 Tiles
 - Burn: no
 - Note: triple-size turret, stock rockets at double speed
 
@@ -146,6 +151,7 @@ Mortar Fortress:
 - Damage Type: Kinetic
 - Damage Mod: Artillery Round
 - Splash: 4 tiles
+- Radius Damage: 100 damage / 4 Tiles
 - Burn: no
 - Note: Radar-Assisted Mortar Targeting (`R-Wpn-Mortar-Acc04`) adds another 10% accuracy after Target Acquisition shells
 
@@ -167,6 +173,7 @@ AA Flak Fortress:
 - Damage Type: Kinetic
 - Damage Mod: Anti-Tank
 - Splash: 5 tiles
+- Radius Damage: 180 damage / 5 Tiles
 - Burn: no
 
 Plasma Cannon Fortress:
@@ -188,6 +195,7 @@ Plasma Cannon Fortress:
 - Damage Type: Heat
 - Damage Mod: All-Rounder
 - Splash: 5 tiles
+- Radius Damage: 500 damage / 5 Tiles
 - Burn: 5 tiles for 5 seconds
 
 Nexus Link Fortress:
@@ -208,6 +216,7 @@ Nexus Link Fortress:
 - Damage Type: Heat
 - Damage Mod: Anti-Personnel
 - Splash: no
+- Radius Damage: No
 - Burn: no
 - Limit: 2 per player (`userLimits`)
 
@@ -229,6 +238,7 @@ Laser Fortress:
 - Damage Type: Heat
 - Damage Mod: Anti-Personnel
 - Splash: no
+- Radius Damage: No
 - Burn: no
 
 3x3 Cannon Fortress (concept test):
@@ -250,6 +260,7 @@ Laser Fortress:
 - Damage Type: Kinetic
 - Damage Mod: All-Rounder
 - Splash: 5 tiles
+- Radius Damage: 520 damage / 5 Tiles
 - Burn: 5 tiles for 3 seconds
 
 Wide-Spectrum Sensor Fortress:
@@ -283,6 +294,7 @@ M1299 Howitzer Fortress:
 - Damage Type: Kinetic
 - Damage Mod: Artillery Round
 - Splash: 4 tiles
+- Radius Damage: 1400 damage / 4 Tiles
 - Burn: 4 tiles for 2.5 seconds
 
 Super RIM-116 AA Fortress:
@@ -306,6 +318,7 @@ Super RIM-116 AA Fortress:
 - Damage Type: Kinetic
 - Damage Mod: Anti-Tank
 - Splash: 0.5 tiles
+- Radius Damage: 100 damage / 0.5 Tiles
 - Burn: no## Research upgrades
 
 Ultra-High Performance Concrete, Carbon-Fibre Reinforced Concrete and
@@ -337,5 +350,6 @@ Anti-Tank Guided Missile Launcher:
 - Damage Type: Kinetic
 - Damage Mod: Anti-Tank
 - Splash: no
+- Radius Damage: No
 - Burn: no
 - MRT: 12:34
