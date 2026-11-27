@@ -37,6 +37,7 @@ Large Rocket Pod Fortress:
 - Splash: no
 - Radius Damage: No
 - Burn: no
+- Burn Damage: No
 
 ATGM Emplacement:
 
@@ -57,6 +58,7 @@ ATGM Emplacement:
 - Splash: no
 - Radius Damage: No
 - Burn: no
+- Burn Damage: No
 
 Flamer Fortress:
 
@@ -78,6 +80,7 @@ Flamer Fortress:
 - Splash: 2 tiles
 - Radius Damage: 40 damage / 2 Tiles
 - Burn: 2 tiles for 5 seconds
+- Burn Damage: 20 damage
 
 Assault Gun Fortress:
 
@@ -99,6 +102,7 @@ Assault Gun Fortress:
 - Splash: no
 - Radius Damage: No
 - Burn: no
+- Burn Damage: No
 
 Large Wall:
 
@@ -129,6 +133,7 @@ Large Sunburst Array Fortress:
 - Splash: 1.5 tiles
 - Radius Damage: 50 damage / 1.5 Tiles
 - Burn: no
+- Burn Damage: No
 - Note: triple-size turret, stock rockets at double speed
 
 
@@ -153,6 +158,7 @@ Mortar Fortress:
 - Splash: 4 tiles
 - Radius Damage: 100 damage / 4 Tiles
 - Burn: no
+- Burn Damage: No
 - Note: Radar-Assisted Mortar Targeting (`R-Wpn-Mortar-Acc04`) adds another 10% accuracy after Target Acquisition shells
 
 AA Flak Fortress:
@@ -175,6 +181,7 @@ AA Flak Fortress:
 - Splash: 5 tiles
 - Radius Damage: 180 damage / 5 Tiles
 - Burn: no
+- Burn Damage: No
 
 Plasma Cannon Fortress:
 
@@ -197,6 +204,7 @@ Plasma Cannon Fortress:
 - Splash: 5 tiles
 - Radius Damage: 500 damage / 5 Tiles
 - Burn: 5 tiles for 5 seconds
+- Burn Damage: 25 damage
 
 Nexus Link Fortress:
 
@@ -218,6 +226,7 @@ Nexus Link Fortress:
 - Splash: no
 - Radius Damage: No
 - Burn: no
+- Burn Damage: No
 - Limit: 2 per player (`userLimits`)
 
 Laser Fortress:
@@ -240,6 +249,7 @@ Laser Fortress:
 - Splash: no
 - Radius Damage: No
 - Burn: no
+- Burn Damage: No
 
 3x3 Cannon Fortress (concept test):
 
@@ -262,6 +272,7 @@ Laser Fortress:
 - Splash: 5 tiles
 - Radius Damage: 520 damage / 5 Tiles
 - Burn: 5 tiles for 3 seconds
+- Burn Damage: 1 damage
 
 Wide-Spectrum Sensor Fortress:
 
@@ -296,6 +307,7 @@ M1299 Howitzer Fortress:
 - Splash: 4 tiles
 - Radius Damage: 1400 damage / 4 Tiles
 - Burn: 4 tiles for 2.5 seconds
+- Burn Damage: 1 damage
 
 Super RIM-116 AA Fortress:
 
@@ -320,6 +332,7 @@ Super RIM-116 AA Fortress:
 - Splash: 0.5 tiles
 - Radius Damage: 100 damage / 0.5 Tiles
 - Burn: no## Research upgrades
+- Burn Damage: No
 
 Ultra-High Performance Concrete, Carbon-Fibre Reinforced Concrete and
 Self-Healing Nano-Concrete:
@@ -352,4 +365,5 @@ Anti-Tank Guided Missile Launcher:
 - Splash: no
 - Radius Damage: No
 - Burn: no
+- Burn Damage: No
 - MRT: 12:34
