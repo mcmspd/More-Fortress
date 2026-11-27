@@ -184,29 +184,6 @@ AA Flak Fortress:
 - Burn: no
 - Burn Damage: No
 
-Plasma Cannon Fortress:
-
-![Plasma Cannon Fortress](Pictures/PC_FORT.png)
-
-- List of Required Researches:
-  - Plasmite Flamer (`R-Wpn-Plasmite-Flamer`)
-  - Plasma Cannon (`R-Wpn-PlasmaCannon`)
-  - Supercrete Mk2 (`R-Defense-WallUpgrade05`)
-- MRT: 25:49
-- Build Power: 1750
-- Build Points: 2500
-- Weapon:
-- Name: Plasma Cannon Fortress
-- Range: 7.5-15 tiles
-- ROF: 4.8/min
-- Damage: 500 (40/s)
-- Damage Type: Heat
-- Damage Mod: All-Rounder
-- Splash: 5 tiles
-- Radius Damage: 500 damage / 5 Tiles
-- Burn: 5 tiles for 5 seconds
-- Burn Damage: 25 damage
-
 Laser Fortress:
 
 ![Laser Fortress](Pictures/LAS_FORT.png)
@@ -309,6 +286,30 @@ Nexus Link Fortress:
 - Burn: no
 - Burn Damage: No
 - Limit: 2 per player (`userLimits`)
+
+Plasma Cannon Fortress:
+
+![Plasma Cannon Fortress](Pictures/PC_FORT.png)
+
+- List of Required Researches:
+  - Cannon Fortress (`R-Defense-Super-Cannon`)
+  - Superhot Plasmite Gel Mk3 (`R-Wpn-Flamer-Damage09`)
+  - Plasma Cannon (`R-Wpn-PlasmaCannon`)
+  - Plascrete Mk2 (`R-Defense-WallUpgrade08`)
+- MRT: 37:28
+- Build Power: 1750
+- Build Points: 2500
+- Weapon:
+- Name: Plasma Cannon Fortress
+- Range: 10-15 tiles
+- ROF: 4.8/min
+- Damage: 500 (40/s)
+- Damage Type: Heat
+- Damage Mod: All-Rounder
+- Splash: 5 tiles
+- Radius Damage: 500 damage / 5 Tiles
+- Burn: 5 tiles for 5 seconds
+- Burn Damage: 25 damage
 
 Super RIM-116 AA Fortress:
 

@@ -287,9 +287,10 @@
   "id": "R-Defense-Super-Plasma",
   "name": "Plasma Cannon Fortress",
   "requiredResearch": [
-   "R-Wpn-Plasmite-Flamer",
+   "R-Defense-Super-Cannon",
+   "R-Wpn-Flamer-Damage09",
    "R-Wpn-PlasmaCannon",
-   "R-Defense-WallUpgrade05"
+   "R-Defense-WallUpgrade08"
   ],
   "researchPoints": 12000,
   "researchPower": 400,
