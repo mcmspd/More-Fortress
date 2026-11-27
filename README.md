@@ -191,10 +191,10 @@ Plasma Cannon Fortress:
 - List of Required Researches:
   - Cannon Fortress (`R-Defense-Super-Cannon`)
   - Plasmite Flamer (`R-Wpn-Plasmite-Flamer`)
-  - Superhot Plasmite Gel (`R-Wpn-Flamer-Damage07`)
+  - Superhot Plasmite Gel Mk2 (`R-Wpn-Flamer-Damage08`)
   - Plasma Cannon (`R-Wpn-PlasmaCannon`)
   - Supercrete Mk2 (`R-Defense-WallUpgrade05`)
-- MRT: 29:17
+- MRT: 33:08
 - Build Power: 1750
 - Build Points: 2500
 - Weapon:
