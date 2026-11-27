@@ -62,6 +62,8 @@ Rules that have bitten before:
 * `python3 research_time.py <research|structure|weapon ID> [--preset 0-4] [--labs N] [--chain]` — minimum research time, rate model calibrated against https://aco4.github.io/wz/mrt/ (single moduled lab, upgrades applied at inflection, power ignored). Spot checks on preset 2: Mortar Pit 0:24, HEAP Mk3 16:01, Rail Gun 37:35.
 * Chain check per item: `research.resultStructures[]` → `structure.id`, `structure.weapons[]` → `weapons.id`, `weapons.model/mountModel/*Gfx` → files on disk (lowercase, exact match). Break one link and the entry is dead in game.
 * Docs sync per item: `WISHLIST.md` status (Todo → In progress → Done), `README.md` section with research prerequisites and behavior. `Pictures/` screenshots are deferred to the end; mark `Done (pic pending)` meanwhile.
+* README block template (one per structure, in README order; keep rows in this order, omit N/A rows):
+  `Name:` / blank / `![Name](Pictures/FILE.png)` / blank / `- List of Required Researches:` (`  - Name (\`ID\`)` per line) / `- Build Power:` / `- Build Points:` / `- Weapon:` (`- Weapon: none (...)` if unarmed) / `- Name:` / `- Range: A-B tiles` / `- ROF:` (`X/min` or `continuous`) / `- Damage:` / `- Damage Type:` / `- Damage Mod:` / `- Splash:` (`no` or `N tiles`) / `- Burn:` (`no` or `N tiles for S seconds`) / `- MRT: m:ss` (from `research_time.py`, clean No Bases start, 1 lab) / optional `- Limit:` / `- Note:` lines.
 
 ## Install / Edit
 
