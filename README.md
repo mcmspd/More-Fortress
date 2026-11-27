@@ -28,8 +28,8 @@ Assault Gun Fortress:
 - Weapon:
 - Name: Assault Gun Fortress
 - Range: 8-11 tiles
-- ROF: continuous
-- Damage: 35
+- ROF: 600/min
+- Damage: 35 (350/s)
 - Damage Type: Kinetic
 - Damage Mod: Anti-Personnel
 - Splash: no
@@ -49,7 +49,7 @@ Flamer Fortress:
 - Name: FlamerFortress
 - Range: 4-10 tiles
 - ROF: 40/min
-- Damage: 55
+- Damage: 55 (36.7/s)
 - Damage Type: Heat
 - Damage Mod: Flamer
 - Splash: 2 tiles
@@ -69,7 +69,7 @@ Mortar Fortress:
 - Name: Mortar Fortress
 - Range: 11-22 tiles
 - ROF: 20/min
-- Damage: 200
+- Damage: 200 (66.7/s)
 - Damage Type: Kinetic
 - Damage Mod: Artillery Round
 - Splash: 4 tiles
@@ -91,7 +91,7 @@ Large Rocket Pod Fortress:
 - Name: Large-Rocket-Pod
 - Range: 5-10 tiles
 - ROF: 171/min
-- Damage: 40
+- Damage: 40 (114/s)
 - Damage Type: Kinetic
 - Damage Mod: Anti-Tank
 - Splash: no
@@ -124,7 +124,7 @@ Nexus Link Fortress:
 - Name: Nexus Link Fortress
 - Range: 17.5 tiles
 - ROF: 600/min
-- Damage: 20
+- Damage: 20 (200/s)
 - Damage Type: Heat
 - Damage Mod: Anti-Personnel
 - Splash: no
@@ -146,7 +146,7 @@ Nexus Link Fortress:
 - Name: 3x3 Cannon Fortress
 - Range: 2-22 tiles
 - ROF: 12.5/min
-- Damage: 750
+- Damage: 750 (156.2/s)
 - Damage Type: Kinetic
 - Damage Mod: All-Rounder
 - Splash: 5 tiles
@@ -178,7 +178,7 @@ Plasma Cannon Fortress:
 - Name: Plasma Cannon Fortress
 - Range: 7.5-15 tiles
 - ROF: 4/min
-- Damage: 2500
+- Damage: 2500 (166.7/s)
 - Damage Type: Heat
 - Damage Mod: All-Rounder
 - Splash: 5 tiles
@@ -198,7 +198,7 @@ AA Flak Fortress:
 - Name: AA Flak Fortress
 - Range: 11-20 tiles
 - ROF: 43/min
-- Damage: 250
+- Damage: 250 (179.2/s)
 - Damage Type: Kinetic
 - Damage Mod: Anti-Tank
 - Splash: 5 tiles
@@ -217,7 +217,7 @@ ATGM Emplacement:
 - Name: ATGM
 - Range: 4-30 tiles
 - ROF: 11/min
-- Damage: 105
+- Damage: 105 (19.2/s)
 - Damage Type: Kinetic
 - Damage Mod: Anti-Tank
 - Splash: no
@@ -237,7 +237,7 @@ Laser Fortress:
 - Name: Laser Fortress
 - Range: 11.7-24 tiles
 - ROF: 112/min
-- Damage: 380
+- Damage: 380 (709.3/s)
 - Damage Type: Heat
 - Damage Mod: Anti-Personnel
 - Splash: no
@@ -257,7 +257,7 @@ M1299 Howitzer Fortress:
 - Name: M1299 Howitzer
 - Range: 30-80 tiles
 - ROF: 2.4/min
-- Damage: 1400
+- Damage: 1400 (56/s)
 - Damage Type: Kinetic
 - Damage Mod: Artillery Round
 - Splash: 4 tiles
@@ -280,7 +280,7 @@ Super RIM-116 AA Fortress:
 - Name: RIM-116 AA Missile
 - Range: 5-32 tiles
 - ROF: 23/min
-- Damage: 550
+- Damage: 550 (210.8/s)
 - Damage Type: Kinetic
 - Damage Mod: Anti-Tank
 - Splash: 0.5 tiles
@@ -298,7 +298,7 @@ Large Sunburst Array Fortress:
 - Name: Large Sunburst Array
 - Range: 13-17 tiles
 - ROF: 171/min
-- Damage: 138
+- Damage: 138 (393.3/s)
 - Damage Type: Kinetic
 - Damage Mod: Anti-Tank
 - Splash: 1.5 tiles
@@ -333,7 +333,7 @@ Anti-Tank Guided Missile Launcher:
 - Name: ATGM
 - Range: 4-30 tiles
 - ROF: 11/min
-- Damage: 105
+- Damage: 105 (19.2/s)
 - Damage Type: Kinetic
 - Damage Mod: Anti-Tank
 - Splash: no
