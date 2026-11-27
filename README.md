@@ -292,7 +292,6 @@ Nexus Link Fortress:
 
 - List of Required Researches:
   - Nexus Link Turret (`R-Sys-SpyTurret`)
-  - Supercrete Mk2 (`R-Defense-WallUpgrade05`)
   - Plascrete Mk2 (`R-Defense-WallUpgrade08`)
 - MRT: 36:55
 - Build Power: 5000
