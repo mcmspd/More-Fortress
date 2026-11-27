@@ -32,6 +32,8 @@ Large Rocket Pod Fortress:
 - Range: 5-10 tiles
 - ROF: 171/min
 - Damage: 40 (114/s)
+- Salvo: 20 Rounds
+- Salvo Damage: 800
 - Damage Type: Kinetic
 - Damage Mod: Anti-Tank
 - Splash: no
@@ -53,6 +55,8 @@ ATGM Emplacement:
 - Range: 4-30 tiles
 - ROF: 11/min
 - Damage: 105 (19.2/s)
+- Salvo: 4 Rounds
+- Salvo Damage: 420
 - Damage Type: Kinetic
 - Damage Mod: Anti-Tank
 - Splash: no
@@ -152,6 +156,8 @@ Large Sunburst Array Fortress:
 - Range: 11-20 tiles
 - ROF: 171/min
 - Damage: 138 (393.3/s)
+- Salvo: 36 Rounds
+- Salvo Damage: 4968
 - Damage Type: Kinetic
 - Damage Mod: Anti-Tank
 - Splash: 1.5 tiles
@@ -177,6 +183,8 @@ AA Flak Fortress:
 - Range: 11-20 tiles
 - ROF: 43/min
 - Damage: 250 (179.2/s)
+- Salvo: 4 Rounds
+- Salvo Damage: 1000
 - Damage Type: Kinetic
 - Damage Mod: Anti-Tank
 - Splash: 5 tiles
@@ -199,6 +207,8 @@ Laser Fortress:
 - Range: 11.7-24 tiles
 - ROF: 112/min
 - Damage: 380 (709.3/s)
+- Salvo: 15 Rounds
+- Salvo Damage: 5700
 - Damage Type: Heat
 - Damage Mod: Anti-Personnel
 - Splash: no
@@ -330,6 +340,8 @@ Super RIM-116 AA Fortress:
 - Range: 5-32 tiles
 - ROF: 37.5/min
 - Damage: 550 (343.8/s)
+- Salvo: 20 Rounds
+- Salvo Damage: 11000
 - Damage Type: Kinetic
 - Damage Mod: Anti-Tank
 - Splash: 0.5 tiles
@@ -363,6 +375,8 @@ Anti-Tank Guided Missile Launcher:
 - Range: 4-30 tiles
 - ROF: 11/min
 - Damage: 105 (19.2/s)
+- Salvo: 4 Rounds
+- Salvo Damage: 420
 - Damage Type: Kinetic
 - Damage Mod: Anti-Tank
 - Splash: no
