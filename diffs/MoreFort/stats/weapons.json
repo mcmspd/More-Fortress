@@ -172,7 +172,7 @@
   "firePause": 1,
   "flags": "AirOnly",
   "flightGfx": "fxmplme.pie",
-  "flightSpeed": 1850,
+  "flightSpeed": 2250,
   "hitGfx": "fxmexp.pie",
   "hitpoints": 50,
   "id": "RIM116Super",

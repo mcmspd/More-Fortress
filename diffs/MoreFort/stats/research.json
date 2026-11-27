@@ -79,7 +79,7 @@
   "name": "Super RIM-116 AA Fortress",
   "requiredResearch": [
    "R-Wpn-Missile-LtSAM",
-   "R-Defense-WallUpgrade08",
+   "R-Defense-WallUpgrade05",
    "R-Wpn-Missile-Accuracy01",
    "R-Wpn-Missile-ROF01",
    "R-Sys-Sensor-Upgrade03"
