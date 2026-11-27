@@ -21,8 +21,8 @@
    "R-Wpn-AAGun02",
    "R-Defense-WallUpgrade05"
   ],
-  "researchPoints": 8400,
-  "researchPower": 262,
+  "researchPoints": 6400,
+  "researchPower": 250,
   "resultStructures": [
    "X-Super-AA"
   ],
@@ -36,8 +36,8 @@
    "R-Wpn-MG4",
    "R-Defense-WallUpgrade03"
   ],
-  "researchPoints": 4800,
-  "researchPower": 200,
+  "researchPoints": 3200,
+  "researchPower": 150,
   "resultStructures": [
    "X-Super-AG"
   ],
@@ -51,8 +51,8 @@
    "R-Wpn-Flame2",
    "R-Defense-WallUpgrade03"
   ],
-  "researchPoints": 4800,
-  "researchPower": 200,
+  "researchPoints": 3200,
+  "researchPower": 150,
   "resultStructures": [
    "X-Super-Flame"
   ],
@@ -66,8 +66,8 @@
    "R-Wpn-Howitzer-Damage04",
    "R-Defense-WallUpgrade08"
   ],
-  "researchPoints": 14000,
-  "researchPower": 437,
+  "researchPoints": 24000,
+  "researchPower": 750,
   "resultStructures": [
    "X-Super-Howitzer"
   ],
@@ -84,8 +84,8 @@
    "R-Wpn-Missile-ROF01",
    "R-Sys-Sensor-Upgrade03"
   ],
-  "researchPoints": 12000,
-  "researchPower": 400,
+  "researchPoints": 24000,
+  "researchPower": 750,
   "resultStructures": [
    "X-Super-RIM116"
   ],
@@ -100,8 +100,8 @@
    "R-Defense-WallUpgrade03",
    "R-Wpn-Rocket-Damage03"
   ],
-  "researchPoints": 4800,
-  "researchPower": 200,
+  "researchPoints": 3200,
+  "researchPower": 150,
   "resultStructures": [
    "X-Super-MRP"
   ],
@@ -116,7 +116,7 @@
    "R-Defense-WallUpgrade05"
   ],
   "researchPoints": 12000,
-  "researchPower": 400,
+  "researchPower": 250,
   "resultStructures": [
    "X-Super-Laser"
   ],
@@ -214,8 +214,8 @@
    "R-Wpn-Mortar-Damage04",
    "R-Wpn-Mortar-Acc03"
   ],
-  "researchPoints": 4800,
-  "researchPower": 200,
+  "researchPoints": 6400,
+  "researchPower": 250,
   "resultStructures": [
    "X-Super-Mortar"
   ],
@@ -230,8 +230,8 @@
    "R-Sys-Sensor-WSTower",
    "R-Defense-WallUpgrade08"
   ],
-  "researchPoints": 12000,
-  "researchPower": 400,
+  "researchPoints": 24000,
+  "researchPower": 750,
   "resultStructures": [
    "X-Super-WideSpec"
   ],
@@ -245,8 +245,8 @@
    "R-Sys-SpyTurret",
    "R-Defense-WallUpgrade08"
   ],
-  "researchPoints": 15000,
-  "researchPower": 5000,
+  "researchPoints": 24000,
+  "researchPower": 750,
   "resultStructures": [
    "X-Super-Nexus"
   ],
@@ -261,8 +261,8 @@
    "R-Wpn-Cannon-Damage08",
    "R-Wpn-Cannon-ROF03"
   ],
-  "researchPoints": 10000,
-  "researchPower": 300,
+  "researchPoints": 26000,
+  "researchPower": 750,
   "resultStructures": [
    "X-Super-Cannon3x"
   ],
@@ -275,8 +275,8 @@
   "requiredResearch": [
    "R-Defense-WallUpgrade05"
   ],
-  "researchPoints": 3000,
-  "researchPower": 150,
+  "researchPoints": 1000,
+  "researchPower": 50,
   "resultStructures": [
    "X-Large-Wall"
   ],
@@ -293,8 +293,8 @@
    "R-Wpn-PlasmaCannon",
    "R-Defense-WallUpgrade05"
   ],
-  "researchPoints": 12000,
-  "researchPower": 400,
+  "researchPoints": 24000,
+  "researchPower": 750,
   "resultStructures": [
    "X-Super-Plasma"
   ],
@@ -337,8 +337,8 @@
    "R-Wpn-Sunburst",
    "R-Defense-WallUpgrade05"
   ],
-  "researchPoints": 8400,
-  "researchPower": 262,
+  "researchPoints": 6400,
+  "researchPower": 250,
   "resultStructures": [
    "X-Super-Sunburst"
   ],
