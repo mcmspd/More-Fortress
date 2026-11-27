@@ -491,7 +491,7 @@
     "periodicalDamageRadius": 640,
     "periodicalDamageTime": 50,
     "radius": 640,
-    "radiusDamage": 2500,
+    "radiusDamage": 500,
     "recoilValue": 300,
     "rotate": 180,
     "shortHit": 60,
