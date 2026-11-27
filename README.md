@@ -347,9 +347,9 @@ Super RIM-116 AA Fortress:
 - Splash: 0.5 tiles
 - Radius Damage: 100 damage / 0.5 Tiles
 - Burn: no
+- Burn Damage: No
 
 ## Research upgrades
-- Burn Damage: No
 
 Ultra-High Performance Concrete, Carbon-Fibre Reinforced Concrete and
 Self-Healing Nano-Concrete:
