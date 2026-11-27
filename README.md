@@ -115,6 +115,30 @@ Large Wall:
 - Build Points: 500
 - Weapon: none (gunless wall block)
 
+Mortar Fortress:
+
+![Mortar Fortress](Pictures/Mort_FORT.png)
+
+- List of Required Researches:
+  - Supercrete Mk2 (`R-Defense-WallUpgrade05`)
+  - HEAP Mortar Shells (`R-Wpn-Mortar-Damage04`)
+  - Target Acquisition Mortar Shells (`R-Wpn-Mortar-Acc03`)
+- MRT: 20:09
+- Build Power: 1000
+- Build Points: 650
+- Weapon:
+- Name: Mortar Fortress
+- Range: 11-22 tiles
+- ROF: 20/min
+- Damage: 200 (66.7/s)
+- Damage Type: Kinetic
+- Damage Mod: Artillery Round
+- Splash: 4 tiles
+- Radius Damage: 100 damage / 4 Tiles
+- Burn: no
+- Burn Damage: No
+- Note: Radar-Assisted Mortar Targeting (`R-Wpn-Mortar-Acc04`) adds another 10% accuracy after Target Acquisition shells
+
 Large Sunburst Array Fortress:
 
 - List of Required Researches:
@@ -137,29 +161,6 @@ Large Sunburst Array Fortress:
 - Note: triple-size turret, stock rockets at double speed
 
 
-
-Mortar Fortress:
-
-![Mortar Fortress](Pictures/Mort_FORT.png)
-
-- List of Required Researches:
-  - Supercrete Mk2 (`R-Defense-WallUpgrade05`)
-  - HEAP Mortar Shells Mk3 (`R-Wpn-Mortar-Damage06`)
-- MRT: 23:36
-- Build Power: 1000
-- Build Points: 650
-- Weapon:
-- Name: Mortar Fortress
-- Range: 11-22 tiles
-- ROF: 20/min
-- Damage: 200 (66.7/s)
-- Damage Type: Kinetic
-- Damage Mod: Artillery Round
-- Splash: 4 tiles
-- Radius Damage: 100 damage / 4 Tiles
-- Burn: no
-- Burn Damage: No
-- Note: Radar-Assisted Mortar Targeting (`R-Wpn-Mortar-Acc04`) adds another 10% accuracy after Target Acquisition shells
 
 AA Flak Fortress:
 

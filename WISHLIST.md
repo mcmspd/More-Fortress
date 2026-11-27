@@ -10,7 +10,7 @@ Planned content for the Warzone 2100 multiplay mod.
 | 4 | **3X3 Super Rail Gun Fortress** | ⬜ Todo | `diffs/MoreFort/stats/` | 3x3 penetrate fortress, 1500 dmg single shot, 20 tiles, DIRECT GAUSS, requires R-Wpn-RailGun03 + Wall09, better than MassDriver |
 | 5 | **3X3 Super ATGM-ER Fortress** | ⬜ Todo | `diffs/MoreFort/stats/` | 3x3 ATGM-ER, 4400 dmg x9 salvo, 45 tiles, HOMING-INDIRECT MISSILE, 60 s reload, 5-tile dead zone, 4x Missile Fortress |
 | 6 | **Repair Fortress** | ⬜ Todo | `diffs/MoreFort/stats/` | 2x2 REPAIR FACILITY with repairPoints, FortressSensor, no weapon, combinesWithWall |
-| 7 | **Mortar Fortress** | ✅ Done | `diffs/MoreFort/stats/` | 200 dmg (stock Howitzer) + 100 splash over 4 tiles, 11-22 tile range, 50/40 accuracy, cannon-class armor (3200 HP, armour 15), 1000 power, requires Supercrete Mk2 + HEAP Mk3, optional Acc04 radar upgrade |
+| 7 | **Mortar Fortress** | ✅ Done | `diffs/MoreFort/stats/` | 200 dmg (stock Howitzer) + 100 splash over 4 tiles, 11-22 tile range, 50/40 accuracy, cannon-class armor (3200 HP, armour 15), 1000 power, requires Supercrete Mk2 + HEAP Shells + Target Acquisition shells, optional Acc04 radar upgrade |
 | 8 | **EMP Howitzer Fortress** | ⬜ Todo | `diffs/MoreFort/stats/` | 2x2 EMP mortar, 40 dmg, 50 tiles, 512 splash (4 tiles) |
 | 9 | **Incendiary Howitzer Fortress** | ⬜ Todo | `diffs/MoreFort/stats/` | 2x2 incendiary, 500 direct + 500 burn, 640 radius (5 tiles), 30 s reload, lower direct than M1299 |
 | 10 | **Wide-Spectrum Sensor Fortress** | ✅ Done | `diffs/MoreFort/stats/` | Unarmed 2x2 sensor, limit 3 per player, 3200 HP, requires WideSpec sensor + tower + Plascrete Mk2 |

@@ -211,7 +211,8 @@
   "name": "Mortar Fortress",
   "requiredResearch": [
    "R-Defense-WallUpgrade05",
-   "R-Wpn-Mortar-Damage06"
+   "R-Wpn-Mortar-Damage04",
+   "R-Wpn-Mortar-Acc03"
   ],
   "researchPoints": 4800,
   "researchPower": 200,
