@@ -189,6 +189,7 @@ Plasma Cannon Fortress:
 ![Plasma Cannon Fortress](Pictures/PC_FORT.png)
 
 - List of Required Researches:
+  - Cannon Fortress (`R-Defense-Super-Cannon`)
   - Plasmite Flamer (`R-Wpn-Plasmite-Flamer`)
   - Superhot Plasmite Gel (`R-Wpn-Flamer-Damage07`)
   - Plasma Cannon (`R-Wpn-PlasmaCannon`)

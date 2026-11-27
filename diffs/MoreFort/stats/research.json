@@ -287,6 +287,7 @@
   "id": "R-Defense-Super-Plasma",
   "name": "Plasma Cannon Fortress",
   "requiredResearch": [
+   "R-Defense-Super-Cannon",
    "R-Wpn-Plasmite-Flamer",
    "R-Wpn-Flamer-Damage07",
    "R-Wpn-PlasmaCannon",
