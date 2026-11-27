@@ -27,7 +27,6 @@ Assault Gun Fortress:
 - Build Points: 650
 - Weapon:
 - Name: Assault Gun Fortress
-- MRT: 16:04
 - Range: 8-11 tiles
 - ROF: continuous
 - Damage: 35
@@ -35,6 +34,7 @@ Assault Gun Fortress:
 - Damage Mod: Anti-Personnel
 - Splash: no
 - Burn: no
+- MRT: 16:04
 
 Flamer Fortress:
 
@@ -47,7 +47,6 @@ Flamer Fortress:
 - Build Points: 650
 - Weapon:
 - Name: FlamerFortress
-- MRT: 15:14
 - Range: 4-10 tiles
 - ROF: 40/min
 - Damage: 55
@@ -55,6 +54,7 @@ Flamer Fortress:
 - Damage Mod: Flamer
 - Splash: 2 tiles
 - Burn: 2 tiles for 5 seconds
+- MRT: 15:14
 
 Mortar Fortress:
 
@@ -89,7 +89,6 @@ Large Rocket Pod Fortress:
 - Build Points: 650
 - Weapon:
 - Name: Large-Rocket-Pod
-- MRT: 11:23
 - Range: 5-10 tiles
 - ROF: 171/min
 - Damage: 40
@@ -97,6 +96,7 @@ Large Rocket Pod Fortress:
 - Damage Mod: Anti-Tank
 - Splash: no
 - Burn: no
+- MRT: 11:23
 
 Wide-Spectrum Sensor Fortress:
 
@@ -129,8 +129,8 @@ Nexus Link Fortress:
 - Damage Mod: Anti-Personnel
 - Splash: no
 - Burn: no
-- Limit: 2 per player (`userLimits`)
 - MRT: 29:45
+- Limit: 2 per player (`userLimits`)
 
 3x3 Cannon Fortress (concept test):
 
@@ -235,7 +235,6 @@ Laser Fortress:
 - Build Points: 2000
 - Weapon:
 - Name: Laser Fortress
-- MRT: 35:03
 - Range: 11.7-24 tiles
 - ROF: 112/min
 - Damage: 380
@@ -243,6 +242,7 @@ Laser Fortress:
 - Damage Mod: Anti-Personnel
 - Splash: no
 - Burn: no
+- MRT: 35:03
 
 M1299 Howitzer Fortress:
 
@@ -284,8 +284,8 @@ Super RIM-116 AA Fortress:
 - Damage Type: Kinetic
 - Damage Mod: Anti-Tank
 - Splash: 0.5 tiles
-- MRT: 39:14
 - Burn: no
+- MRT: 39:14
 
 Large Sunburst Array Fortress:
 
@@ -303,8 +303,8 @@ Large Sunburst Array Fortress:
 - Damage Mod: Anti-Tank
 - Splash: 1.5 tiles
 - Burn: no
-- Triple-size turret, stock rockets at double speed
 - MRT: 21:14
+- Note: triple-size turret, stock rockets at double speed
 
 ## Research upgrades
 
