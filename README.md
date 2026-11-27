@@ -346,7 +346,9 @@ Super RIM-116 AA Fortress:
 - Damage Mod: Anti-Tank
 - Splash: 0.5 tiles
 - Radius Damage: 100 damage / 0.5 Tiles
-- Burn: no## Research upgrades
+- Burn: no
+
+## Research upgrades
 - Burn Damage: No
 
 Ultra-High Performance Concrete, Carbon-Fibre Reinforced Concrete and
