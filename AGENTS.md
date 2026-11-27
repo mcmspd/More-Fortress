@@ -18,6 +18,7 @@ More_Fort/
   effects/*.pie              scaled FX
   check.py                   compliance checker (run it)
   scale_pie.py               uniform PIE scaler (run it)
+  research_time.py           minimum research time per ID (mrt-calibrated)
   stats-reference.md         field/enum reference + checklist
   WISHLIST.md                build tracker (update status per item)
   README.md                  player-facing install + content
@@ -58,6 +59,7 @@ Rules that have bitten before:
 
 * `python3 check.py` — full compliance check, always online (verifies base refs against GitHub, cached under `/tmp/opencode/wz-check-cache`). Must report `0 error(s), 0 warning(s)` before commit. Do not use `--offline`; base refs must verify against upstream, not assumed. `--online` is accepted as a legacy no-op flag.
 * `python3 scale_pie.py --scale F in.pie out.pie` — uniform XYZ scaler for POINTS and CONNECTORS; leaves POLYGONS UV, TYPE, TEXTURE untouched. Use it for `-4x` art instead of hand-editing. Verify by halving/doubling back against the stock pie bounding box.
+* `python3 research_time.py <research|structure|weapon ID> [--preset 0-4] [--labs N] [--chain]` — minimum research time, rate model calibrated against https://aco4.github.io/wz/mrt/ (single moduled lab, upgrades applied at inflection, power ignored). Spot checks on preset 2: Mortar Pit 0:24, HEAP Mk3 16:01, Rail Gun 37:35.
 * Chain check per item: `research.resultStructures[]` → `structure.id`, `structure.weapons[]` → `weapons.id`, `weapons.model/mountModel/*Gfx` → files on disk (lowercase, exact match). Break one link and the entry is dead in game.
 * Docs sync per item: `WISHLIST.md` status (Todo → In progress → Done), `README.md` section with research prerequisites and behavior. `Pictures/` screenshots are deferred to the end; mark `Done (pic pending)` meanwhile.
 
