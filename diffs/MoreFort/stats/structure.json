@@ -117,7 +117,7 @@
   "armour": 15,
   "breadth": 2,
   "buildPoints": 2000,
-  "buildPower": 1750,
+  "buildPower": 2250,
   "combinesWithWall": true,
   "height": 3,
   "hitpoints": 3200,
@@ -137,7 +137,7 @@
   "width": 2
  },
  "X-Super-Howitzer": {
-  "armour": 15,
+ "armour": 15,
   "breadth": 2,
   "buildPoints": 2000,
   "buildPower": 1800,

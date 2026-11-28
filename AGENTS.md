@@ -13,7 +13,12 @@ More_Fort/
   diffs/MoreFort/stats/structure.json  new structures (full objects)
   diffs/MoreFort/stats/research.json   new research topics (full objects)
   diffs/MoreFort/stats/sensor.json     new sensors (full objects, e.g. fortress sensor)
+  diffs/MoreFort/stats/body.json       new droid bodies (e.g. heavy engineering truck)
+  diffs/MoreFort/stats/construct.json  new construct components
+  diffs/MoreFort/stats/repair.json     new repair components
+  diffs/MoreFort/stats/templates.json  premade unit templates
   components/weapons/*.pie  turret/barrel models
+  components/bodies/*.pie   scaled body models
   structs/*.pie              building bodies
   effects/*.pie              scaled FX
   check.py                   compliance checker (run it)
@@ -62,7 +67,7 @@ Rules that have bitten before:
 * `python3 research_time.py <research|structure|weapon ID> [--preset 0-4] [--labs N] [--chain]` — minimum research time, rate model calibrated against https://aco4.github.io/wz/mrt/ (single moduled lab, upgrades applied at inflection, power ignored). Spot checks on preset 2: Mortar Pit 0:24, HEAP Mk3 16:01, Rail Gun 37:35.
 * Chain check per item: `research.resultStructures[]` → `structure.id`, `structure.weapons[]` → `weapons.id`, `weapons.model/mountModel/*Gfx` → files on disk (lowercase, exact match). Break one link and the entry is dead in game.
 * Orphan check: every mod `.pie` must be referenced from stats (`model`/`mountModel`/`*Gfx`/`structureModel`/`sensorModel`); `check.py` warns on orphans.
-* Docs sync per item: `WISHLIST.md` status (Todo → Done → Balanced once playtested), `README.md` section with research prerequisites and behavior. `Pictures/` screenshots are deferred to the end; mark `Done (pic pending)` meanwhile.
+* Docs sync per item: `WISHLIST.md` holds only UNIMPLEMENTED features (Todo). Remove a row once the item is implemented and fully tested — Done/Balanced items live only in `README.md`, never in `WISHLIST.md`. `README.md` section with research prerequisites and behavior. `Pictures/` screenshots are deferred to the end; mark `Done (pic pending)` meanwhile.
 * README block template (one per structure, ordered by ascending MRT; keep rows in this order, omit N/A rows):
   `Name:` / blank / `![Name](Pictures/FILE.png)` / blank / `- List of Required Researches:` (`  - Name (\`ID\`)` per line) / `- MRT: m:ss` (from `research_time.py`, clean No Bases start, 1 lab) / `- Build Power:` / `- Build Points:` / `- Weapon:` (`- Weapon: none (...)` if unarmed) / `- Name:` / `- Range: A-B tiles` / `- ROF:` (`X/min`, continuous counts as 600/min) / `- Damage:` (`N (DPS/s)`, DPS = damage x ROF / 60, 1 decimal) / `- Damage Type:` / `- Salvo:` (`X Rounds`, burst weapons only) / `- Salvo Damage:` (damage × X) / `- Damage Mod:` / `- Splash:` (`no` or `N tiles`) / `- Radius Damage:` (`No` or `N damage / M Tiles`) / `- Burn:` (`no` or `N tiles for S seconds`) / `- Burn Damage:` (`No` or `N damage`) / optional `- Limit:` / `- Note:` lines.
 

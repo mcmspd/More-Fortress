@@ -1,0 +1,17 @@
+{
+  "HvyEngrConstruct": {
+    "id": "HvyEngrConstruct",
+    "name": "Heavy Engineering Construct Arm",
+    "location": "TURRET",
+    "droidType": "DROID_CONSTRUCT",
+    "model": "cy_con.pie",
+    "mountModel": "cy_con.pie",
+    "sensorModel": "cy_con.pie",
+    "designable": 1,
+    "weight": 3200,
+    "buildPoints": 340,
+    "buildPower": 68,
+    "constructPoints": 32,
+    "hitpoints": 100
+  }
+}

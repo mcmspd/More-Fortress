@@ -122,6 +122,22 @@
   ],
   "statID": "X-Super-Laser"
  },
+ "R-Defense-HvyEngrTruck": {
+  "iconID": "IMAGE_RES_DEFENCE",
+  "id": "R-Defense-HvyEngrTruck",
+  "name": "Heavy Engineering Truck",
+  "requiredResearch": [
+   "R-Sys-Spade1Mk1",
+   "R-Sys-MobileRepairTurretHvy",
+   "R-Defense-WallUpgrade05"
+  ],
+  "researchPoints": 4000,
+  "researchPower": 200,
+  "resultComponents": [
+   "HvyEngrTruckBody"
+  ],
+  "statID": "HvyEngrTruckBody"
+ },
  "R-Defense-WallUpgrade13": {
   "category": "Wall",
   "iconID": "IMAGE_RES_DEFENCE",
@@ -129,7 +145,8 @@
   "imdName": "BLWALLH.PIE",
   "name": "Ultra-High Performance Concrete",
   "requiredResearch": [
-   "R-Defense-WallUpgrade12"
+   "R-Defense-WallUpgrade12",
+   "R-Defense-HvyEngrTruck"
   ],
   "researchPoints": 65535,
   "researchPower": 4500,

@@ -233,11 +233,11 @@ Plasma Cannon Fortress:
 - Name: Plasma Cannon Fortress
 - Range: 10-15 tiles
 - ROF: 4.8/min
-- Damage: 500 (40/s)
+- Damage: 650 (52.0/s)
 - Damage Type: Heat
 - Damage Mod: All-Rounder
 - Splash: 5 tiles
-- Radius Damage: 500 damage / 5 Tiles
+- Radius Damage: 400 damage / 5 Tiles
 - Burn: 5 tiles for 5 seconds
 - Burn Damage: 25 damage
 
@@ -333,15 +333,15 @@ Super RIM-116 AA Fortress:
   - Advanced Missile Allocation System (`R-Wpn-Missile-ROF01`)
   - Sensor Upgrade Mk3 (`R-Sys-Sensor-Upgrade03`)
 - MRT: 42:16
-- Build Power: 1750
+- Build Power: 2250
 - Build Points: 2000
 - Weapon:
 - Name: RIM-116 AA Missile
 - Range: 5-32 tiles
-- ROF: 37.5/min
-- Damage: 550 (343.8/s)
-- Salvo: 20 Rounds
-- Salvo Damage: 11000
+- ROF: 78.3/min
+- Damage: 550 (717.4/s)
+- Salvo: 30 Rounds
+- Salvo Damage: 16500
 - Damage Type: Kinetic
 - Damage Mod: Anti-Tank
 - Splash: 0.5 tiles

@@ -18,7 +18,7 @@ from pathlib import Path
 
 MOD_ROOT = Path(__file__).resolve().parent
 STATS_DIRS = sorted(MOD_ROOT.glob("diffs/*/stats"))
-PIE_DIRS = ["components/weapons", "structs", "effects"]
+PIE_DIRS = ["components/weapons", "components/bodies", "structs", "effects"]
 PIE_FIELDS = ("model", "mountModel", "muzzleGfx", "flightGfx",
               "hitGfx", "missGfx", "waterGfx", "trailGfx")
 INT_FIELDS = ("damage", "longRange", "shortRange", "firePause",
@@ -105,6 +105,7 @@ class BaseData:
         self.sensor_ids = set()
         self.weapon_ids = set()
         self.structure_ids = set()
+        self.body_ids = set()
 
 
 def _cache_path(cache_dir, key):
@@ -207,6 +208,11 @@ def fetch_base(args):
         tq = _raw_json("data/mp/stats/structure.json", args.ref,
                        args, f"raw-{args.ref}-structure")
         base.structure_ids = set(tq.keys())
+        for v in rq.values():
+            if isinstance(v, dict):
+                for c in v.get("resultComponents", []):
+                    if isinstance(c, str):
+                        base.body_ids.add(c)
     except (urllib.error.URLError, ValueError, KeyError) as e:
         base.note = f"online check unavailable ({e}); base refs unverified"
         return base
@@ -223,7 +229,8 @@ def load_stats():
         return data
     for d in STATS_DIRS:
         for name in ("weapons.json", "structure.json", "research.json",
-                     "sensor.json"):
+                     "sensor.json", "body.json", "construct.json",
+                     "repair.json", "templates.json"):
             p = d / name
             if not p.exists():
                 continue
@@ -234,7 +241,8 @@ def load_stats():
     for d in STATS_DIRS:
         for p in d.glob("*.json"):
             if p.name not in ("weapons.json", "structure.json", "research.json",
-                                "sensor.json"):
+                              "sensor.json", "body.json", "construct.json",
+                              "repair.json", "templates.json"):
                 warn(f"{p}: unexpected stats file (engine still merges it)")
                 try:
                     json.loads(p.read_text())
@@ -399,14 +407,16 @@ def check_structures(structures, weapons, pie_index, base, sensors=None):
             err(f"structure.{key}.weapons: max 3, extras are cut off")
 
 
-def check_research(research, structures, weapons, base):
+def check_research(research, structures, weapons, bodies, base):
     seen_msg = {}
     if base is not None and base.available:
         all_ids = set(research) | base.research_ids
         base_msgs = base.msgnames
+        base_bodies = base.body_ids
     else:
         all_ids = set(research) | KNOWN_BASE_RESEARCH
         base_msgs = KNOWN_BASE_MSGNAMES
+        base_bodies = set()
     for key, o in research.items():
         if not isinstance(o, dict):
             continue
@@ -443,8 +453,9 @@ def check_research(research, structures, weapons, base):
             if s not in structures:
                 err(f"research.{key}.resultStructures: {s!r} not in diff structure.json")
         for c in o.get("resultComponents", []):
-            if c not in weapons:
-                err(f"research.{key}.resultComponents: {c!r} not in diff weapons.json")
+            if c not in weapons and c not in bodies and c not in base_bodies:
+                err(f"research.{key}.resultComponents: {c!r} not in diff "
+                    f"weapons/body.json nor base @{base.ref}")
         for c in o.get("redComponents", []) + o.get("redStructures", []):
             if c == "":
                 err(f"research.{key}: red* entry must never be empty string")
@@ -462,7 +473,8 @@ def check_research(research, structures, weapons, base):
         if results and "statID" in o:
             if o["statID"] != results[0]:
                 warn(f"research.{key}.statID: {o['statID']!r} != result*[0] {results[0]!r}")
-            if o["statID"] not in structures and o["statID"] not in weapons:
+            if o["statID"] not in structures and o["statID"] not in weapons \
+                    and o["statID"] not in bodies and o["statID"] not in base_bodies:
                 if base is not None and base.available:
                     if o["statID"] not in base.structure_ids and \
                             o["statID"] not in base.weapon_ids:
@@ -489,10 +501,11 @@ def check_research(research, structures, weapons, base):
         visit(k, [])
 
 
-def check_pie_orphans(weapons, structures, sensors, pie_index):
+def check_pie_orphans(weapons, structures, sensors, bodies, pie_index):
     """Every mod pie must be referenced somewhere; orphans get deleted."""
     used = set()
-    for o in list(weapons.values()) + list(structures.values()) + list(sensors.values()):
+    for o in list(weapons.values()) + list(structures.values()) \
+            + list(sensors.values()) + list(bodies.values()):
         if not isinstance(o, dict):
             continue
         for f, v in o.items():
@@ -560,15 +573,24 @@ def main(argv=None):
     structures = data.get("structure.json", {})
     research = data.get("research.json", {})
     sensors = data.get("sensor.json", {})
+    bodies = data.get("body.json", {})
     check_key_ids("weapons", weapons)
     check_key_ids("structure", structures)
     check_key_ids("research", research)
     check_key_ids("sensor", sensors)
+    check_key_ids("body", bodies)
     pie_index = mod_pie_index()
     check_weapons(weapons, pie_index, base)
     check_structures(structures, weapons, pie_index, base, sensors)
-    check_research(research, structures, weapons, base)
-    check_pie_orphans(weapons, structures, sensors, pie_index)
+    check_research(research, structures, weapons, bodies, base)
+    pie_lowers = {n.lower() for n in pie_index}
+    for key, o in bodies.items():
+        if not isinstance(o, dict):
+            continue
+        m = o.get("model")
+        if m:
+            check_pie_ref(f"body.{key}.model", m, pie_index, pie_lowers, base)
+    check_pie_orphans(weapons, structures, sensors, bodies, pie_index)
     check_pie_textures(pie_index)
     if args.verbose:
         for i in sorted(infos):

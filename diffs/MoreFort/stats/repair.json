@@ -1,0 +1,18 @@
+{
+  "HvyEngrRepair": {
+    "id": "HvyEngrRepair",
+    "name": "Heavy Engineering Repair Arm",
+    "location": "TURRET",
+    "droidType": "DROID_REPAIR",
+    "model": "cy_rep.pie",
+    "mountModel": "cy_rep.pie",
+    "sensorModel": "cy_rep.pie",
+    "designable": 1,
+    "weight": 8000,
+    "buildPoints": 1200,
+    "buildPower": 280,
+    "repairPoints": 120,
+    "hitpoints": 140,
+    "time": 28
+  }
+}

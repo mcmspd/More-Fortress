@@ -1,0 +1,11 @@
+{
+  "HvyEngrTruck": {
+    "id": "HvyEngrTruck",
+    "name": "Heavy Engineering Truck",
+    "body": "HvyEngrTruckBody",
+    "propulsion": "wheeled01",
+    "construct": "HvyEngrConstruct",
+    "repair": "HvyEngrRepair",
+    "type": "DROID"
+  }
+}

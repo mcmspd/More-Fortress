@@ -122,8 +122,10 @@ Everything except the key is optional, but a research with no `result*` does not
 ## Other files (rarely touched)
 
 * `propulsion.json`: `speed` + `type` required (`Wheeled,Tracked,Legged,Hover,Lift,Propellor,Half-Tracked`).
-* `sensor.json` / `ecm.json` / `repair.json` / `construction.json` / `brain.json`: component fields + `range` / `repairPoints` / `constructPoints` / `ranks`.
-* `templates.json`: premade units `{body, propulsion, weapons[], type}`.
+* `body.json`: droid bodies — `id`, `name`, `model`, `size`, `droidType`, `weight`, `buildPoints`, `buildPower`, `hitpoints`, `weaponSlots`, `designable`.
+* `construct.json` / `repair.json`: construct & repair components — `constructPoints` / `repairPoints`, `buildPoints`, `buildPower`, `weight`, `hitpoints`, `droidType`, `location`, `model`, `designable`.
+* `sensor.json` / `ecm.json` / `brain.json`: component fields + `range` / `repairPoints` / `constructPoints` / `ranks`.
+* `templates.json`: premade units `{body, propulsion, weapons[], construct, repair, type}`.
 * `weaponmodifier.json` / `structuremodifier.json`: damage % tables keyed by `weaponEffect`.
 * `propulsiontype.json`, `propulsionsounds.json`: movement multipliers + sounds.
 * Base-only: `features.json` (map props), `effectlights.json` (cosmetic lights), `terraintable.json` (terrain speed %).
