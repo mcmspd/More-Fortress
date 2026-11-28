@@ -559,7 +559,7 @@
     "fireOnMove": 0,
     "firePause": 50,
     "flags": "NoFriendlyFire",
-    "flightGfx": "fxplammo2-2x.pie",
+    "flightGfx": "fxplammo2.pie",
     "flightSpeed": 3200,
     "hitGfx": "fxlenfl2.pie",
     "hitpoints": 500,
