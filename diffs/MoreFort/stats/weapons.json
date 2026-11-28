@@ -577,7 +577,6 @@
     "muzzleGfx": "fxlasrot.pie",
     "name": "3x3 Particle Gun Fortress",
     "numExplosions": 1,
-    "penetrate": 1,
     "radius": 160,
     "radiusDamage": 110,
     "radiusLife": 100,
