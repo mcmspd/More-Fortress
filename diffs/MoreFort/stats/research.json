@@ -134,8 +134,7 @@
   "researchPoints": 4000,
   "researchPower": 200,
   "resultComponents": [
-   "HvyEngrConstruct",
-   "HvyEngrRepair"
+   "HvyEngrConstruct"
   ],
   "statID": "HvyEngrConstruct"
  },

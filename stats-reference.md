@@ -122,9 +122,9 @@ Everything except the key is optional, but a research with no `result*` does not
 ## Other files (rarely touched)
 
 * `propulsion.json`: `speed` + `type` required (`Wheeled,Tracked,Legged,Hover,Lift,Propellor,Half-Tracked`).
-* `construct.json` / `repair.json`: construct & repair components — `constructPoints` / `repairPoints`, `buildPoints`, `buildPower`, `weight`, `hitpoints`, `droidType`, `location`, `model`, `designable`. Mirror base `Spade1Mk1` / `HeavyRepair` for turret components.
+* `construction.json` (SCONSTR — never `construct.json`, the engine ignores that name) / `repair.json`: construct & repair components — `constructPoints` / `repairPoints`, `buildPoints`, `buildPower`, `weight`, `hitpoints`, `droidType`, `location`, `model`, `designable`. Mirror base `Spade1Mk1` / `HeavyRepair` for turret components.
 * `sensor.json` / `ecm.json` / `brain.json`: component fields + `range` / `repairPoints` / `constructPoints` / `ranks`.
-* `templates.json`: premade units `{body, propulsion, weapons[], construct, repair, type}`.
+* `templates.json`: premade units `{body, propulsion, weapons[], construct, repair, type}`. Every part must resolve in base + diff or the engine skips the whole template with `Stored template contains an unknown component` — `construct` IDs must live in `construction.json` (SCONSTR filename), bodies/propulsion in base.
 * `weaponmodifier.json` / `structuremodifier.json`: damage % tables keyed by `weaponEffect`.
 * `propulsiontype.json`, `propulsionsounds.json`: movement multipliers + sounds.
 * Base-only: `features.json` (map props), `effectlights.json` (cosmetic lights), `terraintable.json` (terrain speed %).

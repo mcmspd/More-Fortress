@@ -13,10 +13,8 @@ More_Fort/
   diffs/MoreFort/stats/structure.json  new structures (full objects)
   diffs/MoreFort/stats/research.json   new research topics (full objects)
   diffs/MoreFort/stats/sensor.json     new sensors (full objects, e.g. fortress sensor)
-  diffs/MoreFort/stats/construct.json  new construct components (e.g. heavy engineering truck arm)
-  diffs/MoreFort/stats/repair.json     new repair components
-  diffs/MoreFort/stats/templates.json  premade unit templates
-  components/weapons/*.pie  turret/barrel models (incl. scaled trlcon-1.5x.pie)
+  diffs/MoreFort/stats/construction.json new construct arms (engine SCONSTR file is construction.json, NOT construct.json)
+  diffs/MoreFort/stats/templates.json  premade unit templates (type/body/propulsion/construct must all resolve)
   structs/*.pie              building bodies
   effects/*.pie              scaled FX
   check.py                   compliance checker (run it)

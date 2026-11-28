@@ -18,7 +18,7 @@ from pathlib import Path
 
 MOD_ROOT = Path(__file__).resolve().parent
 STATS_DIRS = sorted(MOD_ROOT.glob("diffs/*/stats"))
-PIE_DIRS = ["components/weapons", "components/bodies", "structs", "effects"]
+PIE_DIRS = ["components/weapons", "structs", "effects"]
 PIE_FIELDS = ("model", "mountModel", "muzzleGfx", "flightGfx",
               "hitGfx", "missGfx", "waterGfx", "trailGfx")
 INT_FIELDS = ("damage", "longRange", "shortRange", "firePause",
@@ -106,6 +106,12 @@ class BaseData:
         self.weapon_ids = set()
         self.structure_ids = set()
         self.body_ids = set()
+        self.construction_ids = set()
+        self.repair_ids = set()
+        self.propulsion_ids = set()
+        self.brain_ids = set()
+        self.ecm_ids = set()
+        self.base_components = set()  # union of base resultComponents
 
 
 def _cache_path(cache_dir, key):
@@ -208,11 +214,23 @@ def fetch_base(args):
         tq = _raw_json("data/mp/stats/structure.json", args.ref,
                        args, f"raw-{args.ref}-structure")
         base.structure_ids = set(tq.keys())
+        for stat_file, attr in (("body.json", "body_ids"),
+                                ("construction.json", "construction_ids"),
+                                ("repair.json", "repair_ids"),
+                                ("propulsion.json", "propulsion_ids"),
+                                ("brain.json", "brain_ids"),
+                                ("ecm.json", "ecm_ids")):
+            try:
+                bq = _raw_json(f"data/mp/stats/{stat_file}", args.ref,
+                              args, f"raw-{args.ref}-{stat_file}")
+                setattr(base, attr, set(bq.keys()))
+            except (urllib.error.URLError, ValueError, KeyError):
+                pass  # optional: base refs for this file stay empty
         for v in rq.values():
             if isinstance(v, dict):
                 for c in v.get("resultComponents", []):
                     if isinstance(c, str):
-                        base.body_ids.add(c)
+                        base.base_components.add(c)
     except (urllib.error.URLError, ValueError, KeyError) as e:
         base.note = f"online check unavailable ({e}); base refs unverified"
         return base
@@ -229,8 +247,7 @@ def load_stats():
         return data
     for d in STATS_DIRS:
         for name in ("weapons.json", "structure.json", "research.json",
-                     "sensor.json", "body.json", "construct.json",
-                     "repair.json", "templates.json"):
+                     "sensor.json", "construction.json", "templates.json"):
             p = d / name
             if not p.exists():
                 continue
@@ -241,8 +258,7 @@ def load_stats():
     for d in STATS_DIRS:
         for p in d.glob("*.json"):
             if p.name not in ("weapons.json", "structure.json", "research.json",
-                              "sensor.json", "body.json", "construct.json",
-                              "repair.json", "templates.json"):
+                              "sensor.json", "construction.json", "templates.json"):
                 warn(f"{p}: unexpected stats file (engine still merges it)")
                 try:
                     json.loads(p.read_text())
@@ -407,17 +423,17 @@ def check_structures(structures, weapons, pie_index, base, sensors=None):
             err(f"structure.{key}.weapons: max 3, extras are cut off")
 
 
-def check_research(research, structures, weapons, bodies, constructs, repairs, base):
+def check_research(research, structures, weapons, constructions, base):
     seen_msg = {}
     if base is not None and base.available:
         all_ids = set(research) | base.research_ids
         base_msgs = base.msgnames
-        base_components = base.body_ids
+        base_components = base.base_components
     else:
         all_ids = set(research) | KNOWN_BASE_RESEARCH
         base_msgs = KNOWN_BASE_MSGNAMES
         base_components = set()
-    mod_components = set(bodies) | set(constructs) | set(repairs)
+    mod_components = set(constructions)
     for key, o in research.items():
         if not isinstance(o, dict):
             continue
@@ -456,7 +472,7 @@ def check_research(research, structures, weapons, bodies, constructs, repairs, b
         for c in o.get("resultComponents", []):
             if c not in weapons and c not in mod_components and c not in base_components:
                 err(f"research.{key}.resultComponents: {c!r} not in diff "
-                    f"weapons/body/construct/repair.json nor base @{base.ref}")
+                    f"weapons/construction.json nor base @{base.ref}")
         for c in o.get("redComponents", []) + o.get("redStructures", []):
             if c == "":
                 err(f"research.{key}: red* entry must never be empty string")
@@ -502,12 +518,11 @@ def check_research(research, structures, weapons, bodies, constructs, repairs, b
         visit(k, [])
 
 
-def check_pie_orphans(weapons, structures, sensors, bodies, constructs, repairs, pie_index):
+def check_pie_orphans(weapons, structures, sensors, constructions, pie_index):
     """Every mod pie must be referenced somewhere; orphans get deleted."""
     used = set()
     for o in list(weapons.values()) + list(structures.values()) \
-            + list(sensors.values()) + list(bodies.values()) \
-            + list(constructs.values()) + list(repairs.values()):
+            + list(sensors.values()) + list(constructions.values()):
         if not isinstance(o, dict):
             continue
         for f, v in o.items():
@@ -518,6 +533,77 @@ def check_pie_orphans(weapons, structures, sensors, bodies, constructs, repairs,
     for name, rel in sorted(pie_index.items()):
         if name not in used:
             warn(f"{rel}: unreferenced pie, delete it")
+
+
+def check_templates(templates, weapons, sensors, constructions, base):
+    """Every template part must resolve in-engine or the template is skipped.
+
+    Mirrors src/template.cpp loadTemplateCommon: an unknown part fails the
+    whole template (the reported crash). Filenames matter: the engine loads
+    construction.json (SCONSTR), not construct.json.
+    """
+    if base is not None and base.available:
+        bodies = base.body_ids
+        brains = base.brain_ids
+        propulsions = base.propulsion_ids
+        repairs = base.repair_ids
+        ecms = base.ecm_ids
+        sensor_pool = set(base.sensor_ids) | set(sensors)
+        constructs = set(constructions) | set(base.construction_ids)
+        wids = set(weapons) | set(base.weapon_ids)
+    else:
+        bodies = brains = propulsions = repairs = ecms = set()
+        sensor_pool = set(sensors)
+        constructs = set(constructions)
+        wids = set(weapons)
+    for key, o in templates.items():
+        if not isinstance(o, dict):
+            continue
+        if o.get("type") not in ("ECM", "SENSOR", "CONSTRUCT", "WEAPON",
+                                 "PERSON", "CYBORG", "CYBORG_SUPER",
+                                 "CYBORG_CONSTRUCT", "CYBORG_REPAIR",
+                                 "TRANSPORTER", "SUPERTRANSPORTER", "DROID",
+                                 "DROID_COMMAND", "REPAIR"):
+            err(f"templates.{key}.type: {o.get('type')!r} unknown droid type, "
+                f"engine will reject the template")
+        if o.get("body", "") not in bodies:
+            if base is not None and base.available:
+                err(f"templates.{key}.body: {o.get('body')!r} not in base "
+                    f"body.json, template will fail to load")
+            else:
+                warn(f"templates.{key}.body: {o.get('body')!r} unverified (offline)")
+        for field, pool, null in (("brain", brains, "ZNULLBRAIN"),
+                                  ("propulsion", propulsions, "ZNULLPROP"),
+                                  ("repair", repairs, "ZNULLREPAIR"),
+                                  ("ecm", ecms, "ZNULLECM")):
+            v = o.get(field, null)
+            if v != null and v not in pool:
+                if base is not None and base.available:
+                    err(f"templates.{key}.{field}: {v!r} unknown, "
+                        f"template will fail to load")
+                else:
+                    warn(f"templates.{key}.{field}: {v!r} unverified (offline)")
+        v = o.get("sensor", "ZNULLSENSOR")
+        if v != "ZNULLSENSOR" and v not in sensor_pool:
+            if base is not None and base.available:
+                err(f"templates.{key}.sensor: {v!r} unknown, "
+                    f"template will fail to load")
+            else:
+                warn(f"templates.{key}.sensor: {v!r} unverified (offline)")
+        v = o.get("construct", "ZNULLCONSTRUCT")
+        if v != "ZNULLCONSTRUCT" and v not in constructs:
+            if base is not None and base.available:
+                err(f"templates.{key}.construct: {v!r} not in diff "
+                    f"construction.json nor base, template will fail to load")
+            else:
+                warn(f"templates.{key}.construct: {v!r} unverified (offline)")
+        for w in o.get("weapons", []):
+            if w not in wids:
+                if base is not None and base.available:
+                    err(f"templates.{key}.weapons: {w!r} unknown, "
+                        f"template will fail to load")
+                else:
+                    warn(f"templates.{key}.weapons: {w!r} unverified (offline)")
 
 
 def check_pie_textures(pie_index):
@@ -575,28 +661,29 @@ def main(argv=None):
     structures = data.get("structure.json", {})
     research = data.get("research.json", {})
     sensors = data.get("sensor.json", {})
-    bodies = data.get("body.json", {})
-    constructs = data.get("construct.json", {})
-    repairs = data.get("repair.json", {})
+    constructions = data.get("construction.json", {})
+    templates = data.get("templates.json", {})
     check_key_ids("weapons", weapons)
     check_key_ids("structure", structures)
     check_key_ids("research", research)
     check_key_ids("sensor", sensors)
-    check_key_ids("body", bodies)
-    check_key_ids("construct", constructs)
-    check_key_ids("repair", repairs)
+    check_key_ids("construction", constructions)
+    check_key_ids("templates", templates)
     pie_index = mod_pie_index()
     check_weapons(weapons, pie_index, base)
     check_structures(structures, weapons, pie_index, base, sensors)
-    check_research(research, structures, weapons, bodies, constructs, repairs, base)
+    check_research(research, structures, weapons, constructions, base)
+    check_templates(templates, weapons, sensors, constructions, base)
     pie_lowers = {n.lower() for n in pie_index}
-    for key, o in bodies.items():
+    for key, o in constructions.items():
         if not isinstance(o, dict):
             continue
-        m = o.get("model")
-        if m:
-            check_pie_ref(f"body.{key}.model", m, pie_index, pie_lowers, base)
-    check_pie_orphans(weapons, structures, sensors, bodies, constructs, repairs, pie_index)
+        for f in ("model", "mountModel", "sensorModel"):
+            m = o.get(f)
+            if m:
+                check_pie_ref(f"construction.{key}.{f}", m,
+                              pie_index, pie_lowers, base)
+    check_pie_orphans(weapons, structures, sensors, constructions, pie_index)
     check_pie_textures(pie_index)
     if args.verbose:
         for i in sorted(infos):

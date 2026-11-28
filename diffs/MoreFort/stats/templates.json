@@ -5,7 +5,6 @@
     "body": "ScavTruckBody",
     "propulsion": "wheeled01",
     "construct": "HvyEngrConstruct",
-    "repair": "HvyEngrRepair",
-    "type": "DROID"
+    "type": "CONSTRUCT"
   }
 }
