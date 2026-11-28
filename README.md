@@ -363,13 +363,14 @@ Super RIM-116 AA Fortress:
 - Name: 3x3 Particle Gun Fortress
 - Range: 30-30 tiles
 - ROF: 120/min
-- Damage: 580 (1160.0/s)
+- Damage: 435 (870.0/s)
 - Damage Type: Heat
 - Damage Mod: All-Rounder
 - Splash: 1.25 tiles
 - Radius Damage: 110 damage / 1.25 Tiles
 - Burn: no
 - Burn Damage: No
+- Note: engages air (ShootAir), dead zone inside 12 tiles
 
 ## Research upgrades
 
