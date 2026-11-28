@@ -557,7 +557,7 @@
     "facePlayer": 1,
     "fireOnMove": 0,
     "firePause": 50,
-    "flags": "ShootAir",
+    "flags": "NoFriendlyFire",
     "flightGfx": "fxplammo2-2x.pie",
     "flightSpeed": 3200,
     "hitGfx": "fxlenfl2.pie",

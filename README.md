@@ -370,7 +370,7 @@ Super RIM-116 AA Fortress:
 - Radius Damage: 110 damage / 1.25 Tiles
 - Burn: no
 - Burn Damage: No
-- Note: engages air (ShootAir), dead zone inside 12 tiles
+- Note: ground targets only, dead zone inside 12 tiles
 
 ## Research upgrades
 
