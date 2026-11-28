@@ -1,6 +1,6 @@
 **Warzone 2100 Mod: More Fortress**
 
-Adds 13 new Fortress defenses, 1 large wall, 1 ATGM emplacement, and 1 new tank weapon to skirmish and multiplayer.
+Adds 14 new Fortress defenses, 1 large wall, 1 ATGM emplacement, and 1 new tank weapon to skirmish and multiplayer.
 
 ## Installation
 
@@ -346,6 +346,28 @@ Super RIM-116 AA Fortress:
 - Damage Mod: Anti-Tank
 - Splash: 0.5 tiles
 - Radius Damage: 100 damage / 0.5 Tiles
+- Burn: no
+- Burn Damage: No
+
+3x3 Particle Gun Fortress:
+
+![3x3 Particle Gun Fortress](Pictures/PG3X_FORT.png)
+
+- List of Required Researches:
+  - Particle Gun (`R-Wpn-ParticleGun`)
+  - Plascrete Mk2 (`R-Defense-WallUpgrade08`)
+- MRT: 58:35
+- Build Power: 6000
+- Build Points: 5000
+- Weapon:
+- Name: 3x3 Particle Gun Fortress
+- Range: 30-30 tiles
+- ROF: 60/min
+- Damage: 290 (290.0/s)
+- Damage Type: Heat
+- Damage Mod: All-Rounder
+- Splash: 1.25 tiles
+- Radius Damage: 110 damage / 1.25 Tiles
 - Burn: no
 - Burn Damage: No
 
