@@ -134,9 +134,10 @@
   "researchPoints": 4000,
   "researchPower": 200,
   "resultComponents": [
-   "HvyEngrTruckBody"
+   "HvyEngrConstruct",
+   "HvyEngrRepair"
   ],
-  "statID": "HvyEngrTruckBody"
+  "statID": "HvyEngrConstruct"
  },
  "R-Defense-WallUpgrade13": {
   "category": "Wall",

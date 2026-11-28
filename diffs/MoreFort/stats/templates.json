@@ -2,7 +2,7 @@
   "HvyEngrTruck": {
     "id": "HvyEngrTruck",
     "name": "Heavy Engineering Truck",
-    "body": "HvyEngrTruckBody",
+    "body": "ScavTruckBody",
     "propulsion": "wheeled01",
     "construct": "HvyEngrConstruct",
     "repair": "HvyEngrRepair",

@@ -407,16 +407,17 @@ def check_structures(structures, weapons, pie_index, base, sensors=None):
             err(f"structure.{key}.weapons: max 3, extras are cut off")
 
 
-def check_research(research, structures, weapons, bodies, base):
+def check_research(research, structures, weapons, bodies, constructs, repairs, base):
     seen_msg = {}
     if base is not None and base.available:
         all_ids = set(research) | base.research_ids
         base_msgs = base.msgnames
-        base_bodies = base.body_ids
+        base_components = base.body_ids
     else:
         all_ids = set(research) | KNOWN_BASE_RESEARCH
         base_msgs = KNOWN_BASE_MSGNAMES
-        base_bodies = set()
+        base_components = set()
+    mod_components = set(bodies) | set(constructs) | set(repairs)
     for key, o in research.items():
         if not isinstance(o, dict):
             continue
@@ -453,9 +454,9 @@ def check_research(research, structures, weapons, bodies, base):
             if s not in structures:
                 err(f"research.{key}.resultStructures: {s!r} not in diff structure.json")
         for c in o.get("resultComponents", []):
-            if c not in weapons and c not in bodies and c not in base_bodies:
+            if c not in weapons and c not in mod_components and c not in base_components:
                 err(f"research.{key}.resultComponents: {c!r} not in diff "
-                    f"weapons/body.json nor base @{base.ref}")
+                    f"weapons/body/construct/repair.json nor base @{base.ref}")
         for c in o.get("redComponents", []) + o.get("redStructures", []):
             if c == "":
                 err(f"research.{key}: red* entry must never be empty string")
@@ -474,7 +475,7 @@ def check_research(research, structures, weapons, bodies, base):
             if o["statID"] != results[0]:
                 warn(f"research.{key}.statID: {o['statID']!r} != result*[0] {results[0]!r}")
             if o["statID"] not in structures and o["statID"] not in weapons \
-                    and o["statID"] not in bodies and o["statID"] not in base_bodies:
+                    and o["statID"] not in mod_components and o["statID"] not in base_components:
                 if base is not None and base.available:
                     if o["statID"] not in base.structure_ids and \
                             o["statID"] not in base.weapon_ids:
@@ -501,11 +502,12 @@ def check_research(research, structures, weapons, bodies, base):
         visit(k, [])
 
 
-def check_pie_orphans(weapons, structures, sensors, bodies, pie_index):
+def check_pie_orphans(weapons, structures, sensors, bodies, constructs, repairs, pie_index):
     """Every mod pie must be referenced somewhere; orphans get deleted."""
     used = set()
     for o in list(weapons.values()) + list(structures.values()) \
-            + list(sensors.values()) + list(bodies.values()):
+            + list(sensors.values()) + list(bodies.values()) \
+            + list(constructs.values()) + list(repairs.values()):
         if not isinstance(o, dict):
             continue
         for f, v in o.items():
@@ -574,15 +576,19 @@ def main(argv=None):
     research = data.get("research.json", {})
     sensors = data.get("sensor.json", {})
     bodies = data.get("body.json", {})
+    constructs = data.get("construct.json", {})
+    repairs = data.get("repair.json", {})
     check_key_ids("weapons", weapons)
     check_key_ids("structure", structures)
     check_key_ids("research", research)
     check_key_ids("sensor", sensors)
     check_key_ids("body", bodies)
+    check_key_ids("construct", constructs)
+    check_key_ids("repair", repairs)
     pie_index = mod_pie_index()
     check_weapons(weapons, pie_index, base)
     check_structures(structures, weapons, pie_index, base, sensors)
-    check_research(research, structures, weapons, bodies, base)
+    check_research(research, structures, weapons, bodies, constructs, repairs, base)
     pie_lowers = {n.lower() for n in pie_index}
     for key, o in bodies.items():
         if not isinstance(o, dict):
@@ -590,7 +596,7 @@ def main(argv=None):
         m = o.get("model")
         if m:
             check_pie_ref(f"body.{key}.model", m, pie_index, pie_lowers, base)
-    check_pie_orphans(weapons, structures, sensors, bodies, pie_index)
+    check_pie_orphans(weapons, structures, sensors, bodies, constructs, repairs, pie_index)
     check_pie_textures(pie_index)
     if args.verbose:
         for i in sorted(infos):

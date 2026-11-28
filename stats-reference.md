@@ -122,8 +122,7 @@ Everything except the key is optional, but a research with no `result*` does not
 ## Other files (rarely touched)
 
 * `propulsion.json`: `speed` + `type` required (`Wheeled,Tracked,Legged,Hover,Lift,Propellor,Half-Tracked`).
-* `body.json`: droid bodies — `id`, `name`, `model`, `size`, `droidType`, `weight`, `buildPoints`, `buildPower`, `hitpoints`, `weaponSlots`, `designable`.
-* `construct.json` / `repair.json`: construct & repair components — `constructPoints` / `repairPoints`, `buildPoints`, `buildPower`, `weight`, `hitpoints`, `droidType`, `location`, `model`, `designable`.
+* `construct.json` / `repair.json`: construct & repair components — `constructPoints` / `repairPoints`, `buildPoints`, `buildPower`, `weight`, `hitpoints`, `droidType`, `location`, `model`, `designable`. Mirror base `Spade1Mk1` / `HeavyRepair` for turret components.
 * `sensor.json` / `ecm.json` / `brain.json`: component fields + `range` / `repairPoints` / `constructPoints` / `ranks`.
 * `templates.json`: premade units `{body, propulsion, weapons[], construct, repair, type}`.
 * `weaponmodifier.json` / `structuremodifier.json`: damage % tables keyed by `weaponEffect`.

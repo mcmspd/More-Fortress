@@ -13,12 +13,10 @@ More_Fort/
   diffs/MoreFort/stats/structure.json  new structures (full objects)
   diffs/MoreFort/stats/research.json   new research topics (full objects)
   diffs/MoreFort/stats/sensor.json     new sensors (full objects, e.g. fortress sensor)
-  diffs/MoreFort/stats/body.json       new droid bodies (e.g. heavy engineering truck)
-  diffs/MoreFort/stats/construct.json  new construct components
+  diffs/MoreFort/stats/construct.json  new construct components (e.g. heavy engineering truck arm)
   diffs/MoreFort/stats/repair.json     new repair components
   diffs/MoreFort/stats/templates.json  premade unit templates
-  components/weapons/*.pie  turret/barrel models
-  components/bodies/*.pie   scaled body models
+  components/weapons/*.pie  turret/barrel models (incl. scaled trlcon-1.5x.pie)
   structs/*.pie              building bodies
   effects/*.pie              scaled FX
   check.py                   compliance checker (run it)
