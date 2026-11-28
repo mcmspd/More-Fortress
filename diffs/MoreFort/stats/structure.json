@@ -343,28 +343,5 @@
    "SunburstSuper"
   ],
   "width": 2
- },
- "X-Super-Particle3x": {
-  "armour": 30,
-  "breadth": 3,
-  "buildPoints": 5000,
-  "buildPower": 6000,
-  "combinesWithWall": true,
-  "height": 5,
-  "hitpoints": 6400,
-  "id": "X-Super-Particle3x",
-  "name": "3x3 Particle Gun Fortress",
-  "resistance": 100,
-  "sensorID": "FortressSensor",
-  "strength": "HARD",
-  "structureModel": [
-   "stwpfcan-1.5x.pie"
-  ],
-  "thermal": 30,
-  "type": "FORTRESS",
-  "weapons": [
-   "ParticleSuper3x"
-  ],
-  "width": 3
  }
 }

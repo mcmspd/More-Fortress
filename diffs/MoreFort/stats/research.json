@@ -360,20 +360,5 @@
    "X-Super-Sunburst"
   ],
   "statID": "X-Super-Sunburst"
- },
- "R-Defense-Super-Particle3x": {
-  "iconID": "IMAGE_RES_DEFENCE",
-  "id": "R-Defense-Super-Particle3x",
-  "name": "3x3 Particle Gun Fortress",
-  "requiredResearch": [
-   "R-Wpn-ParticleGun",
-   "R-Defense-WallUpgrade08"
-  ],
-  "researchPoints": 26000,
-  "researchPower": 750,
-  "resultStructures": [
-   "X-Super-Particle3x"
-  ],
-  "statID": "X-Super-Particle3x"
  }
 }
