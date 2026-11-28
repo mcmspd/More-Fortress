@@ -604,6 +604,18 @@ def check_templates(templates, weapons, sensors, constructions, base):
                         f"template will fail to load")
                 else:
                     warn(f"templates.{key}.weapons: {w!r} unverified (offline)")
+        # Type/part consistency: stock limit counts DROID_CONSTRUCT droids
+        # (droidlimits.js sets 15 via setDroidLimit). droidTypeFromTemplate
+        # derives CONSTRUCT from a non-zero construct part — a CONSTRUCT
+        # template without one falls through to DROID_DEFAULT, escaping the
+        # limit and unable to build.
+        if o.get("type") == "CONSTRUCT" and \
+                o.get("construct", "ZNULLCONSTRUCT") == "ZNULLCONSTRUCT":
+            err(f"templates.{key}: type CONSTRUCT but no construct part, "
+                f"unit would escape the 15-constructor limit and cannot build")
+        if o.get("type") == "REPAIR" and \
+                o.get("repair", "ZNULLREPAIR") == "ZNULLREPAIR":
+            err(f"templates.{key}: type REPAIR but no repair part")
 
 
 def check_pie_textures(pie_index):
