@@ -551,7 +551,7 @@
   "ParticleSuper3x": {
     "buildPoints": 3000,
     "buildPower": 1200,
-    "damage": 2500,
+    "damage": 5000,
     "effectSize": 100,
     "explosionWav": "lsrexpl.ogg",
     "facePlayer": 1,
