@@ -555,6 +555,7 @@
     "effectSize": 100,
     "explosionWav": "lsrexpl.ogg",
     "facePlayer": 1,
+    "faceInFlight": 1,
     "fireOnMove": 0,
     "firePause": 50,
     "flags": "NoFriendlyFire",
